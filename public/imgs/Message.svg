@@ -1,0 +1,15 @@
+<svg id="Group_80" data-name="Group 80" xmlns="http://www.w3.org/2000/svg" width="48.997" height="48.997" viewBox="0 0 48.997 48.997">
+  <g id="heart_icon_group" data-name="heart icon group">
+    <g id="favourite_icon" data-name="favourite icon" transform="translate(0 0)">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="48.997" height="48.997" rx="24" fill="#1d4259"/>
+    </g>
+  </g>
+  <g id="Group_73" data-name="Group 73" transform="translate(12.712 17.479)">
+    <g id="Group_72" data-name="Group 72" transform="translate(0 0)">
+      <path id="Path_98" data-name="Path 98" d="M786.942,419.05c1.306-1.517,2.257-2.534,2.918-3.157a58.863,58.863,0,0,1-5.894-4.939l-.031,11.528C784.8,421.509,785.874,420.358,786.942,419.05Z" transform="translate(-783.936 -409.731)" fill="none" stroke="#fff" stroke-width="1"/>
+      <path id="Path_99" data-name="Path 99" d="M803,421.23c-.192-.233-.36-.444-.513-.641-2.622,2.061-4.87,3.724-5.174,3.969-2.255-1.6-4.2-3.022-5.873-4.277a38.831,38.831,0,0,1-5.515,7.492l22.674.061C807.045,426.044,804.9,423.339,803,421.23Z" transform="translate(-784.748 -413.537)" fill="none" stroke="#fff" stroke-width="1"/>
+      <path id="Path_100" data-name="Path 100" d="M815.473,415.933a38.729,38.729,0,0,1,6.1,5.94l.03-11.2C820.006,412.238,817.676,414.179,815.473,415.933Z" transform="translate(-796.807 -409.614)" fill="none" stroke="#fff" stroke-width="1"/>
+      <path id="Path_101" data-name="Path 101" d="M786.554,408.887l11.013,9.137,4.215-3.552c-.118-.315.011-.387.319-.269l6.24-5.258Z" transform="translate(-785.004 -408.887)" fill="none" stroke="#fff" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

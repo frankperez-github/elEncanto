@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48.997" height="48.997" viewBox="0 0 48.997 48.997">
+  <g id="Group_106" data-name="Group 106" transform="translate(-1741 -235)">
+    <g id="Group_86" data-name="Group 86" transform="translate(1741 235)">
+      <g id="heart_icon_group" data-name="heart icon group" transform="translate(0 0)">
+        <g id="favourite_icon" data-name="favourite icon" transform="translate(0 0)">
+          <rect id="Rectangle_1" data-name="Rectangle 1" width="48.997" height="48.997" rx="24" fill="#ff524f"/>
+        </g>
+      </g>
+      <path id="Facebook-6" d="M726.727-419.264H706.092a1.282,1.282,0,0,0-1.282,1.282h0v20.635a1.282,1.282,0,0,0,1.282,1.282H717.2v-8.982h-3.022v-3.5H717.2v-2.578c0-3,1.832-4.63,4.5-4.63a25.96,25.96,0,0,1,2.7.136v3.134H722.55c-1.462,0-1.735.692-1.735,1.706v2.232h3.47l-.453,3.5h-3.017v8.982h5.912a1.282,1.282,0,0,0,1.282-1.282h0v-20.635a1.281,1.281,0,0,0-1.282-1.282Z" transform="translate(-692.098 431.976)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

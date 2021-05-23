@@ -1,0 +1,417 @@
+/*General*********************/
+*{
+    text-align: left;
+    margin: 0;
+    padding:0;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+input:focus{
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
+select:focus{
+    outline: none;
+}
+span{
+    color: white;
+}
+
+
+/******Presentation********************/
+
+.Logo_present{
+    margin: 22% 0 9% 0;
+    text-align: center;
+}
+.Presentation_button{
+    font-size: 18px;
+    text-align: center;
+    width: 93%;
+    padding: 5% 0; 
+    box-shadow: 0.5px 3.5px 4px   rgb(218, 216, 216);
+    border-radius: 0.3rem;
+    border: none;
+    background-color: white;
+}
+.Continue{
+    text-align: center;
+    margin-top: 20%;
+}
+/*******end of Presentation*************************/
+
+
+/******Pallets_mobile*************/
+
+.navbar_mob{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 6.5%;
+    background-color: white; 
+    box-shadow: 0px 5px 7px   rgb(218, 216, 216);
+    border-bottom-left-radius: 1.7rem;
+    border-bottom-right-radius: 1.7rem;
+}
+.link_nav_mob{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20% 0;
+    margin-right: 5%;
+    color: black;
+}
+.Link-div{
+    margin-right: 5.5%;
+}
+.link_name{
+    margin-left: 3%;
+}
+.Truck{
+    text-align: center;
+}
+.truck_mob_img{
+    width: 65%;
+}
+.ProductCard_mob{
+    font-size: 12px;
+    width: 90%;
+    padding: 1% 5%;
+    margin: 2.5% 5.5%;
+    border-radius: 0.4rem;
+    box-shadow: 1px 2.5px 5px   rgb(218, 216, 216) ;
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+}
+.Pallets_menu{
+    text-align: right;
+}
+.buy_button_mob{
+    box-shadow: 3px 4px 3px   rgb(218, 216, 216) ;
+    margin:3% 5% 10% 0;
+    font-size: 12px;
+    width: 23%;
+    padding: 1.2% 0%;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    background-color: #FF524F;
+    color: white;
+}
+.last{
+    margin-bottom: 25%;
+}
+.pkg_numb_mob{
+    margin-left: -25%;
+    font-size: 14px;
+}
+.Producticon_mob{
+    width: 12%;
+    margin-right: 1%;
+}
+.Networks{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    margin-left: 5%;
+}
+.Boxes{
+    text-align: right;
+}
+.boxes_mob_img{
+    padding-right: 10% !important;
+}
+.see_product{
+    color: black;
+    font-size: 14px;
+}
+.PalletsID{
+    display: none;
+}
+.Price_mob{
+    font-size: 14px;
+}
+/******end of Pallets_mobile******/
+
+
+
+/**************Products_mobile*************/
+.product_mob{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25%;
+}
+.prod_name_mob{
+    margin-left: -36%;
+    font-size: 14px;
+}
+.prod_name_mob2{
+    margin-left: -29%;
+    font-size: 14px;
+}
+.product_mob:first-of-type{
+    margin-top: 23%;
+}
+.product_mob:last-of-type{
+    margin-bottom: 27%;
+}
+/********end of Products_mobile*************/
+
+
+/**GardenProducts**********/
+.bath_single_product_mob{
+    width: 35%;
+    margin-bottom: 5%;
+}
+.line{
+    display: flex;
+    justify-content: space-around;
+    margin: 13% 5%;
+}
+.line:first-of-type{
+    margin-top: 19%;
+}
+.buy_product_mob{
+    box-shadow: 3px 4px 3px   rgb(218, 216, 216) ;
+    font-size: 13px;
+    margin-top: 4%;
+    width: 98%;
+    padding: 4.5%;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    color: white;
+}
+.price_mob{
+    font-size: 14px;
+}
+.product_name_mob{
+    font-size: 13px;
+}
+.X_Bar_mob{
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 23%;
+    margin-left: 8.5%;
+    height: 2vh;
+    margin-top: -1%;
+}
+.arrow_mob{
+    cursor: pointer;
+}
+.arrow-div_mob{
+    width: 50%;
+    text-align: center;
+}
+.numbers_mob{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -4.5%;
+    margin-right: 24%;
+}
+.numbers_mob p{
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: 250;
+}
+.actual_numb{
+    font-weight: 400 !important;
+}
+/*end of GardenProducts*/
+
+/*************Animation_section********************/
+
+#ClosedTruck{
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    animation-name: Down_Truck_mob;
+    animation-duration: 8s;
+    animation-timing-function: ease-in;
+}
+#OpenTruck_mob{
+    position: absolute ;
+    width: 92%;
+    margin-left: 4%;
+    margin-top: 70%;
+    opacity: 0;
+    z-index: -2;
+    animation-name: Open_Truck_mob;
+    animation-duration: 8s;
+}
+#ChargeDron_mob{
+    position: absolute;
+    width: 50%;
+    top: 5%;
+    left: -50%;
+    animation-name: ChargeDron_mob;
+    animation-duration: 8s;
+}
+#EmptyDron_mob{
+    position: absolute;
+    opacity: 0;
+    width: 39%;
+    animation-name: EmptyDron_mob;
+    animation-duration: 8s;
+}
+#Pallets_menu{
+    margin-top: 85%;
+    opacity: 1;
+    animation-name: Hide-Show_Pallets;
+    animation-duration: 8s;
+}
+#Text_animation_mob{
+    position: absolute;
+    opacity: 0;
+    top: 85%;
+    left: 22%;
+    animation-name: Text_animation;
+    animation-duration: 8s;
+}
+#mobile_animation{
+    display: none;
+}
+
+
+/*******end of Animation_section********************/
+
+/*********************Buy Form*****************/
+#buy_form_mob{
+    background-color: #fffffff5;
+    width: 95%;
+    height: 86.5%;
+    position: absolute;
+    top: 8.3%;
+    left: 5.4%;
+}
+.form_side_mob:last-of-type{
+    margin-left: 12%;
+    width: 90%;
+}
+.form_mob input{
+    padding: 4% 2.5%;
+    margin-left: 7%;
+    width: 75%;
+}
+.form_mob select{
+    padding: 5% 2.5%;
+    margin-left: 7%;
+    width: 75%;
+}
+.form_mob:first-of-type{
+    margin-top: -5%;
+}
+.form_mob label{
+    margin-left: 14%;
+}
+.form_button_mob{
+    width: 30%;
+    margin-left: 7%;
+    background-color: white;
+    margin-top: 7.5%;
+    padding: 2.5% 0;
+    border: none;
+    border-radius: 2rem;
+    text-align: center;
+    color: rgb(145, 145, 145);
+    font-size: 15px;
+    font-weight: 800;
+    box-shadow: 0.8px 3px 5px  rgb(199, 198, 198) ;
+}
+.form_button_mob:last-of-type{
+    margin-left: 15%;
+}
+.pathRed{
+    fill: green;
+}
+/****************end of Buy Form***************/
+
+/*Animations*/
+@keyframes Down_Truck_mob {
+    0%{width: 80%;}
+    12.5%{width:91%; margin-left: 4.5%; margin-top: 68%;} /*sec 1*/
+    24.5%{width:91%; margin-left: 4.5%;margin-top: 68%;opacity: 1;}
+    25%{width:91%; margin-left: 4.5%;margin-top: 68%;opacity: 0;}/*sec 2*/
+    37.5%{width:91%;margin-left: 4.5%; margin-top: 68%;opacity: 0;}/*sec3*/
+    50%{width:91%; margin-left: 4.5%;margin-top: 68%;opacity: 0;} /*sec 4*/
+    62.5%{width:91%; margin-left: 4.5%;margin-top: 68%;opacity: 0;} /*sec 5*/
+    75%{width:91%;margin-left: 4.5%; margin-top: 68%;opacity: 0;} /*sec 6*/
+    87%{width:91%;margin-left: 4.5%; margin-top: 68%;opacity: 0;} 
+    87.5%{width:91%;margin-left: 4.5%; margin-top: 68%;opacity: 1;} /*sec 7*/
+    100%{width:91%;margin-left: 70%; margin-top: 68%;} /*sec 8*/
+}
+@keyframes Open_Truck_mob {
+    0%{opacity: 0;}
+    12%{opacity: 0;}
+    12.5%{opacity: 0;} /*sec 1*/
+    24.5%{opacity: 0;}
+    25%{opacity: 1;}/*sec 2*/
+    37.5%{opacity: 1;}/*sec3*/
+    50%{opacity: 1;} /*sec 4*/
+    62.5%{opacity: 1;} /*sec 5*/
+    75%{opacity: 1;} /*sec 6*/
+    87%{opacity: 1;} 
+    87.5%{opacity: 0;} /*sec 7*/
+    100%{opacity: 0;} /*sec 8*/
+}
+@keyframes ChargeDron_mob {
+    37.5%{top: 5%; left: -50%;}/*sec3*/
+    50%{top: 30%; left: 15%;} /*sec 4*/
+    62%{top: 30%; left: 15%;opacity: 1;}
+    62.5%{top: 30%; left: 15%;opacity: 0;} /*sec 5*/
+    75%{opacity: 0;} /*sec 6*/
+    87.5%{opacity: 0;} /*sec 7*/
+    100%{opacity: 0;} /*sec 8*/
+}
+@keyframes Hide-Show_Pallets {
+    0%{opacity: 0;}
+    99%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes EmptyDron_mob {
+    0%{top: 30.5%; left: 20.5%;opacity: 0;}
+    25%{top: 30.5%; left: 20.5%;opacity: 0;}
+    50%{top: 30.5%; left: 20.5%;opacity: 0;}
+    62%{top: 30.5%; left: 20.5%;opacity: 0;}
+    62.5%{top: 30.5%; left: 20.5%; opacity: 1;} /*sec 5*/
+    63%{top: 30.5%; left: 20.5%; opacity: 1;}
+    75%{top: 30.5%; left: 20.5%; opacity: 1;} /*sec 6*/
+    87.5%{top: 10%; left: 130%; opacity: 1;} /*sec 7*/
+    100%{top: 10%; left: 130%; opacity: 1;} /*sec 8*/
+}
+@keyframes Text_animation {
+    9.5%{opacity: 0;}
+    10%{opacity: 1;}
+    12.5%{opacity: 1;} /*sec 1*/
+    25%{opacity: 1;}/*sec 2*/
+    37.5%{opacity: 1;}/*sec3*/
+    50%{opacity: 1;} /*sec 4*/
+    62.5%{opacity: 1;} /*sec 5*/
+    75%{opacity: 1;} /*sec 6*/
+    87.5%{opacity: 1;} /*sec 7*/
+    99.5%{opacity: 1;}
+    100%{opacity: 0;} /*sec 8*/
+}
+
+@media(max-width:280px){
+    .navbar_mob{
+        font-size: 13px;
+    }
+}

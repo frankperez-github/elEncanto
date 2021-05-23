@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="49.226" height="49.226" viewBox="0 0 49.226 49.226">
+  <g id="Grupo_107" data-name="Grupo 107" transform="translate(-1073.938 -772.639)">
+    <g id="heart_icon_group" data-name="heart icon group" transform="translate(1073.938 772.639)">
+      <g id="favourite_icon" data-name="favourite icon" transform="translate(0 0)">
+        <rect id="Rectangle_1" data-name="Rectangle 1" width="49.226" height="49.226" rx="24" fill="#ff524f"/>
+      </g>
+    </g>
+    <g id="purchases" transform="translate(1086.874 782.753)">
+      <g id="pruchases_icon" transform="translate(0 0)">
+        <circle id="Elipse_148" data-name="Elipse 148" cx="3.079" cy="3.079" r="3.079" transform="translate(2.256 22.913)" fill="#fff"/>
+        <circle id="Elipse_149" data-name="Elipse 149" cx="3.079" cy="3.079" r="3.079" transform="translate(16.927 22.913)" fill="#fff"/>
+        <path id="Trazado_739" data-name="Trazado 739" d="M218.533,58.757l-17.907.971a3.426,3.426,0,0,1-3.386-3.006l-.736-5.168a3.43,3.43,0,0,1,3.036-4.095l18.919-2.687a3.457,3.457,0,0,1,3.576,4.44L220,57.556A1.8,1.8,0,0,1,218.533,58.757Z" transform="translate(-196.268 -38.651)" fill="#fff"/>
+        <rect id="Rectángulo_329" data-name="Rectángulo 329" width="5.108" height="6.821" rx="0.929" transform="translate(0 0.724) rotate(-8.143)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
