@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import  ContactLink from '../../public/imgs/link_contact.svg';
+
 
 
 function NavBar_mob(){

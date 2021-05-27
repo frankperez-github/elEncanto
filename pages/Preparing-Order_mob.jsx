@@ -21,21 +21,30 @@ function PreparingOrder(){
 
 
             <div className="Truck_Animation">
-                <div id="ClosedTruck">
-                    <Image src="/../public/imgs/Truck.svg" width="350%" height="250%" className="truck_mob_img"/>
+                <div id="closeTruck">
+                    <Image src="/../public/imgs/Truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck" />
+                </div>
+                <div id="closeTruck2">
+                    <Image src="/../public/imgs/Truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck2" />
+                </div>
+                <div id="closeTruck3">
+                    <Image src="/../public/imgs/Truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck3" />
+                </div>
+                <div id="closeTruck4">
+                    <Image src="/../public/imgs/Truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck4" />
                 </div>
                 
 
                 <div id="OpenTruck_mob">
-                    <Image src="/../public/imgs/EmptyTruck.svg" width="370%" height="200%" />
+                    <Image src="/../public/imgs/EmptyTruck.svg" width="400%" height="250%" />
                 </div>
 
                 <div id="ChargeDron_mob">
                     <Image src="/../public/imgs/ChargeDron.svg" width="370%" height="200%" />
                 </div>
 
-                <div id="EmptyDron_mob">
-                    <Image src="/../public/imgs/EmptyDron.svg" width="370%" height="200%" />
+                <div className="emptyDron">
+                    <Image src="/../public/imgs/EmptyDron.svg"  width ="370%" height="100%" id="EmptyDron_mob"/>
                 </div>
 
                 <div id="Text_animation_mob">

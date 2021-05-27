@@ -1,8 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import  Pkg_1 from '../public/imgs/Module_1.svg';
-import  Pkg_2 from '../public/imgs/Module_2.svg';
-import  Pkg_3 from '../public/imgs/Module_3.svg';
 import NavBar_mob from '../components/MobileVersion/NavBar_mob';
 import Footer_mob from '../components/MobileVersion/Fotter_mob';
 

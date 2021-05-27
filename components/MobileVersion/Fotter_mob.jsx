@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import  Boxes from '../../public/imgs/3Boxes.svg';
+
 
 
 

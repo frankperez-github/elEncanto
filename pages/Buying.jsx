@@ -16,6 +16,8 @@ function BuyForm_mob(){
         
         <div className="Buy_form_mob">
 
+            <Preparing_Order />
+
             <form action="Submit"  className="form_mob" id="buy_form_mob">
 
                 <div className="form_left form_side_mob">
@@ -61,7 +63,7 @@ function BuyForm_mob(){
             </form>
             
 
-            <Preparing_Order />
+            
 
         </div>
     );

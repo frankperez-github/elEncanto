@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import  Left_arrow from '../../public/imgs/prev.svg';
-import  Right_arrow from '../../public/imgs/next.svg';
+
 
 function X_Bar(){
 
