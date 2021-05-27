@@ -40,7 +40,7 @@ function PreparingOrder(){
                 </div>
 
                 <div id="ChargeDron_mob">
-                    <Image src="/public/charge_dron.svg" width="370%" height="200%" />
+                    <Image src="/charge_dron.svg" width="370%" height="200%" />
                 </div>
 
                 <div className="emptyDron">
