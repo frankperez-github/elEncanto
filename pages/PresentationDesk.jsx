@@ -27,7 +27,7 @@ function Pallets (){
                     
                     
                     <div className="StaticTruck-div">
-                            <Image className="StaticTruck" src="/../public/imgs/Truck.svg" width="450%" height="300%"/>
+                            <Image className="StaticTruck" src="/../public/imgs/truck.svg" width="450%" height="300%"/>
                     </div>
 
                         
@@ -36,7 +36,7 @@ function Pallets (){
                             <div className="product ProductCard">
                                 
                                     <div className="ModuleImg-div">
-                                        <Image src="/../public/imgs/Module_1.svg" width="42%" height="47%"/>
+                                        <Image src="/../public/imgs/module_1.svg" width="42%" height="47%"/>
                                     </div>
                                 
                                 
@@ -49,7 +49,7 @@ function Pallets (){
 
                             <div className="product ProductCard">
                                 <div className="ModuleImg-div">
-                                    <Image src="/../public/imgs/Module_2.svg" width="42%" height="50%"/>
+                                    <Image src="/../public/imgs/module_2.svg" width="42%" height="50%"/>
                                 </div>
                                 <p className="pkg_numb">Package No. 2</p>
                                 <p >$100</p>
@@ -60,7 +60,7 @@ function Pallets (){
 
                             <div className="product ProductCard">
                                 <div className="ModuleImg-div">
-                                    <Image src="/../public/imgs/Module_3.svg" width="42%" height="50%"/>
+                                    <Image src="/../public/imgs/module_3.svg" width="42%" height="50%"/>
                                 </div>
 
                                 <p className="pkg_numb">Package No. 3</p>

@@ -7,7 +7,7 @@ function Layout(props) {
     <div className="borders">
         <div className="nav_bar">
             <div className="logo">
-                <Image className="logo_img" src="/../public/imgs/Logo_Liquidation.svg" alt="Logo" width="150%" height="150%" />
+                <Image className="logo_img" src="/../public/imgs/logo.svg" alt="Logo" width="150%" height="150%" />
             </div>
 
             <div className="nav">
@@ -65,7 +65,7 @@ function Layout(props) {
 
         <div className="Footer">
             <div className="boxes">
-                <Image src="/../public/imgs/3Boxes.svg" width="220%" height="100%"/>
+                <Image src="/../public/imgs/boxes.svg" width="220%" height="100%"/>
             </div>
             <div id="TextTruck">
                 We are preparing your order!

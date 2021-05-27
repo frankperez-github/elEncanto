@@ -6,7 +6,7 @@ function Presentation(){
         <div className="Presentation">
 
             <div className="Logo_present">
-                <Image src="/../public/imgs/Logo_Liquidation.svg" width="200%" height="150%" className="Logo_present_img"/>
+                <Image src="/../public/imgs/logo.svg" width="200%" height="150%" className="Logo_present_img"/>
             </div>
             
             <div className="Continue">

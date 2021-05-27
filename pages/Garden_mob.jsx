@@ -20,7 +20,7 @@ function Garden_mob(){
                     <div className="bath_single_product_mob">
                         
                         <div >
-                            <Image src="/../public/imgs/Toilet.svg" width="150%" height="150%" />
+                            <Image src="/../public/imgs/toilet.svg" width="150%" height="150%" />
                         </div>
                         <div className="product_name_mob">
                             <p>Bath Toilet</p>
@@ -37,7 +37,7 @@ function Garden_mob(){
                     <div className="bath_single_product_mob">
                         
                         <div >
-                        <Image src="/../public/imgs/Toilet.svg" width="150%" height="150%" />
+                        <Image src="/../public/imgs/toilet.svg" width="150%" height="150%" />
                         </div>
                         <div className="product_name_mob">
                             <p>Bath Toilet</p>
@@ -56,7 +56,7 @@ function Garden_mob(){
                     <div className="bath_single_product_mob">
                         
                         <div >
-                            <Image src="/../public/imgs/Toilet.svg" width="150%" height="150%" />
+                            <Image src="/../public/imgs/toilet.svg" width="150%" height="150%" />
                         </div>
                         <div className="product_name_mob">
                             <p>Bath Toilet</p>
@@ -73,7 +73,7 @@ function Garden_mob(){
                     <div className="bath_single_product_mob">
                         
                         <div >
-                            <Image src="/../public/imgs/Toilet.svg" width="150%" height="150%" />
+                            <Image src="/../public/imgs/toilet.svg" width="150%" height="150%" />
                         </div>
                         <div className="product_name_mob">
                             <p>Bath Toilet</p>
@@ -92,7 +92,7 @@ function Garden_mob(){
                     <div className="bath_single_product_mob">
                         
                         <div >
-                            <Image src="/../public/imgs/Toilet.svg" width="150%" height="150%" />
+                            <Image src="/../public/imgs/toilet.svg" width="150%" height="150%" />
                         </div>
                         <div className="product_name_mob">
                             <p>Bath Toilet</p>
@@ -110,7 +110,7 @@ function Garden_mob(){
                     <div className="bath_single_product_mob">
                         
                         <div >
-                            <Image src="/../public/imgs/Toilet.svg" width="150%" height="150%" />
+                            <Image src="/../public/imgs/toilet.svg" width="150%" height="150%" />
                         </div>
                         <div className="product_name_mob">
                             <p>Bath Toilet</p>

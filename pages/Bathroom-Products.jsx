@@ -24,7 +24,7 @@ function Bathroom_products(){
             <div className="spec-product-div">
 
                 <div className="StaticTruck-div">
-                <Image className="StaticTruck" src="/../public/imgs/Truck.svg" width="450%" height="300%"/>
+                <Image className="StaticTruck" src="/../public/imgs/truck.svg" width="450%" height="300%"/>
                 </div>
             
                 <div className="Garden_products">
@@ -35,7 +35,7 @@ function Bathroom_products(){
                     <div className="bath_single_product">
                     
                         <div className="image">
-                            <Image src="/../public/imgs/Toilet.svg" width="100%" height="100%" className="product_image"/>
+                            <Image src="/../public/imgs/toilet.svg" width="100%" height="100%" className="product_image"/>
                         </div>
                         <div className="product_name">
                             <p>Bath Toilet</p>
@@ -56,7 +56,7 @@ function Bathroom_products(){
                     <div className="bath_single_product">
                         
                         <div className="image">
-                            <Image src="/../public/imgs/Toilet.svg" width="100%" height="100%" className="product_image"/>
+                            <Image src="/../public/imgs/toilet.svg" width="100%" height="100%" className="product_image"/>
                         </div>
                         <div className="product_name">
                             <p>Bath Toilet</p>
@@ -76,7 +76,7 @@ function Bathroom_products(){
                     <div className="bath_single_product">
                         
                         <div className="image">
-                            <Image src="/../public/imgs/Toilet.svg" width="100%" height="100%" className="product_image"/>
+                            <Image src="/../public/imgs/toilet.svg" width="100%" height="100%" className="product_image"/>
                         </div>
                         <div className="product_name">
                             <p>Bath Toilet</p>
@@ -100,7 +100,7 @@ function Bathroom_products(){
                     <div className="bath_single_product">
                     
                         <div className="image">
-                            <Image src="/../public/imgs/Toilet.svg" width="100%" height="100%" className="product_image"/>
+                            <Image src="/../public/imgs/toilet.svg" width="100%" height="100%" className="product_image"/>
                         </div>
                         <div className="product_name">
                             <p>Bath Toilet</p>
@@ -119,7 +119,7 @@ function Bathroom_products(){
                     <div className="bath_single_product">
                         
                         <div className="image">
-                            <Image src="/../public/imgs/Toilet.svg" width="100%" height="100%" className="product_image"/>
+                            <Image src="/../public/imgs/toilet.svg" width="100%" height="100%" className="product_image"/>
                         </div>
                         <div className="product_name">
                             <p>Bath Toilet</p>
@@ -136,7 +136,7 @@ function Bathroom_products(){
                     <div className="bath_single_product">
                         
                         <div className="image">
-                            <Image src="/../public/imgs/Toilet.svg" width="100%" height="100%" className="product_image"/>
+                            <Image src="/../public/imgs/toilet.svg" width="100%" height="100%" className="product_image"/>
                         </div>
                         <div className="product_name">
                             <p>Bath Toilet</p>
