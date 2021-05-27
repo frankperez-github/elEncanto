@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Layout from '../components/Layout'
 import PresentationDesk from '../pages/PresentationDesk'
 import Presentation_mob from '../pages/Presentation_mob'
 
@@ -12,8 +13,8 @@ export default function Home() {
       </Head>
 
       <main >
-        <PresentationDesk />
-
+        <PresentationDesk/>
+              
         <Presentation_mob />
       </main>
 

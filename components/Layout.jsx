@@ -1,8 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { children } from 'react';
 
-function Layout() {
+function Layout(props) {
 
     return(
     <div className="borders">
@@ -61,12 +60,15 @@ function Layout() {
         </div>
 
             <main>
-                {children}
+                {props.children}
             </main>
 
         <div className="Footer">
             <div className="boxes">
                 <Image src="/../public/imgs/3Boxes.svg" width="220%" height="100%"/>
+            </div>
+            <div id="TextTruck">
+                We are preparing your order!
             </div>
         </div>
 
