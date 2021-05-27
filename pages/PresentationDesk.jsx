@@ -27,7 +27,7 @@ function Pallets (){
                     
                     
                     <div className="StaticTruck-div">
-                            <Image className="StaticTruck" src="/../public/imgs/truck.svg" width="450%" height="300%"/>
+                            <Image className="StaticTruck" src="/../public/imgs/truck.svg" layout='fill'/>
                     </div>
 
                         
