@@ -167,7 +167,7 @@ select:focus{
     padding-left: 6%;
 }
 #EmptyTruck{
-    width: 35%;
+    width: 34%;
     position: absolute;
     top: 32%;
     left: 6.6%;
@@ -299,7 +299,7 @@ select:focus{
 .buy_form{
     z-index: 3;
     display: flex;
-    background-color: #ffffffec;
+    background-color: #ffffff;
     border-radius: 5rem;
     width: 86.9%;
     height: 89%;
