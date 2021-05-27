@@ -16,14 +16,14 @@ function Pallets_mob(){
             <NavBar_mob />
 
             <div className="Truck">
-                <Image className="truck_mob_img" src="/../public/imgs/truck.svg" width="300%" height="300%"/>
+                <Image className="truck_mob_img" src="/truck.svg" width="300%" height="300%"/>
             </div>      
 
             <div className="Pallets_menu" >
 
                 <div className="product ProductCard_mob">
 
-                    <Image src="/../public/imgs/module_1.svg" width="42%" height="47%" className="Producticon_mob"/>
+                    <Image src="/module_1.svg" width="42%" height="47%" className="Producticon_mob"/>
                     
                     <p className="pkg_numb_mob">Package No. 1</p>
                     <p className="Price_mob">$100</p>
@@ -37,7 +37,7 @@ function Pallets_mob(){
                 
 
                 <div className="product ProductCard_mob">
-                    <Image src="/../public/imgs/module_2.svg" width="42%" height="47%" className="Producticon_mob"/>
+                    <Image src="/module_2.svg" width="42%" height="47%" className="Producticon_mob"/>
                     <p className="pkg_numb_mob">Package No. 2</p>
                      <p className="Price_mob">$100</p>
                 </div>
@@ -49,7 +49,7 @@ function Pallets_mob(){
                 </Link>
                 
                 <div className="product ProductCard_mob">
-                   <Image src="/../public/imgs/module_3.svg" width="42%" height="47%" className="Producticon_mob"/>
+                   <Image src="/module_3.svg" width="42%" height="47%" className="Producticon_mob"/>
                     <p className="pkg_numb_mob">Package No. 3</p>
                     <p className="Price_mob">$100</p>
                 </div>

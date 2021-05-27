@@ -25,14 +25,14 @@ function Products(){
                     <div className="Products-div">
                         
                         <div className="StaticTruck-div">
-                            <Image className="StaticTruck" src="/../public/imgs/truck.svg" width="450%" height="300%"/>
+                            <Image className="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
                     </div>
 
                         <div className="Right_side_products">
                             <div className="product ProductCard CardProducts">
 
                                 <div className="ModuleImg-div">
-                                    <Image src="/../public/imgs/garden.svg" width="42%" height="50%"/>
+                                    <Image src="/garden.svg" width="42%" height="50%"/>
                                 </div>
                                 
                                 <p className="prod_name">Garden</p>
@@ -44,7 +44,7 @@ function Products(){
                             <div className="product ProductCard CardProducts">
 
                                 <div className="ModuleImg-div">
-                                    <Image src="/../public/imgs/bathroom.svg" width="42%" height="50%"/>
+                                    <Image src="/bathroom.svg" width="42%" height="50%"/>
                                 </div>
 
                                 <p className="prod_name">Bathroom</p>
@@ -56,7 +56,7 @@ function Products(){
                             <div className="product ProductCard CardProducts">
 
                                 <div className="ModuleImg-div">
-                                    <Image src="/../public/imgs/tools.svg" width="42%" height="50%"/>
+                                    <Image src="/tools.svg" width="42%" height="50%"/>
                                 </div>
 
                                 <p className="prod_name">Tools</p>

@@ -7,7 +7,7 @@ function Layout(props) {
     <div className="borders">
         <div className="nav_bar">
             <div className="logo">
-                <Image className="logo_img" src="/../public/imgs/logo.svg" alt="Logo" width="150%" height="150%" />
+                <Image className="logo_img" src="/logo.svg" alt="Logo" width="150%" height="150%" />
             </div>
 
             <div className="nav">
@@ -16,7 +16,7 @@ function Layout(props) {
                     <Link href="/Pallets" className="link_a"> 
                         <div className="NavLink-div">
                             <div className="LinkImg">
-                                <Image src="/../public/imgs/link_pallets.svg" width="40%" height="40%"/> 
+                                <Image src="/link_pallets.svg" width="40%" height="40%"/> 
                             </div>
 
                             <div className="LinkName">
@@ -32,7 +32,7 @@ function Layout(props) {
                     <Link href="/Products" className="link_a">
                         <div className="NavLink-div">
                             <div className="LinkImg">
-                                <Image src="/../public/imgs/link_products.svg" width="40%" height="40%"/> 
+                                <Image src="/link_products.svg" width="40%" height="40%"/> 
                             </div>
 
                             <div className="LinkName">
@@ -46,7 +46,7 @@ function Layout(props) {
                     <Link href="#">
                     <div className="NavLink-div">
                             <div className="LinkImg">
-                                <Image src="/../public/imgs/link_contact.svg" width="40%" height="40%"/> 
+                                <Image src="/link_contact.svg" width="40%" height="40%"/> 
                             </div>
 
                             <div className="LinkName">
@@ -65,7 +65,7 @@ function Layout(props) {
 
         <div className="Footer">
             <div className="boxes">
-                <Image src="/../public/imgs/boxes.svg" width="220%" height="100%"/>
+                <Image src="/boxes.svg" width="220%" height="100%"/>
             </div>
             <div id="TextTruck">
                 We are preparing your order!

@@ -24,7 +24,7 @@ function Products_mob(){
                 <div>
 
                     <div className="product_mob ProductCard_mob CardProducts">
-                    <Image src="/../public/imgs/garden.svg" width="42%" height="50%" className="Producticon"/>
+                    <Image src="/garden.svg" width="42%" height="50%" className="Producticon"/>
                         <p className="prod_name_mob">Garden</p>
 
                         <a href="/Garden-Products">
@@ -34,7 +34,7 @@ function Products_mob(){
                     </div>
 
                     <div className="product_mob ProductCard_mob CardProducts">
-                        <Image src="/../public/imgs/bathroom.svg" width="42%" height="50%" className="Producticon"/>
+                        <Image src="/bathroom.svg" width="42%" height="50%" className="Producticon"/>
                         <p className="prod_name_mob2">Bathroom</p>
 
                         <a href="/Bathroom-Products">
@@ -44,7 +44,7 @@ function Products_mob(){
 
 
                     <div className="product_mob ProductCard_mob CardProducts">
-                        <Image src="/../public/imgs/tools.svg" width="42%" height="50%" className="Producticon"/>
+                        <Image src="/tools.svg" width="42%" height="50%" className="Producticon"/>
                         <p className="prod_name_mob">Tools</p>
 
                         <a href="/tools-Products">

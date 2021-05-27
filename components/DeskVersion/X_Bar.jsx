@@ -9,7 +9,7 @@ function X_Bar(){
 
         <div className="X_Bar">
             <div className="arrow-div">
-                <Image className="arrow"  src="/../public/imgs/prev.svg" width="100%" height="100%"/>
+                <Image className="arrow"  src="/prev.svg" width="100%" height="100%"/>
             </div>
             
             <div className="numbers">
@@ -22,7 +22,7 @@ function X_Bar(){
             </div>
 
             <div className="arrow-div">
-                <Image className="arrow" src="/../public/imgs/next.svg" width="102%" height="100%"/>
+                <Image className="arrow" src="/next.svg" width="102%" height="100%"/>
             </div>
         </div>
 

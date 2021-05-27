@@ -22,29 +22,29 @@ function PreparingOrder(){
 
             <div className="Truck_Animation">
                 <div id="closeTruck">
-                    <Image src="/../public/imgs/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck" />
+                    <Image src="/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck" />
                 </div>
                 <div id="closeTruck2">
-                    <Image src="/../public/imgs/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck2" />
+                    <Image src="/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck2" />
                 </div>
                 <div id="closeTruck3">
-                    <Image src="/../public/imgs/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck3" />
+                    <Image src="/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck3" />
                 </div>
                 <div id="closeTruck4">
-                    <Image src="/../public/imgs/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck4" />
+                    <Image src="/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck4" />
                 </div>
                 
 
                 <div id="OpenTruck_mob">
-                    <Image src="/../public/imgs/empty_truck.svg" width="400%" height="250%" />
+                    <Image src="/empty_truck.svg" width="400%" height="250%" />
                 </div>
 
                 <div id="ChargeDron_mob">
-                    <Image src="/../public/charge_dron.svg" width="370%" height="200%" />
+                    <Image src="/public/charge_dron.svg" width="370%" height="200%" />
                 </div>
 
                 <div className="emptyDron">
-                    <Image src="/../public/imgs/empty_dron.svg"  width ="370%" height="100%" id="EmptyDron_mob"/>
+                    <Image src="/empty_dron.svg"  width ="370%" height="100%" id="EmptyDron_mob"/>
                 </div>
 
                 <div id="Text_animation_mob">
@@ -56,7 +56,7 @@ function PreparingOrder(){
 
                 <div className="product ProductCard_mob">
 
-                    <Image src="/../public/imgs/module_1.svg" width="42%" height="47%" className="Producticon_mob"/>
+                    <Image src="/module_1.svg" width="42%" height="47%" className="Producticon_mob"/>
                     
                     <p className="pkg_numb_mob">Package No. 1</p>
                     <p className="Price_mob">$100</p>
@@ -70,7 +70,7 @@ function PreparingOrder(){
                 
 
                 <div className="product ProductCard_mob">
-                    <Image src="/../public/imgs/module_2.svg" width="42%" height="47%" className="Producticon_mob"/>
+                    <Image src="/module_2.svg" width="42%" height="47%" className="Producticon_mob"/>
                     <p className="pkg_numb_mob">Package No. 2</p>
                      <p className="Price_mob">$100</p>
                 </div>
@@ -82,7 +82,7 @@ function PreparingOrder(){
                 
                 
                 <div className="product ProductCard_mob">
-                    <Image src="/../public/imgs/module_3.svg" width="42%" height="47%" className="Producticon_mob"/>
+                    <Image src="/module_3.svg" width="42%" height="47%" className="Producticon_mob"/>
                     <p className="pkg_numb_mob">Package No. 3</p>
                     <p className="Price_mob">$100</p>
                 </div>

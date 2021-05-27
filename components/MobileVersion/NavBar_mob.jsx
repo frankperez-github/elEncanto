@@ -11,7 +11,7 @@ function NavBar_mob(){
         
             <div className="Link-div">
                 <a href="/Pallets" className="link_nav_mob">
-                    <Image src="/../public/imgs/link_pallets.svg" width="30%" height="30%" className="link_nav_img"/>
+                    <Image src="/link_pallets.svg" width="30%" height="30%" className="link_nav_img"/>
                     
                     <div className="link_name">
                         Pallets 
@@ -22,7 +22,7 @@ function NavBar_mob(){
             <div className="Link-div">
                 <a href="/Products" className="link_nav_mob">
 
-                    <Image src="/../public/imgs/link_products.svg" width="30%" height="30%" className="link_nav_img"/>
+                    <Image src="/link_products.svg" width="30%" height="30%" className="link_nav_img"/>
                     
                     <div className="link_name">
                         Products 
@@ -32,7 +32,7 @@ function NavBar_mob(){
 
             <div className="Link-div">
                 <a href ="/Contact" className="link_nav_mob">
-                   <Image src="/../public/imgs/link_contact.svg" width="30%" height="30%" className="link_nav_img"/>
+                   <Image src="/link_contact.svg" width="30%" height="30%" className="link_nav_img"/>
                    
                     <div className="link_name"> 
                         Contact 
