@@ -3,7 +3,7 @@ import  Image from 'next/image';
 import  Link from 'next/link';
 import Column from '../components/DeskVersion/ColumnSide';
 import X_Bar from '../components/DeskVersion/X_Bar';
-import Tools_mob from './tools_mob';
+import Tools_mob from './Tools_mob';
 
 const Show_Form =()=>{
     document.getElementById('buy_form_desk').style.display="block";
