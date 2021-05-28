@@ -765,6 +765,37 @@ select{
         
     }
 }
+@media(min-width:2170px){
+    #OpenTruck{
+        width: 36%;
+        position: absolute;
+        opacity: 0;
+        top: 45%;
+        left: 9%;
+        animation-name: To_open_truck;
+        animation-duration: 6s;
+    }
+    #EmptyTruck{
+        width: 34%;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        animation-name: Down_truck;
+        animation-duration: 6s;
+        animation-timing-function: ease;
+    }
+    @keyframes Down_truck {
+        0%{top: 40%;}                   /*second 1*/
+        16.2%{top: 50%;opacity: 1;}  
+        16.7%{top: 50%;opacity: 0;}  /*second 2*/
+        33.3%{top: 50%;opacity: 0;}   /*second 3*/
+        49.8%{top: 50%;opacity: 0;}   /*second 4*/
+        83%{top: 50%;opacity: 0;}
+        83.1%{top: 50%;opacity: 1;}           /*second 5*/
+        100%{top: 40%;opacity: 1;}           /*second 6*/
+        
+    }
+}
 
 
 
