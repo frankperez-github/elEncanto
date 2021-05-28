@@ -1,7 +1,7 @@
 import  Image from 'next/image';
 import  Link from 'next/link';
 import Column from '../components/DeskVersion/ColumnSide';
-import Bath_mob from '../pages/Bath_mob';
+import Bath_mob from '../components/MobileVersion/Bath_mob';
 import X_Bar from '../components/DeskVersion/X_Bar';
 import Buy_form from './Buy_form';
 
