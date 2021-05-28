@@ -1,12 +1,14 @@
 import Image from 'next/image';
 import Column from '../components/DeskVersion/ColumnSide';
 import X_Bar from '../components/DeskVersion/X_Bar';
-import Buy_form from './Buy_form';
+import Buy_form from '../components/DeskVersion/Buy_form';
 import Garden_mob from '../components/MobileVersion/Garden_mob';
 
 
     const Show_Form =()=>{
         document.getElementById('buy_form_desk').style.display="block";
+        document.getElementById('StaticTruck').style.display="block";
+        document.getElementById('Animation').style.display="none";
     }
 
 function Garden_products(){
@@ -16,15 +18,15 @@ function Garden_products(){
             <div className="borders">
 
             
-                <div className="CenterSection">
+                <div id="CenterSection">
                     <Garden_mob />
 
                     <Buy_form/>
 
-                    <div className="spec-product-div">
+                    <div className="spec-product-div" >
 
                         <div className="StaticTruck-div">
-                        <Image className="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
+                        <Image id="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
                         </div>
                     
                         <div className="Garden_products">

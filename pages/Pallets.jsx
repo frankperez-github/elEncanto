@@ -1,33 +1,35 @@
 import Image from 'next/image';
-import Link from 'next/link'
 import Column from '../components/DeskVersion/ColumnSide';
-import Buy_form from './Buy_form';
+import Buy_form from '../components/DeskVersion/Buy_form';
 import Pallets_mob from '../components/MobileVersion/Pallets_mob';
 
 const Show_Form =()=>{
     document.getElementById('buy_form_desk').style.display="block";
+    document.getElementById('StaticTruck').style.display="block";
+    document.getElementById('Animation').style.display="none";
 }
 
 function Pallets (){
 
     
+    
     return(
+
         <div className="borders">
 
-            
-            <div className="CenterSection">
+            <div id="CenterSection">
 
-                <div className="Pallets">
+                <div className="Pallets" >
 
                     <Buy_form/>
 
                     <Pallets_mob />
                         
-                    <div className="Pallets-div">
+                    <div className="Pallets-div" >
                     
                     
                         <div className="StaticTruck-div">
-                                <Image className="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
+                                <Image id="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
                         </div>
 
                             

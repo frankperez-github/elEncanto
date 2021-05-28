@@ -1,4 +1,4 @@
-import Buy_form from './Buy_form';
+import Buy_form from '../components/DeskVersion/Buy_form';
 import  Image from 'next/image';
 import Column from '../components/DeskVersion/ColumnSide';
 import X_Bar from '../components/DeskVersion/X_Bar';
@@ -6,6 +6,8 @@ import Tools_mob from '../components/MobileVersion/Tools_mob';
 
 const Show_Form =()=>{
     document.getElementById('buy_form_desk').style.display="block";
+    document.getElementById('StaticTruck').style.display="block";
+    document.getElementById('Animation').style.display="none";
 }
 
 function Tools_products(){
@@ -15,15 +17,15 @@ function Tools_products(){
     return(
         <div className="borders">
 
-        <div className="CenterSection">
+        <div id="CenterSection">
             <Tools_mob />
 
             <Buy_form/>
 
-            <div className="spec-product-div">
+            <div className="spec-product-div" >
 
                 <div className="StaticTruck-div">
-                <Image className="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
+                <Image id="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
                 </div>
             
                 <div className="Garden_products">

@@ -19,13 +19,13 @@ function Products(){
         <div className="borders">
         
            
-            <div className="CenterSection">
+            <div id="CenterSection">
                 <div className="Products">
 
                     <div className="Products-div">
                         
                         <div className="StaticTruck-div">
-                            <Image className="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
+                            <Image id="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
                     </div>
 
                         <div className="Right_side_products">

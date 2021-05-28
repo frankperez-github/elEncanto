@@ -1,14 +1,22 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import Animation from './Animation';
 
-function Buy_form() {
 
     const GoBack =()=>{
         document.getElementById('buy_form_desk').style.display="none";
     }
+    function ShowAnim(){  
+        document.getElementById('StaticTruck').style.display="none";
+        document.getElementById('buy_form_desk').style.display="none";
+        document.getElementById('Animation').style.display="block";
+    }
 
+function Buy_form() {
+        
     return(
 
-        <div className="Buy_form" >
+        <div id="buy_form" >
+            <Animation/>
 
             <form action="Submit" id="buy_form_desk" >
                 <div className="buy_form">
@@ -26,8 +34,8 @@ function Buy_form() {
                         <label htmlFor="name">Full Name *</label><br/>
                         <input type="text" name="name" id="" required/><br/>
 
-                        <label htmlFor="email">Email - Phone *</label><br/>
-                        <input type="email" name="email" id="" required/>
+                        <label htmlFor="Email">Email - Phone *</label><br/>
+                        <input type="text" name="Email" id="" required/>
                     </div>
 
                     <div className="form_right form_side">
@@ -47,14 +55,17 @@ function Buy_form() {
                         <Link href="">
                             <button onClick={GoBack} className="form_button" >BACK</button>
                         </Link>
-                        <Link href="/Preparing_Order">
-                            <button className="form_button" >SEND</button>
-                        </Link>
+                        
+                        <button className="form_button" onClick={ShowAnim}>SEND</button>
+                        
                     
                     </div>
                 </div>
             </form>
             
         </div>
+        
     );
+    
+
 }export default Buy_form

@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from 'next/link';
+import Image from 'next/image';
 
 function Layout(props) {
 
@@ -69,6 +69,8 @@ function Layout(props) {
             </div>
         </div>
 
+
+        
     </div>
     );
 

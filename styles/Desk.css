@@ -22,6 +22,9 @@ select:focus{
 }
 
 /**************Animations************************/
+#Animation{
+    display: none;
+}
 @keyframes Down_truck {
     0%{top: 33%;}                   /*second 1*/
     16.2%{top: 45%;opacity: 1;}  
@@ -124,9 +127,9 @@ select:focus{
 /*--------end of NAV-BAR----------*/
 
 /*Center Section */
-.CenterSection{
-    margin-top: 0%;
-    margin-bottom: 0%;
+#CenterSection{
+    margin-top: 1%;
+    margin-bottom: 0.5%;
 }
 /**********end of C. S.*/
 
@@ -205,8 +208,8 @@ select:focus{
 }
 #TextTruck{
     opacity: 0;
-    position: relative;
-    margin-bottom: -2%;
+    position: absolute;
+    top: 90%;
     margin-left: 13%;
     font-size: 20px;
     animation-name: Show_Text;
@@ -694,13 +697,13 @@ select{
     }
 }
 @media(min-height:800px){
-    .CenterSection{
+    #CenterSection{
         margin-top: 6%;
         margin-bottom: 6%;
     }
 }
 @media(height:950px){
-    .CenterSection{
+    #CenterSection{
         margin-top: 8%;
         margin-bottom: 8%;
     }
@@ -734,34 +737,34 @@ select{
         
     }
 }
-@media(min-width:1500px){
+@media(min-width:1600px){
     #OpenTruck{
         width: 36%;
         position: absolute;
         opacity: 0;
-        top: 30%;
-        left: 9%;
+        top: 40%;
+        left: 7%;
         animation-name: To_open_truck;
         animation-duration: 6s;
     }
     #EmptyTruck{
-        width: 35%;
+        width: 30%;
         position: absolute;
-        top: 25%;
-        left: 10%;
+        top: 37%;
+        left: 8%;
         animation-name: Down_truck;
         animation-duration: 6s;
         animation-timing-function: ease;
     }
     @keyframes Down_truck {
-        0%{top: 25%;}                   /*second 1*/
-        16.2%{top: 34.3%;opacity: 1;}  
-        16.7%{top: 34.3%;opacity: 0;}  /*second 2*/
-        33.3%{top: 34.3%;opacity: 0;}   /*second 3*/
-        49.8%{top: 34.3%;opacity: 0;}   /*second 4*/
-        83%{top: 34.3%;opacity: 0;}
-        83.1%{top: 34.3%;opacity: 1;}           /*second 5*/
-        100%{top: 25%;opacity: 1;}           /*second 6*/
+        0%{top: 37%;}                   /*second 1*/
+        16.2%{top: 45.9%;opacity: 1;}  
+        16.7%{top: 45.9%;opacity: 0;}  /*second 2*/
+        33.3%{top: 45.9%;opacity: 0;}   /*second 3*/
+        49.8%{top: 45.9%;opacity: 0;}   /*second 4*/
+        83%{top: 45.9%;opacity: 0;}
+        83.1%{top: 45.9%;opacity: 1;}           /*second 5*/
+        100%{top: 37%;opacity: 1;}           /*second 6*/
         
     }
 }
@@ -795,11 +798,12 @@ select{
         100%{top: 40%;opacity: 1;}           /*second 6*/
         
     }
-    .CenterSection{
+    #CenterSection{
         margin-top: 8%;
         margin-bottom: 2%;
     }
 }
+
 
 
 

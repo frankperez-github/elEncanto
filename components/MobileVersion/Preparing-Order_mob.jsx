@@ -96,7 +96,6 @@ function PreparingOrder(){
                 <Footer_mob/>
             </div>
             
-            
         </div>
     </div>       
     );
