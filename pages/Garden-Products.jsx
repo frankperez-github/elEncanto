@@ -1,9 +1,8 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import Column from '../components/DeskVersion/ColumnSide';
 import X_Bar from '../components/DeskVersion/X_Bar';
 import Buy_form from './Buy_form';
-import Garden_mob from './Garden_mob';
+import Garden_mob from '../components/MobileVersion/Garden_mob';
 
 
     const Show_Form =()=>{
