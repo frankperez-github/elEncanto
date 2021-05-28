@@ -795,8 +795,9 @@ select{
         100%{top: 40%;opacity: 1;}           /*second 6*/
         
     }
-    .boxes{
-        margin-top: -3%;
+    .CenterSection{
+        margin-top: 8%;
+        margin-bottom: 2%;
     }
 }
 
