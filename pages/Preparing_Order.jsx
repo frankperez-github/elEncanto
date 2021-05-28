@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Column from '../components/DeskVersion/ColumnSide';
 import LeftSide from '../components/DeskVersion/LeftSide'
 import Buy_form from './Buying';
-import PreparingOrder from './Preparing-Order_mob';
 
 
 function Preparing_Order (){
@@ -18,7 +17,7 @@ function Preparing_Order (){
         
                         <LeftSide/>
 
-
+                        
                         <div className="Right_side" id="Pallets">
 
                             <div className="product ProductCard">
@@ -67,6 +66,10 @@ function Preparing_Order (){
             
                         
                     </div>
+
+                </div>
+                <div id="TextTruck">
+                    We are preparing your order!
                 </div>
                 
             <Buy_form/>

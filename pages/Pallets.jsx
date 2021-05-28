@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import Column from '../components/DeskVersion/ColumnSide';
 import Buy_form from './Buy_form';
-import Pallets_mob from './Pallets_mob';
+import Pallets_mob from '../components/MobileVersion/Pallets_mob';
 
 const Show_Form =()=>{
     document.getElementById('buy_form_desk').style.display="block";

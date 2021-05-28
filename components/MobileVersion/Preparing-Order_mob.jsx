@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import NavBar_mob from '../components/MobileVersion/NavBar_mob';
-import Footer_mob from '../components/MobileVersion/Fotter_mob';
+import NavBar_mob from '../MobileVersion/NavBar_mob';
+import Footer_mob from '../MobileVersion/Fotter_mob';
 
 const Go_buying =()=>{
     document.getElementById('buy_form_mob').style.display="block";

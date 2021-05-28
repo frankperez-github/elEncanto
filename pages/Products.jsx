@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Products_mob from '../pages/Products_mob';
+import Products_mob from '../components/MobileVersion/Products_mob';
 import Column from '../components/DeskVersion/ColumnSide';
 
 
@@ -60,7 +60,7 @@ function Products(){
                                 </div>
 
                                 <p className="prod_name">Tools</p>
-                                <Link href="/tools-Products">
+                                <Link href="/Tools-Products">
                                     <p className="see_product_desk"  >See More...</p>
                                 </Link>
                             </div>

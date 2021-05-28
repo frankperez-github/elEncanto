@@ -1,4 +1,4 @@
-import Pallets_mob from '../Views/Pallets_mob';
+import Pallets_mob from '../MobileVersion/Pallets_mob';
 
 
 

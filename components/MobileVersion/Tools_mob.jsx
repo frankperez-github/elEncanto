@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import NavBar_mob from '../components/MobileVersion/NavBar_mob';
-import Footer_mob from '../components/MobileVersion/Fotter_mob';
+import NavBar_mob from './NavBar_mob';
+import Footer_mob from './Fotter_mob';
 
 
 

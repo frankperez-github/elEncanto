@@ -1,4 +1,4 @@
-import Preparing_Order from './Preparing-Order_mob';
+import Preparing_Order from '../components/MobileVersion/Preparing-Order_mob';
 
 function BuyForm_mob(){
 

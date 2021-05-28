@@ -67,9 +67,6 @@ function Layout(props) {
             <div className="boxes">
                 <Image src="/boxes.svg" width="220%" height="100%"/>
             </div>
-            <div id="TextTruck">
-                We are preparing your order!
-            </div>
         </div>
 
     </div>
