@@ -795,6 +795,9 @@ select{
         100%{top: 40%;opacity: 1;}           /*second 6*/
         
     }
+    .boxes{
+        margin-top: -3%;
+    }
 }
 
 
