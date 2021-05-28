@@ -47,7 +47,7 @@ function Products_mob(){
                         <Image src="/tools.svg" width="42%" height="50%" className="Producticon"/>
                         <p className="prod_name_mob">Tools</p>
 
-                        <a href="/tools-Products">
+                        <a href="/Tools-Products">
                             <p className="see_product" >See More...</p>
                         </a>
                     </div>
