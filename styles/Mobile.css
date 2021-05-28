@@ -372,7 +372,7 @@ span{
     left: 10%;
     width: 80%;
     animation-name: Down_Truck_mob;
-    animation-duration: 10s;
+    animation-duration: 6s;
     animation-timing-function: ease-in;
 }
 #closeTruck2{
@@ -403,19 +403,19 @@ span{
     margin-left: 10% !important;
     opacity: 0;
     animation-name: Acelerate;
-    animation-duration: 10s;
+    animation-duration: 6s;
 }
 .ClosedTruck3{
     opacity: 0;
     margin-left: 30% !important;
     animation-name: Acelerate2;
-    animation-duration: 10s;
+    animation-duration: 6s;
 }
 .ClosedTruck4{
     opacity: 0;
     margin-left: 70% !important;
     animation-name: Acelerate3;
-    animation-duration: 10s;
+    animation-duration: 6s;
 }
 #OpenTruck_mob{
     position: absolute;
@@ -425,7 +425,7 @@ span{
     opacity: 0;
     z-index: -2;
     animation-name: Open_Truck_mob;
-    animation-duration: 10s;
+    animation-duration: 6s;
 }
 #ChargeDron_mob{
     position: absolute;
@@ -433,7 +433,7 @@ span{
     top: 5%;
     left: -50%;
     animation-name: ChargeDron_mob;
-    animation-duration: 10s;
+    animation-duration: 6s;
 }
 .emptyDron{
     position: absolute;
@@ -442,7 +442,7 @@ span{
     top: 30%;
     opacity: 0;
     animation-name: EmptyDron_mob;
-    animation-duration: 10s;
+    animation-duration: 6s;
 }
 #EmptyDron_mob{
     position: absolute;
@@ -452,7 +452,7 @@ span{
     margin-top: 85%;
     opacity: 1;
     animation-name: Hide-Show_Pallets;
-    animation-duration: 10s;
+    animation-duration: 6s;
 }
 #Text_animation_mob{
     position: absolute;
@@ -460,7 +460,7 @@ span{
     top: 85%;
     left: 22%;
     animation-name: Text_animation;
-    animation-duration: 8s;
+    animation-duration: 6s;
 }
 #mobile_animation{
     display: none;

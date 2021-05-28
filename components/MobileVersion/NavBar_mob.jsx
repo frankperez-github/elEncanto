@@ -31,7 +31,7 @@ function NavBar_mob(){
             </div>
 
             <div className="Link-div">
-                <a href ="/Contact" className="link_nav_mob">
+                <a href ="#" className="link_nav_mob">
                    <Image src="/link_contact.svg" width="30%" height="30%" className="link_nav_img"/>
                    
                     <div className="link_name"> 
