@@ -12,43 +12,34 @@ function Footer_mob(){
             <div className="Networks">
                     
                 <div>
-                    <a href="">
+                    <a href="https://www.facebook.com/El-Encanto-Liquidation-100615011645519">
                         <Image className="link_net" src="/facebook.svg" width="45%" height="50%"></Image>
                     </a>
                 </div>
                 
+            
                 <div>
-                    <a href="">
-                        <Image className="link_net" src="/google_p.svg" width="45%" height="50%"></Image>
-                    </a>
-                </div>
-                
-                <div>
-                    <a href="">
+                    <a href="https://wa.me/+17029576836">
                         <Image className="link_net" src="/whatsapp.svg" width="45%" height="50%"></Image>
                     </a>
                 </div>
                 
                 <div>
-                    <a href="">
+                    <a href="https://www.instagram.com/liquidationelencanto/?hl=en">
                         <Image className="link_net" src="/instagram.svg" width="45%" height="50%"></Image>
                     </a>
                 </div>
                 
                 <div>
-                    <a href="">
+                    <a href="tel:+17029576836">
                         <Image className="link_net" src="/to_call.svg" width="45%" height="50%"></Image>   
                     </a>
                 </div>
                 
-                <div>
-                    <a href="">
-                        <Image className="link_net" src="/twitter.svg" width="45%" height="50%"></Image>
-                    </a>
-                </div>
+                
                 
                 <div>
-                    <a href="">
+                    <a href="mailto:elencantoliquidation@gmail.com">
                         <Image className="link_net" src="/message.svg" width="45%" height="50%"></Image>
                     </a>
                 </div>
