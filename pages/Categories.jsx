@@ -1,11 +1,10 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import Products_mob from '../components/MobileVersion/Products_mob';
 import Column from '../components/DeskVersion/ColumnSide';
+import CategoryCard from '../components/DeskVersion/CategoryCard'
 
 
-
-function Products(){
+function Products({categories}){
 
    
 
@@ -29,42 +28,8 @@ function Products(){
                     </div>
 
                         <div className="Right_side_products">
-                            <div className="product ProductCard CardProducts">
-
-                                <div className="ModuleImg-div">
-                                    <Image src="/garden.svg" width="42%" height="50%"/>
-                                </div>
-                                
-                                <p className="prod_name">Garden</p>
-                                <Link href="/Garden-Products">
-                                    <p className="see_product_desk"  >See More...</p>
-                                </Link>
-                            </div>
-
-                            <div className="product ProductCard CardProducts">
-
-                                <div className="ModuleImg-div">
-                                    <Image src="/bathroom.svg" width="42%" height="50%"/>
-                                </div>
-
-                                <p className="prod_name">Bathroom</p>
-                                <Link href="/Bathroom-Products">
-                                    <p className="see_product_desk"  >See More...</p>
-                                </Link>
-                            </div>
-
-                            <div className="product ProductCard CardProducts">
-
-                                <div className="ModuleImg-div">
-                                    <Image src="/tools.svg" width="42%" height="50%"/>
-                                </div>
-
-                                <p className="prod_name">Tools</p>
-                                <Link href="/Tools-Products">
-                                    <p className="see_product_desk"  >See More...</p>
-                                </Link>
-                            </div>
-
+                         
+                        {categories.map(category=> <CategoryCard key={category["id"]} category = {category}/>)}
                         </div>
 
                         <Column />
@@ -78,3 +43,16 @@ function Products(){
     </div>
     );
 }export default Products
+
+export const getStaticProps = async() => {
+    const res = await fetch('http://localhost:8000/api/categories')
+    const categories = await res.json()
+    
+
+    return {
+        props: {
+            categories
+        }
+    }
+
+}

@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/dist/client/image'
 
-const CategoryCard = ({category})=> {
+ const CategoryCard = ({category}) => {
     return (
         <div className="product ProductCard CardProducts">
 
@@ -17,3 +18,4 @@ const CategoryCard = ({category})=> {
     )
 }
 
+export default CategoryCard
