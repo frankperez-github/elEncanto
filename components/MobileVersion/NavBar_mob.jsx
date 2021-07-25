@@ -20,12 +20,12 @@ function NavBar_mob(){
             </div>
 
             <div className="Link-div">
-                <a href="/Products" className="link_nav_mob">
+                <a href="/Categories" className="link_nav_mob">
 
                     <Image src="/link_products.svg" width="30%" height="30%" className="link_nav_img"/>
                     
                     <div className="link_name">
-                        Products 
+                        Categories
                     </div>
                 </a>
             </div>
