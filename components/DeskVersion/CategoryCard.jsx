@@ -11,7 +11,7 @@ import Image from 'next/dist/client/image'
 </div>
 
 <p className="prod_name">{category.name}</p>
-<Link href="categories/[id]" as={`categories/${category.id}`} >
+<Link href="Categories/[id]" as={`Categories/${category.id}`} >
     <p className="see_product_desk">See More...</p>
 </Link>
 </div>

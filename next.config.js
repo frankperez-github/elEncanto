@@ -1,6 +1,6 @@
 module.exports ={
     images: {
-        domains: ['localhost'],
+        domains: ['elencanto-bucket.s3.amazonaws.com'],
       },
     webpack(config)
     {config.module.rules.push({
