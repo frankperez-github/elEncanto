@@ -38,7 +38,7 @@ span{
     87.5%{width:98%;left: 2%; top: 51.9%;opacity: 1;} /*sec 7*/
     90%{opacity: 1;}
     90.5%{width:98%;left: 2%; top: 51.9%;opacity: 0;} /*sec 7*/
-    100%{width:98%;left: 2%; top: 51.9%;opacity: 0} /*sec 8*/
+    100%{width:98%;left: 2%; top: 51.9%;opacity: 0; display: none;} /*sec 8*/
 }
 @keyframes Acelerate {
     0%{opacity: 0;}
@@ -145,12 +145,17 @@ span{
     100%{opacity: 0;} /*sec 8*/
 }
 
+
 @media(max-width:280px){
     .navbar_mob{
         font-size: 13px;
     }
 }
+
+
 /*End of Animations **************/
+
+
 
 /******Presentation********************/
 
@@ -175,8 +180,19 @@ span{
 /*******end of Presentation*************************/
 
 
-/******Pallets_mobile*************/
-
+/******Layout*************/
+.Boxes{
+    text-align: right;
+}
+.boxes_mob_img{
+    padding-right: 10% !important;
+}
+.Networks{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    margin-left: 5%;
+}
 .navbar_mob{
     display: flex;
     align-items: center;
@@ -201,74 +217,7 @@ span{
 .link_name{
     margin-left: 3%;
 }
-.Truck{
-    text-align: center;
-}
-.truck_mob_img{
-    width: 65%;
-}
-.ProductCard_mob{
-    font-size: 12px;
-    width: 90%;
-    padding: 1% 5%;
-    margin: 2.5% 5.5%;
-    border-radius: 0.4rem;
-    box-shadow: 1px 2.5px 5px   rgb(218, 216, 216) ;
-}
-
-.product{
-    display: flex;
-    justify-content: space-between;
-}
-.Pallets_menu{
-    text-align: right;
-}
-.buy_button_mob{
-    box-shadow: 3px 4px 3px   rgb(218, 216, 216) ;
-    margin:3% 5% 10% 0;
-    font-size: 12px;
-    width: 23%;
-    padding: 1.2% 0%;
-    border-radius: 1rem;
-    border: none;
-    text-align: center;
-    background-color: #FF524F;
-    color: white;
-}
-.last{
-    margin-bottom: 25%;
-}
-.pkg_numb_mob{
-    margin-left: -25%;
-    font-size: 14px;
-}
-.Producticon_mob{
-    width: 12%;
-    margin-right: 1%;
-}
-.Networks{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 5%;
-    margin-left: 5%;
-}
-.Boxes{
-    text-align: right;
-}
-.boxes_mob_img{
-    padding-right: 10% !important;
-}
-.see_product{
-    color: black;
-    font-size: 14px;
-}
-.PalletsID{
-    display: none;
-}
-.Price_mob{
-    font-size: 14px;
-}
-/******end of Pallets_mobile******/
+/******end of Layout******/
 
 
 
@@ -368,7 +317,7 @@ span{
 #closeTruck{
     z-index: -2;
     position: absolute;
-    top: 17%;
+    top: 13%;
     left: 10%;
     width: 80%;
     animation-name: Down_Truck_mob;
@@ -461,9 +410,6 @@ span{
     left: 22%;
     animation-name: Text_animation;
     animation-duration: 6s;
-}
-#mobile_animation{
-    display: none;
 }
 /*******end of Animation_section********************/
 

@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import NavBar_mob from './NavBar_mob';
-import Footer_mob from '../MobileVersion/Fotter_mob';
 
 
 
@@ -17,8 +15,7 @@ function Products_mob(){
         
         <div className="Products_mob">
     
-
-            <NavBar_mob />      
+    
 
             <div className="Products_menu">
                 <div>
@@ -57,7 +54,7 @@ function Products_mob(){
             </div>
         
         
-            <Footer_mob/>
+            
 
         </div>
     );

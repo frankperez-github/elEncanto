@@ -1,7 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import NavBar_mob from './NavBar_mob';
-import Footer_mob from './Fotter_mob';
 
 
 
@@ -12,7 +10,7 @@ function Tools_mob(){
     return(
         
         <div className="Tools_mob">
-            <NavBar_mob />  
+            
 
             <div className="Garden_mob">
 
@@ -29,7 +27,7 @@ function Tools_mob(){
                             <p>$100</p>
                         </div>
                         
-                        <Link href="/Buying">
+                        <Link href="/buy_form">
                         <button  className="buy_product_mob red_button">Buy</button>
                         </Link>
                     </div>
@@ -46,7 +44,7 @@ function Tools_mob(){
                             <p>$100</p>
                         </div>
 
-                        <Link href="/Buying">
+                        <Link href="/buy_form">
                         <button  className="buy_product_mob violet_button">Buy</button>
                         </Link>
                     </div>
@@ -65,7 +63,7 @@ function Tools_mob(){
                             <p>$100</p>
                         </div>
 
-                        <Link href="/Buying">
+                        <Link href="/buy_form">
                         <button  className="buy_product_mob blue_button">Buy</button>
                         </Link>
                     </div>
@@ -82,7 +80,7 @@ function Tools_mob(){
                             <p>$100</p>
                         </div>
 
-                        <Link href="/Buying">
+                        <Link href="/buy_form">
                         <button  className="buy_product_mob brown_button">Buy</button>
                         </Link>
                     </div>
@@ -101,7 +99,7 @@ function Tools_mob(){
                             <p>$100</p>
                         </div>
 
-                        <Link href="/Buying">
+                        <Link href="/buy_form">
                         <button  className="buy_product_mob red_button">Buy</button>
                         </Link>
 
@@ -119,7 +117,7 @@ function Tools_mob(){
                             <p>$100</p>
                         </div>
 
-                        <Link href="/Buying">
+                        <Link href="/buy_form">
                         <button  className="buy_product_mob violet_button">Buy</button>
                         </Link>
 
@@ -147,7 +145,7 @@ function Tools_mob(){
 
             </div>
 
-            <Footer_mob/>
+            
 
         </div>
         

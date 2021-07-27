@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Column from '../components/DeskVersion/ColumnSide';
+
 import X_Bar from '../components/DeskVersion/X_Bar';
-import Buy_form from '../components/DeskVersion/Buy_form';
+
 import Garden_mob from '../components/MobileVersion/Garden_mob';
 
 
@@ -14,160 +14,154 @@ import Garden_mob from '../components/MobileVersion/Garden_mob';
 function Garden_products(){
 
     return(
+        <div className="grdnProd">
+            <Garden_mob />
 
-            <div className="borders">
+            <buy_form/>
 
+            <div className="spec-product-div" >
+
+                <div className="StaticTruck-div">
+                <Image id="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
+                </div>
             
-                <div id="CenterSection">
-                    <Garden_mob />
+                <div className="Garden_products">
 
-                    <Buy_form/>
 
-                    <div className="spec-product-div" >
+                <div className="upline">
 
-                        <div className="StaticTruck-div">
-                        <Image id="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
-                        </div>
+                    <div className="bath_single_product">
                     
-                        <div className="Garden_products">
-
-
-                        <div className="upline">
-
-                            <div className="bath_single_product">
-                            
-                                <div className="image">
-                                    <Image src="/toilet.svg" width="100%" height="100%" className="product_image"/>
-                                </div>
-                                <div className="product_name">
-                                    <p>Bath Toilet</p>
-                                </div>
-                                <div className="price">
-                                    <p>$100</p>
-                                </div>
-
-                                
-                                
-                                <button onClick={Show_Form} className="buy_product red_button">Buy</button>
-                                
-                        
-                                
-
-                            </div>
-
-                            <div className="bath_single_product">
-                                
-                                <div className="image">
-                                    <Image src="/toilet.svg" width="100%" height="100%" className="product_image"/>
-                                </div>
-                                <div className="product_name">
-                                    <p>Bath Toilet</p>
-                                </div>
-                                <div className="price">
-                                    <p>$100</p>
-                                </div>
-
-                                
-                                
-                                <button onClick={Show_Form} className="buy_product violet_button">Buy</button>
-                                
-                        
-
-                            </div>
-
-                            <div className="bath_single_product">
-                                
-                                <div className="image">
-                                    <Image src="/toilet.svg" width="100%" height="100%" className="product_image"/>
-                                </div>
-                                <div className="product_name">
-                                    <p>Bath Toilet</p>
-                                </div>
-                                <div className="price">
-                                    <p>$100</p>
-                                </div>
-
-                                
-                                
-                                <button onClick={Show_Form} className="buy_product blue_button">Buy</button>
-                                
-                        
-
-                            </div>
-
+                        <div className="image">
+                            <Image src="/toilet.svg" width="100%" height="100%" className="product_image"/>
+                        </div>
+                        <div className="product_name">
+                            <p>Bath Toilet</p>
+                        </div>
+                        <div className="price">
+                            <p>$100</p>
                         </div>
 
-                        <div className="downline">
-
-                            <div className="bath_single_product">
-                            
-                                <div className="image">
-                                    <Image src="/toilet.svg" width="100%" height="100%" className="product_image"/>
-                                </div>
-                                <div className="product_name">
-                                    <p>Bath Toilet</p>
-                                </div>
-                                <div className="price">
-                                    <p>$100</p>
-                                </div>
-                                
-                                
-                                <button onClick={Show_Form} className="buy_product brown_button">Buy</button>
-                                
                         
-
-                            </div>
-
-                            <div className="bath_single_product">
-                                
-                                <div className="image">
-                                    <Image src="/toilet.svg" width="100%" height="100%" className="product_image"/>
-                                </div>
-                                <div className="product_name">
-                                    <p>Bath Toilet</p>
-                                </div>
-                                <div className="price">
-                                    <p>$100</p>
-                                </div>
-                            
-                                    <button onClick={Show_Form} className="buy_product red_button">Buy</button>
                         
-
-                            </div>
-
-                            <div className="bath_single_product">
-                                
-                                <div className="image">
-                                    <Image src="/toilet.svg" width="100%" height="100%" className="product_image"/>
-                                </div>
-                                <div className="product_name">
-                                    <p>Bath Toilet</p>
-                                </div>
-                                <div className="price">
-                                    <p>$100</p>
-                                </div>
-                                
-                                
-                                <button onClick={Show_Form} className="buy_product violet_button">Buy</button>
-                                
+                        <button onClick={Show_Form} className="buy_product red_button">Buy</button>
                         
-
-                            </div>
-                            
-                        </div>
-
-
-                    </div>
-
-                        <Column />                
-                    </div>
-
-                    <X_Bar />
                 
+                        
+
+                    </div>
+
+                    <div className="bath_single_product">
+                        
+                        <div className="image">
+                            <Image src="/toilet.svg" width="100%" height="100%" className="product_image"/>
+                        </div>
+                        <div className="product_name">
+                            <p>Bath Toilet</p>
+                        </div>
+                        <div className="price">
+                            <p>$100</p>
+                        </div>
+
+                        
+                        
+                        <button onClick={Show_Form} className="buy_product violet_button">Buy</button>
+                        
+                
+
+                    </div>
+
+                    <div className="bath_single_product">
+                        
+                        <div className="image">
+                            <Image src="/toilet.svg" width="100%" height="100%" className="product_image"/>
+                        </div>
+                        <div className="product_name">
+                            <p>Bath Toilet</p>
+                        </div>
+                        <div className="price">
+                            <p>$100</p>
+                        </div>
+
+                        
+                        
+                        <button onClick={Show_Form} className="buy_product blue_button">Buy</button>
+                        
+                
+
+                    </div>
+
                 </div>
 
-              
+                <div className="downline">
+
+                    <div className="bath_single_product">
+                    
+                        <div className="image">
+                            <Image src="/toilet.svg" width="100%" height="100%" className="product_image"/>
+                        </div>
+                        <div className="product_name">
+                            <p>Bath Toilet</p>
+                        </div>
+                        <div className="price">
+                            <p>$100</p>
+                        </div>
+                        
+                        
+                        <button onClick={Show_Form} className="buy_product brown_button">Buy</button>
+                        
+                
+
+                    </div>
+
+                    <div className="bath_single_product">
+                        
+                        <div className="image">
+                            <Image src="/toilet.svg" width="100%" height="100%" className="product_image"/>
+                        </div>
+                        <div className="product_name">
+                            <p>Bath Toilet</p>
+                        </div>
+                        <div className="price">
+                            <p>$100</p>
+                        </div>
+                    
+                            <button onClick={Show_Form} className="buy_product red_button">Buy</button>
+                
+
+                    </div>
+
+                    <div className="bath_single_product">
+                        
+                        <div className="image">
+                            <Image src="/toilet.svg" width="100%" height="100%" className="product_image"/>
+                        </div>
+                        <div className="product_name">
+                            <p>Bath Toilet</p>
+                        </div>
+                        <div className="price">
+                            <p>$100</p>
+                        </div>
+                        
+                        
+                        <button onClick={Show_Form} className="buy_product violet_button">Buy</button>
+                        
+                
+
+                    </div>
+                    
+                </div>
+
+
             </div>
+
+                                
+            </div>
+
+            <X_Bar />
+        
+        </div>
+
     );
 
 }export default Garden_products

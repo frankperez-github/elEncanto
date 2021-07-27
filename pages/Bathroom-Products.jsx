@@ -1,8 +1,8 @@
 import  Image from 'next/image';
-import Column from '../components/DeskVersion/ColumnSide';
+
 import Bath_mob from '../components/MobileVersion/Bath_mob';
 import X_Bar from '../components/DeskVersion/X_Bar';
-import Buy_form from '../components/DeskVersion/Buy_form';
+
 
 const Show_Form =()=>{
     document.getElementById('buy_form_desk').style.display="block";
@@ -14,13 +14,13 @@ function Bathroom_products(){
 
     
     return( 
-    <div className="borders">
+    
 
         
-        <div id="CenterSection">
+        <div className="bathProd">
             <Bath_mob />
 
-            <Buy_form/>
+            <buy_form/>
 
             <div className="spec-product-div" >
 
@@ -158,7 +158,7 @@ function Bathroom_products(){
 
             </div>
 
-                <Column />                
+                                
             </div>
 
             <X_Bar />
@@ -167,7 +167,7 @@ function Bathroom_products(){
 
        
 
-    </div>
+    
 );
 
 }export default Bathroom_products

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Buy_form from '../../pages/Buying';
+
 
 export default function Animation() {
 
@@ -30,7 +30,7 @@ export default function Animation() {
                 We are preparing your order!
             </div>
                 
-            <Buy_form/>
+            <buy_form/>
        </div>
 
     );

@@ -1,6 +1,6 @@
-import Buy_form from '../components/DeskVersion/Buy_form';
+
 import  Image from 'next/image';
-import Column from '../components/DeskVersion/ColumnSide';
+
 import X_Bar from '../components/DeskVersion/X_Bar';
 import Tools_mob from '../components/MobileVersion/Tools_mob';
 
@@ -15,12 +15,12 @@ function Tools_products(){
     
 
     return(
-        <div className="borders">
+        
 
-        <div id="CenterSection">
+        <div className="toolsProd">
             <Tools_mob />
 
-            <Buy_form/>
+            <buy_form/>
 
             <div className="spec-product-div" >
 
@@ -158,14 +158,12 @@ function Tools_products(){
 
             </div>
 
-                <Column />                
+                                
             </div>
 
             <X_Bar />
         
         </div>
-
-    </div>
     );
 
 }export default Tools_products

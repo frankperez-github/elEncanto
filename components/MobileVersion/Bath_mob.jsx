@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import NavBar_mob from '../MobileVersion/NavBar_mob';
-import Footer_mob from '../MobileVersion/Fotter_mob';
+
+
 
 
 function Bath_mob(){
@@ -12,7 +12,7 @@ function Bath_mob(){
         
         
         <div className="Bath_mob">
-            <NavBar_mob />     
+               
 
             <div className="Garden_mob">
 
@@ -29,7 +29,7 @@ function Bath_mob(){
                             <p>$100</p>
                         </div>
                         
-                        <Link href="/Buying">
+                        <Link href="/buy_form">
                         <button  className="buy_product_mob red_button">Buy</button>
                         </Link>
                     </div>
@@ -46,7 +46,7 @@ function Bath_mob(){
                             <p>$100</p>
                         </div>
 
-                        <Link href="/Buying">
+                        <Link href="/buy_form">
                         <button  className="buy_product_mob violet_button">Buy</button>
                         </Link>
                     </div>
@@ -65,7 +65,7 @@ function Bath_mob(){
                             <p>$100</p>
                         </div>
 
-                        <Link href="/Buying">
+                        <Link href="/buy_form">
                         <button  className="buy_product_mob blue_button">Buy</button>
                         </Link>
                     </div>
@@ -82,7 +82,7 @@ function Bath_mob(){
                             <p>$100</p>
                         </div>
 
-                        <Link href="/Buying">
+                        <Link href="/buy_form">
                         <button  className="buy_product_mob brown_button">Buy</button>
                         </Link>
                     </div>
@@ -101,7 +101,7 @@ function Bath_mob(){
                             <p>$100</p>
                         </div>
 
-                        <Link href="/Buying">
+                        <Link href="/buy_form">
                         <button  className="buy_product_mob red_button">Buy</button>
                         </Link>
 
@@ -119,7 +119,7 @@ function Bath_mob(){
                             <p>$100</p>
                         </div>
 
-                        <Link href="/Buying">
+                        <Link href="/buy_form">
                         <button  className="buy_product_mob violet_button">Buy</button>
                         </Link>
 
@@ -147,7 +147,7 @@ function Bath_mob(){
 
             </div>
 
-            <Footer_mob />
+            
 
         </div>
         

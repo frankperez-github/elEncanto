@@ -74,11 +74,7 @@ select:focus{
 /*****************end of Animations***************/
 
 /*--------NAV-BAR----------*/
-.borders{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 .nav_bar{
     display: flex;
     justify-content: space-between;
@@ -86,19 +82,18 @@ select:focus{
     max-height: 15vh;
 }
 .logo{
-    width: 12%;
+    width: 15%;
     margin-left: 5%;
 }
 .logo_img{
     margin-top: 15% !important;
-    padding-bottom: 30% !important;
+    padding-bottom: 20% !important;
 }
 .nav{
     width: 60%;
     display: flex;
     justify-content: space-around;
     margin-right: 1%;
-    margin-top: -2%;
 }
 .link-div{
     width: 17%;
@@ -124,20 +119,19 @@ select:focus{
     align-items: center;
     width: 77%;
 }
+#NavBar_mob{
+    display: none;
+}
 /*--------end of NAV-BAR----------*/
 
-/*Center Section */
-#CenterSection{
-    margin-top: 1%;
-    margin-bottom: 0.5%;
-}
-/**********end of C. S.*/
+
 
 /*--------Fotter----------*/
 .boxes{
     width: 17%;
     text-align: end;
     margin-left: 76.5%;
+    margin-top: -4%;
 }
 .boxes_img{
     width: 70%;
@@ -148,11 +142,14 @@ select:focus{
 /*--------Pallets View----------*/
 .ColumnLink{
     width: 35%;
-    margin-top: 5%;
+    margin-top: 20%;
 }
 
 .ColumnLink:first-of-type{
     margin-top: 10%;
+}
+.ColumnLink:last-of-type{
+    margin-bottom: 40%;
 }
 .Pallets-div{
     margin-top: 0.5%;
@@ -226,7 +223,7 @@ select:focus{
 }
 .ProductCard{
     font-size: 17px;
-    width: 57%;
+    width: 57% ;
     padding: 1% 5%;
     margin-top: 5%;
     border-radius: 0.4rem;
@@ -263,6 +260,9 @@ select:focus{
     width: 19%;
     padding-right: 2%;
 }
+.Footer_mob{
+    display: none;
+}
 /*--------end of Pallets View----------*/
 
 
@@ -295,7 +295,7 @@ select:focus{
 /*--------end of Product View----------*/
 
 
-/*--------Buy_form----------*/
+/*--------buy_form----------*/
 #buy_form_desk{
     display: none; 
 }
@@ -366,7 +366,18 @@ select{
 .form_button:first-of-type{
     margin-left: -1%; 
 }
-/*--------end of Buy_form----------*/
+.Add2Cart2{
+    display: none;
+}
+.Add2Cart{
+    display: block;
+    margin-top: -8.5%;
+    margin-left: 41.2%;
+}
+#FakeRightSide{
+    margin-top: 74%;
+}
+/*--------end of buy_form----------*/
 
 
 /*--------Bathroom Products--------*/
@@ -504,7 +515,7 @@ select{
 .Tools_mob{
     display: none;
 }
-.Buy_form_mob{
+.buy_form_mob{
     display: none;
 }
 
@@ -696,17 +707,9 @@ select{
         
     }
 }
-@media(min-height:800px){
-    #CenterSection{
-        margin-top: 6%;
-        margin-bottom: 6%;
-    }
-}
+
 @media(height:950px){
-    #CenterSection{
-        margin-top: 8%;
-        margin-bottom: 8%;
-    }
+    
     #OpenTruck{
         width: 37%;
         position: absolute;
@@ -798,13 +801,11 @@ select{
         100%{top: 40%;opacity: 1;}           /*second 6*/
         
     }
-    #CenterSection{
-        margin-top: 8%;
-        margin-bottom: 2%;
-    }
 }
 
-
+#mobile_animation{
+    display: none;
+}
 
 
 @media(max-width:1125px){
@@ -1105,7 +1106,7 @@ select{
     .Column{
         display: none;
     }
-    .Pallets-div{
+    .Networks_column{
         display: none;
     }
     .Footer{
@@ -1130,7 +1131,7 @@ select{
         display: none;
     }
     .buy_form{
-        display: none;
+        display: block;
     }
     .Products{
         display: none;
@@ -1147,6 +1148,10 @@ select{
     #TextTruck{
         display: none;
     }
+    #ReciclePallets{
+        display: none;
+    }
+    
     
     /********** Showing mobile Views***********/
     .Presentation{
@@ -1156,7 +1161,7 @@ select{
         display:block;
     }
     .Products_mob{
-        display: block !important;
+        display: block;
     }
     .Garden_products_mob{
         display: block;
@@ -1170,9 +1175,119 @@ select{
     .Animation_mob{
         display: block;
     }
-    .Buy_form_mob{
+    .buy_form_mob{
         display: block;  
     }
+    #NavBar_mob{
+        display: block;
+    }
+    .Footer_mob{
+        display: block;
+    }
 
-   
+    /*Adjusting Desk to Mobile Version*/
+    
+    .Pallets-div{
+        display: block;
+    }
+    .StaticTruck-div{
+        width: 85%;
+        padding-top: 4%;
+        margin-left: 5%;
+    }
+    .Right_side{
+        margin-top: 10%;
+        margin-left: 5%;
+        width: 90%;
+        text-align: right;
+    }
+    .ProductCard{
+        font-size: 17px;
+        width: 100%;
+    }
+    .buy_button{
+        margin: 5% 0% 3% 0;
+        font-size: 14px;
+        width: 30%;
+        padding: 1.5% 0%;
+    }
+    .buy_button:last-of-type{
+        margin-bottom: 20%;
+    }
+
+    /*****************************/
+
+    #FakeRightSide{
+        animation-name: HidePallets;
+        animation-duration: 6s;
+        animation-timing-function: ease-in;
+    }
+    @keyframes HidePallets {
+        0%{opacity: 0;}
+        99%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+
+    #buy_form_desk{
+        display: none; 
+    }
+    .buy_form{
+        z-index: 5;
+        background-color: #ffffff;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+    }
+    .form_button{
+        margin-top: 7.5%;
+        margin-left: 20%;
+        font-size: 15px;
+    }
+    .form_button:first-of-type{
+        margin-left: 8%; 
+    }
+    .Add2Cart{
+        display: none;
+        margin-top: -9.3%;
+        margin-left: 57%;
+    }
+    .Add2Cart2{
+        display: block;
+        margin-top: -9.3%;
+        margin-left: 57%;
+    }
+    .form_side{
+        width: 100%;
+        padding: 50% 0;
+    }
+    .form_left{
+        padding: 10% 5% 1% 5%;
+    }
+    .form_right{
+        padding: 0% 5% 15% 5%;
+    }
+    label{
+        margin-left: 11%;
+        font-size: 21px;
+    }
+    input{
+        width: 85%;
+        margin-left: 7.5%;
+        padding: 5% 0;
+        border-radius: 0.4rem;
+        border: none;
+        background-color: #ff524f27;
+        padding-left: 3%;
+        font-size: 16px;
+    }
+    select{
+        font-size: 16px;
+        margin-left: 7.5%;
+        width: 85%;
+        padding: 5% 3%;
+    }
+    
 }    

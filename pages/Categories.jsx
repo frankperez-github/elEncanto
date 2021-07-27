@@ -17,28 +17,28 @@ function Products({categories}){
 
         <div className="borders">
         
-           
-            <div id="CenterSection">
-                <div className="Products">
+        
+        
+            <div className="Products">
 
-                    <div className="Products-div">
-                        
-                        <div className="StaticTruck-div">
-                            <Image id="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
-                    </div>
-
-                        <div className="Right_side_products">
-                         
-                        {categories.map(category=> <CategoryCard key={category["id"]} category = {category}/>)}
-                        </div>
-
-                        <Column />
-                        
-                    </div>
-                
-       
+                <div className="Products-div">
+                    
+                    <div className="StaticTruck-div">
+                        <Image id="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
                 </div>
+
+                    <div className="Right_side_products">
+                        
+                    {categories.map(category=> <CategoryCard key={category["id"]} category = {category}/>)}
+                    </div>
+
+                    <Column />
+                    
+                </div>
+            
+
             </div>
+        
         </div>
     </div>
     );

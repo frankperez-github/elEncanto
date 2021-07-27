@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Column from '../components/DeskVersion/ColumnSide';
-import Buy_form from '../components/DeskVersion/Buy_form';
-import Pallets_mob from '../components/MobileVersion/Pallets_mob';
+import Animation from '../components/DeskVersion/Animation';
+import Buy_form_desk from '../components/DeskVersion/Buy_Form';
+
 
 const Show_Form =()=>{
     document.getElementById('buy_form_desk').style.display="block";
@@ -15,73 +16,64 @@ function Pallets (){
     
     return(
 
-        <div className="borders">
+        <div className="Pallets">
 
-            <div id="CenterSection">
+            <Buy_form_desk />
+            <Animation />
+                
+            <div className="Pallets-div" id="Pallets-div">
+            
+            
+                <div className="StaticTruck-div">
+                    <Image id="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
+                </div>
 
-                <div className="Pallets" >
-
-                    <Buy_form/>
-
-                    <Pallets_mob />
-                        
-                    <div className="Pallets-div" >
                     
-                    
-                        <div className="StaticTruck-div">
-                                <Image id="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
-                        </div>
+                <div className="Right_side" id="Right_side">
 
-                            
-                        <div className="Right_side" >
-
-                            <div className="product ProductCard">
-                                
-                                    <div className="ModuleImg-div">
-                                        <Image src="/module_1.svg" width="42%" height="47%"/>
-                                    </div>
-                                
-                                
-                                <p className="pkg_numb">Package No. 1</p>
-                                <p >$100</p>
-                            </div>
-
-                            <button onClick={Show_Form} className="buy_button">Buy</button>
-                            
-
-                            <div className="product ProductCard">
-                                <div className="ModuleImg-div">
-                                    <Image src="/module_2.svg" width="42%" height="50%"/>
-                                </div>
-                                <p className="pkg_numb">Package No. 2</p>
-                                <p >$100</p>
-                            </div>
-
-                            <button onClick={Show_Form} className="buy_button">Buy</button>
-                            
-
-                            <div className="product ProductCard">
-                                <div className="ModuleImg-div">
-                                    <Image src="/module_3.svg" width="42%" height="50%"/>
-                                </div>
-
-                                <p className="pkg_numb">Package No. 3</p>
-                                <p >$100</p>
-                            </div>
-
-                            <button onClick={Show_Form} className="buy_button">Buy</button>
-                                
-                        </div>
+                    <div className="product ProductCard">
                         
-                        <Column />
-
+                            <div className="ModuleImg-div">
+                                <Image src="/module_1.svg" width="42%" height="47%"/>
+                            </div>
+                        
+                        
+                        <p className="pkg_numb">Package No. 1</p>
+                        <p >$100</p>
                     </div>
 
+                    <button onClick={Show_Form} className="buy_button">Buy</button>
+                    
+
+                    <div className="product ProductCard">
+                        <div className="ModuleImg-div">
+                            <Image src="/module_2.svg" width="42%" height="50%"/>
+                        </div>
+                        <p className="pkg_numb">Package No. 2</p>
+                        <p >$100</p>
+                    </div>
+
+                    <button onClick={Show_Form} className="buy_button">Buy</button>
+                    
+
+                    <div className="product ProductCard">
+                        <div className="ModuleImg-div">
+                            <Image src="/module_3.svg" width="42%" height="50%"/>
+                        </div>
+
+                        <p className="pkg_numb">Package No. 3</p>
+                        <p >$100</p>
+                    </div>
+
+                    <button  onClick={Show_Form} className="buy_button">Buy</button>
+                        
                 </div>
- 
+                
+                <Column />
+
             </div>
 
-           
         </div>
+
           );
 }export default Pallets;
