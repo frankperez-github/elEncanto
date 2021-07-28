@@ -13,6 +13,7 @@ import Animation from './Animation';
         
         document.getElementById('StaticTruck').style.display="none";
         document.getElementById('Animation').style.display="block";
+        document.getElementById('buy_form_desk').style.display="none";
     }
 
     const handleSubmitMobile = (e) => {

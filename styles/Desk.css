@@ -1340,5 +1340,25 @@ select{
         padding: 5% 3%;
     }
     
+
+    /************************/
+
+    .Products-div{
+        display: block;
+    }
+    .Right_side_products{
+        margin-top: 10%;
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 27%;
+        text-align: right;
+    }
+    .ModuleImg-div{
+        width: 37%;
+    }
+    .prod_name{
+        margin-left: -35%;
+    }
+    
 }    
 
