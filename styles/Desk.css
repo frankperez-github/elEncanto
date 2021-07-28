@@ -811,6 +811,28 @@ select{
 }
 
 
+@media(max-height:900px){
+    .nav_bar{
+        margin-bottom: 5%;
+    }
+    .boxes{
+        margin-top: 5%;
+    }
+    .ColumnLink:first-of-type{
+        margin-top: 30%;
+    }
+}
+@media(max-height:600px){
+    .nav_bar{
+        margin-bottom: 1%;
+    }
+    .boxes{
+        margin-top: -4%;
+    }
+    .ColumnLink:first-of-type{
+        margin-top: 2%;
+    }
+}
 @media(min-width:1600px){
     .nav_bar{
         margin-bottom: 5%;
