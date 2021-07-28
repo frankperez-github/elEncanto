@@ -76,6 +76,8 @@ select:focus{
 /*--------NAV-BAR----------*/
 
 .nav_bar{
+    margin-top: -0.5%;
+    margin-bottom: 1.5%;
     display: flex;
     justify-content: space-between;
     font-size: 16px;
@@ -809,6 +811,39 @@ select{
 }
 
 
+@media(min-width:1600px){
+    .nav_bar{
+        margin-bottom: 5%;
+    }
+    .boxes{
+        margin-top: 5%;
+    }
+    .ColumnLink:first-of-type{
+        margin-top: 30%;
+    }
+}
+@media(min-width:1950px){
+    .nav_bar{
+        margin-bottom: 5%;
+    }
+    .boxes{
+        margin-top: 5%;
+    }
+    .ColumnLink:first-of-type{
+        margin-top: 30%;
+    }
+}
+@media(min-width:2400px){
+    .nav_bar{
+        margin-bottom: 3%;
+    }
+    .boxes{
+        margin-top: 5%;
+    }
+    .ColumnLink:first-of-type{
+        margin-top: 30%;
+    }
+}
 @media(max-width:1125px){
     .nav_bar{
         font-size: 15px;
