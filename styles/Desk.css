@@ -246,6 +246,7 @@ select:focus{
     text-align: center;
     background-color: #FF524F;
     color: white;
+    align-self: flex-end;
 }
 .buy_button:last-of-type{
     margin-bottom: 0%;

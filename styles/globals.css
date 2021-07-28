@@ -18,3 +18,7 @@ a {
 
 
 /*Mobile CSS*/
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
