@@ -39,31 +39,11 @@ export default function Home() {
                     <div className="Right_side" id="Right_side">
                     
                       <ProductCard/>
-
+                      <ProductCard/>
+                      <ProductCard/>
                       
 
-                        <div className="product ProductCard">
-                            <div className="ModuleImg-div">
-                                <Image src="/module_2.svg" width="42%" height="50%"/>
-                            </div>
-                            <p className="pkg_numb">Package No. 2</p>
-                            <p >$100</p>
-                        </div>
-
-                        <button onClick={Show_Form} className="buy_button">Buy</button>
-                        
-
-                        <div className="product ProductCard">
-                            <div className="ModuleImg-div">
-                                <Image src="/module_3.svg" width="42%" height="50%"/>
-                            </div>
-
-                            <p className="pkg_numb">Package No. 3</p>
-                            <p >$100</p>
-                        </div>
-
-                        <button  onClick={Show_Form} className="buy_button">Buy</button>
-                            
+                     
                     </div>
                     
                     <Column />
