@@ -4,12 +4,7 @@ import Image from 'next/image';
 
 function Products_mob(){
 
-   const TurnGreen =()=>{
-        var paths = document.getElementsByClassName("path");
-        paths.forEach(element =>{
-            element.style.fill="green"
-        });
-   }
+  
 
     return(
         
@@ -25,7 +20,7 @@ function Products_mob(){
                         <p className="prod_name_mob">Garden</p>
 
                         <a href="/Garden-Products">
-                            <p onClick={TurnGreen} className="see_product" >See More...</p>
+                            <p className="see_product" >See More...</p>
                         </a>
                         
                     </div>

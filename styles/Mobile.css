@@ -221,29 +221,6 @@ span{
 
 
 
-/**************Products_mobile*************/
-.product_mob{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 25%;
-}
-.prod_name_mob{
-    margin-left: -36%;
-    font-size: 14px;
-}
-.prod_name_mob2{
-    margin-left: -29%;
-    font-size: 14px;
-}
-.product_mob:first-of-type{
-    margin-top: 23%;
-}
-.product_mob:last-of-type{
-    margin-bottom: 27%;
-}
-/********end of Products_mobile*************/
-
 
 /**GardenProducts**********/
 .bath_single_product_mob{
@@ -466,6 +443,4 @@ span{
     fill: green;
 }
 /****************end of Buy Form***************/
-
-
 

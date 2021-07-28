@@ -5,10 +5,7 @@ import Animation from './Animation';
 
     const GoBack =()=>{
         document.getElementById('buy_form_desk').style.display="none";
-    }
-    const Go_buy_form =()=>{
-        document.getElementById('buy_form_desk').style.display="block";
-        document.getElementById('mobile_animation').style.display="none";
+        document.getElementById('Pallets-divForm').style.display="block";
     }
    
     const handleSubmitDesk = (e) => {

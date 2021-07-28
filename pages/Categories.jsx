@@ -17,8 +17,6 @@ function Products({categories}){
 
         <div className="borders">
         
-        
-        
             <div className="Products">
 
                 <div className="Products-div">

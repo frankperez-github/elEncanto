@@ -216,7 +216,7 @@ select:focus{
     margin-left: 40%;
 }
 .Right_side{
-    margin-top: 1.6%;
+    margin-top: 2.7%;
     margin-right: -13%;
     width: 43%;
     text-align: right;
@@ -253,7 +253,7 @@ select:focus{
 }
 .Networks_column{
     width: 9.5% ;
-    margin-top: -2.5% !important;
+    margin-top: -1% !important;
     margin-left: 9.5% !important;
 }
 .ModuleImg-div{
@@ -270,7 +270,7 @@ select:focus{
 
 /*-------- Product View----------*/
 .Right_side_products{
-    margin-top: 1.6%;
+    margin-top: 3%;
     margin-right: -19%;
     width: 43%;
 }
@@ -304,15 +304,16 @@ select:focus{
     display: flex;
     background-color: #ffffff;
     border-radius: 5rem;
-    width: 86.9%;
-    height: 89%;
-    position: absolute;
-    top: 7%;
-    left: 6%;
+    width: 86%;
+    position: relative;
+    margin-top: -4%;
+    left: 7.5%;
+    margin-bottom: -6.5%;
 }
 .form_side{
     width: 50%;
-    padding: 60px 0;
+    padding: 4% 0;
+    padding-bottom: 12.5%;
 }
 
 .form_left{
@@ -331,7 +332,7 @@ input{
     margin-top: 1.5%;
     margin-bottom: 4%;
     width: 72%;
-    height: 12%;
+    height: 16%;
     border-radius: 0.4rem;
     border: none;
     background-color: #ff524f27;
@@ -343,7 +344,7 @@ select{
     margin-top: 1.5%;
     margin-bottom: 4%;
     width: 72%;
-    height: 12%;
+    height: 16%;
     border-radius: 0.4rem;
     border: none;
     background-color: #ff524f27;
@@ -1133,9 +1134,6 @@ select{
     .buy_form{
         display: block;
     }
-    .Products{
-        display: none;
-    }
     .Principal{
         display: none;
     }
@@ -1227,19 +1225,14 @@ select{
         99%{opacity: 0;}
         100%{opacity: 1;}
     }
-
-    #buy_form_desk{
-        display: none; 
-    }
     .buy_form{
-        z-index: 5;
+        z-index: 3 !important;
         background-color: #ffffff;
         border-radius: 0;
         width: 100%;
         height: 100%;
-        position: fixed;
-        top: 0%;
-        left: 0%;
+        position: static;
+        margin-top: 5%;
     }
     .form_button{
         margin-top: 7.5%;
@@ -1291,3 +1284,4 @@ select{
     }
     
 }    
+
