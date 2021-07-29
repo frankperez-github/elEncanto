@@ -1,5 +1,6 @@
+import Column from '../components/DeskVersion/ColumnSide'
 import Image from 'next/image';
-import Column from '../components/DeskVersion/ColumnSide';
+
 import CategoryCard from '../components/DeskVersion/CategoryCard'
 
 
@@ -20,8 +21,8 @@ function Products({categories}){
 
                 <div className="Products-div">
                     
-                    <div className="StaticTruck-div">
-                        <Image id="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
+                    <div className="StaticTruck-divProd">
+                        <Image id="StaticTruck" src="/truck.svg" width="450%" height="200%"/>
                     </div>
 
                     <div className="Right_side_products">
@@ -31,7 +32,8 @@ function Products({categories}){
                     <Column />
                     
                 </div>
-            
+
+                
 
             </div>
         

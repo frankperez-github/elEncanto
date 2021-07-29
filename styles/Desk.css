@@ -129,11 +129,14 @@ select:focus{
 
 
 /*--------Fotter----------*/
+.Footer{
+    display: flex;
+    justify-content: space-between;
+}
 .boxes{
-    width: 17%;
+    width: 30%;
     text-align: end;
-    margin-left: 76.5%;
-    margin-top: -4%;
+    margin-right: 3%;
 }
 .boxes_img{
     width: 70%;
@@ -144,14 +147,6 @@ select:focus{
 /*--------Pallets View----------*/
 .ColumnLink{
     width: 35%;
-    margin-top: 20%;
-}
-
-.ColumnLink:first-of-type{
-    margin-top: 10%;
-}
-.ColumnLink:last-of-type{
-    margin-bottom: 40%;
 }
 .Pallets-div{
     margin-top: 0.5%;
@@ -163,7 +158,8 @@ select:focus{
     justify-content: space-between;
     align-items: center;
 }
-.StaticTruck-div{
+.StaticTruck-div{ 
+    display: none;/***********************************************************************************************Static Truck Hereeeeeeeeeeeeeeeeeeeeeeeeeee*********************************************************************************************/
     width: 40%;
     padding-top: 1.5%;
     padding-left: 6%;
@@ -218,14 +214,20 @@ select:focus{
     margin-left: 40%;
 }
 .Right_side{
-    margin-top: 4vh;
-    margin-right: -13%;
-    width: 43%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6%;
+    margin-bottom: 5%;
+    width: 100%;
     text-align: right;
+}
+.product-card{
+    margin-left: 3%;
+    width: 30%;
 }
 .ProductCard{
     font-size: 17px;
-    width: 57% ;
+    width: 90%;
     padding: 1% 5%;
     border-radius: 0.4rem;
     box-shadow: 1px 2.5px 5px   rgb(218, 216, 216) ;
@@ -233,9 +235,9 @@ select:focus{
 
 .buy_button{
     box-shadow: 3px 4px 3px   rgb(218, 216, 216) ;
-    margin:2% 42% 4vh 0;
+    margin: 5% 10% 10% 0;
     font-size: 14px;
-    width: 18%;
+    width: 30%;
     padding: 0.9% 0%;
     border-radius: 1rem;
     border: none;
@@ -249,9 +251,12 @@ select:focus{
     margin-left: -15%;
 }
 .Networks_column{
-    width: 9.5% ;
-    margin-top: -1% !important;
-    margin-left: 9.5% !important;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    margin-top: -1%;
+    width: 100% ;
+    margin-left: 9.5%;
 }
 .ModuleImg-div{
     width: 19%;
@@ -267,12 +272,19 @@ select:focus{
 
 /*-------- Product View----------*/
 .Right_side_products{
-    margin-top: 3%;
-    margin-right: -19%;
-    width: 43%;
+    margin-top: -4%;
+    margin-bottom: 2.8%;
+    margin-right: 15%;
+    width: 50%;
+}
+.StaticTruck-divProd{ 
+    width: 60%;
+    padding-top: 1.5%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 .Products-div{
-    margin-top: 0.4%;
+    margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
@@ -813,9 +825,7 @@ select{
     .boxes{
         margin-top: 5%;
     }
-    .ColumnLink:first-of-type{
-        margin-top: 30%;
-    }
+    
 }
 @media(max-height:600px){
     .nav_bar{
@@ -824,9 +834,7 @@ select{
     .boxes{
         margin-top: -4%;
     }
-    .ColumnLink:first-of-type{
-        margin-top: 2%;
-    }
+    
 }
 @media(min-width:1600px){
     .nav_bar{
@@ -835,9 +843,7 @@ select{
     .boxes{
         margin-top: 5%;
     }
-    .ColumnLink:first-of-type{
-        margin-top: 30%;
-    }
+    
 }
 @media(min-width:1950px){
     .nav_bar{
@@ -846,9 +852,7 @@ select{
     .boxes{
         margin-top: 5%;
     }
-    .ColumnLink:first-of-type{
-        margin-top: 30%;
-    }
+    
 }
 @media(min-width:2400px){
     .nav_bar{
@@ -857,9 +861,7 @@ select{
     .boxes{
         margin-top: 5%;
     }
-    .ColumnLink:first-of-type{
-        margin-top: 30%;
-    }
+    
 }
 @media(max-width:1125px){
     .nav_bar{
@@ -1245,9 +1247,19 @@ select{
         padding-top: 4%;
         margin-left: 5%;
     }
+    
+    .product-card{
+        margin-left: 3%;
+        width: 94%;
+    }
+    
+    .StaticTruck-div{
+        display: block;
+    }
     .Right_side{
-       
+        display: block;
         margin-left: 5%;
+        margin-top: 4%;
         width: 90%;
         text-align: right;
     }
@@ -1342,6 +1354,12 @@ select{
 
     .Products-div{
         display: block;
+    }
+    .StaticTruck-divProd{ 
+        width: 80%;
+        padding-top: 10%;
+        margin-left: 10%;
+        margin-bottom: 15%;
     }
     .Right_side_products{
        

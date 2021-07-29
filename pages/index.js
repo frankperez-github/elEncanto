@@ -1,22 +1,16 @@
 import Head from 'next/head'
 import Animation from '../components/DeskVersion/Animation'
 import Image from 'next/image'
-import Column from '../components/DeskVersion/ColumnSide'
 import Buy_form_desk from '../components/DeskVersion/Buy_Form'
 import ProductCard from '../components/DeskVersion/ProductCard'
 
 export default function Home({products}) {
   
-  const Show_Form =()=>{
-    document.getElementById('buy_form_desk').style.display="block";
-    document.getElementById('StaticTruck').style.display="block";
-    document.getElementById('Animation').style.display="none";
-    document.getElementById('Pallets-divForm').style.display="none";
-  }
-
- 
+  
   
   return (
+
+
     <div>
       <Head>
         <title>El Encanto</title>
@@ -44,7 +38,7 @@ export default function Home({products}) {
                      
                     </div>
                     
-                    <Column />
+                    
 
                 </div>
             </div>
