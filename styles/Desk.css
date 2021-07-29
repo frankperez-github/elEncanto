@@ -218,7 +218,7 @@ select:focus{
     margin-left: 40%;
 }
 .Right_side{
-    margin-top: 2.7%;
+
     margin-right: -13%;
     width: 43%;
     text-align: right;
@@ -227,17 +227,13 @@ select:focus{
     font-size: 17px;
     width: 57% ;
     padding: 1% 5%;
-    margin-top: 5%;
     border-radius: 0.4rem;
     box-shadow: 1px 2.5px 5px   rgb(218, 216, 216) ;
-}
-.ProductCard:first-of-type{
-    margin-top: -7%;
 }
 
 .buy_button{
     box-shadow: 3px 4px 3px   rgb(218, 216, 216) ;
-    margin:3% 42% 3% 0;
+    margin:2% 42% 4vh 0;
     font-size: 14px;
     width: 18%;
     padding: 0.9% 0%;
@@ -248,9 +244,7 @@ select:focus{
     color: white;
     align-self: flex-end;
 }
-.buy_button:last-of-type{
-    margin-bottom: 0%;
-}
+
 .pkg_numb{
     margin-left: -15%;
 }
@@ -1252,7 +1246,7 @@ select{
         margin-left: 5%;
     }
     .Right_side{
-        margin-top: 10%;
+       
         margin-left: 5%;
         width: 90%;
         text-align: right;
@@ -1267,10 +1261,12 @@ select{
         width: 30%;
         padding: 1.5% 0%;
     }
-    .buy_button:last-of-type{
-        margin-bottom: 15%;
+    .buy_button{
+        margin-bottom: 2vh;
     }
-
+    .buy_button:last-of-type{
+        margin-bottom: 5vh;
+    }
     /*****************************/
 
     #FakeRightSide{
@@ -1348,7 +1344,7 @@ select{
         display: block;
     }
     .Right_side_products{
-        margin-top: 10%;
+       
         width: 90%;
         margin-left: 5%;
         margin-bottom: 27%;
