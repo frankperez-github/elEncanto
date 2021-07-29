@@ -92,6 +92,7 @@ select:focus{
     padding-bottom: 20% !important;
 }
 .nav{
+    margin-top: 5%;
     width: 60%;
     display: flex;
     justify-content: space-around;
@@ -159,10 +160,7 @@ select:focus{
     align-items: center;
 }
 .StaticTruck-div{ 
-    display: none;/***********************************************************************************************Static Truck Hereeeeeeeeeeeeeeeeeeeeeeeeeee*********************************************************************************************/
-    width: 40%;
-    padding-top: 1.5%;
-    padding-left: 6%;
+    display: none;
 }
 #EmptyTruck{
     width: 34%;
@@ -218,7 +216,6 @@ select:focus{
     flex-wrap: wrap;
     margin-top: 6%;
     margin-bottom: 5%;
-    width: 100%;
     text-align: right;
 }
 .product-card{
@@ -271,20 +268,9 @@ select:focus{
 
 
 /*-------- Product View----------*/
-.Right_side_products{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -2%;
-    margin-bottom: 4%;
-    margin-right: 3.5%;
-    width: 57%;
 
-}
 .StaticTruck-divProd{ 
-    width:40%;
-    padding-top: 1.5%;
-    margin-right: 2%;
-    margin-left: 2%;
+    display: none;
 }
 .Products-div{
     margin-top: 5%;
@@ -292,12 +278,10 @@ select:focus{
     justify-content: space-between;
 }
 .CardProducts{
-    margin-bottom: 14%;
-    width: 48%;
-    margin-right: 2%;
-}
-.CardProducts:last-of-type{
-    margin-bottom: 10.5%;
+    margin-bottom: 3%;
+    padding: 1% 1.5%;
+    width: 30%;
+    margin-left: 3%;
 }
 .see_product_desk{
     cursor: pointer;
@@ -1361,23 +1345,23 @@ select{
         display: block;
     }
     .StaticTruck-divProd{ 
+        display: block;
         width: 80%;
         padding-top: 10%;
         margin-left: 10%;
         margin-bottom: 15%;
     }
-    .Right_side_products{
-        width: 90%;
-        margin-left: 5%;
-        margin-bottom: 27%;
-        text-align: right;
-    }
     .ModuleImg-div{
         width: 37%;
     }
     .prod_name{
-        margin-left: -35%;
+        margin-left: -22%;
     }
-    
+    .CardProducts{
+        margin-bottom: 13%;
+        padding: 1.5% 2.5%;
+        width: 95%;
+        margin-left: 2.5%;
+    }
 }    
 

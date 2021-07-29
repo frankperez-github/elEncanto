@@ -1,12 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 
 function Layout(props) {
 
-    const router = useRouter();
-  
-    var marginTop = router.pathname === "/" ? "5%" : "";
 
     return(
     <div className="Layout">
@@ -52,7 +48,7 @@ function Layout(props) {
                 <Image className="logo_img" src="/logo.svg" alt="Logo" width="150%" height="150%" />
             </div>
 
-            <div className="nav" style={{marginTop: marginTop}}>
+            <div className="nav" >
 
                 <div className="link-div">
                     <Link href="/" className="link_a"> 
