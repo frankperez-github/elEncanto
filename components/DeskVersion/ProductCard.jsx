@@ -14,7 +14,7 @@ export default function ProductCard({product}) {
     
     
     <p className="pkg_numb">{product.name}</p>
-    <p >{product.price}</p>
+    <p >${product.price}</p>
     </div>
 <button /* onClick={Show_Form} */ className="buy_button">Buy</button>
 </div>
