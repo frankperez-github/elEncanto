@@ -3,7 +3,11 @@ import Image from 'next/dist/client/image'
 import Link from 'next/link'
 
 export default function ProductCard({product}) {
+
+    
+
     return (
+
         <Link href={`products/${product.id}`}>
         <div className="product-card">
         <div className="product ProductCard">
@@ -19,5 +23,6 @@ export default function ProductCard({product}) {
 <button /* onClick={Show_Form} */ className="buy_button">Buy</button>
 </div>
 </Link>
+
     )
 }

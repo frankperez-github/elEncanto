@@ -2,7 +2,7 @@ import  Image from 'next/image';
 
 import Bath_mob from '../components/MobileVersion/Bath_mob';
 import X_Bar from '../components/DeskVersion/X_Bar';
-import Column from '../components/DeskVersion/ColumnSide';
+
 
 
 const Show_Form =()=>{
@@ -157,7 +157,7 @@ function Bathroom_products(){
 
                 </div>
 
-                <Column />
+                
                                 
             </div>
 

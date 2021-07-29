@@ -1,5 +1,6 @@
+import Column from '../components/DeskVersion/ColumnSide'
 import Image from 'next/image';
-import Column from '../components/DeskVersion/ColumnSide';
+
 import CategoryCard from '../components/DeskVersion/CategoryCard'
 
 
@@ -18,20 +19,21 @@ function Products({categories}){
         
             <div className="Products">
 
-                <div className="Products-div">
+                <div className="Pallets-div">
                     
-                    <div className="StaticTruck-div">
-                        <Image id="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
+                    <div className="StaticTruck-divProd">
+                        <Image id="StaticTruck" src="/truck.svg" width="400%" height="200%"/>
                     </div>
 
-                    <div className="Right_side_products">
+                    <div className="Right_side">
                         {categories.map(category=> <CategoryCard key={category["id"]} category = {category}/>)}
                     </div>
 
                     <Column />
                     
                 </div>
-            
+
+                
 
             </div>
         

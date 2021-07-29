@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Column from '../components/DeskVersion/ColumnSide';
+
 
 import X_Bar from '../components/DeskVersion/X_Bar';
 
@@ -156,7 +156,7 @@ function Garden_products(){
 
                 </div>
 
-                <Column />                
+                                
             </div>
 
             <X_Bar />

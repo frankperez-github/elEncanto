@@ -1,6 +1,6 @@
 
 import  Image from 'next/image';
-import Column from '../components/DeskVersion/ColumnSide';
+
 
 import X_Bar from '../components/DeskVersion/X_Bar';
 import Tools_mob from '../components/MobileVersion/Tools_mob';
@@ -159,7 +159,7 @@ function Tools_products(){
 
                 </div>
 
-                <Column />
+                
 
             </div>
 
