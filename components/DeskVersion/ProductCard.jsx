@@ -1,22 +1,23 @@
 import React from 'react'
 import Image from 'next/dist/client/image'
+import Link from 'next/link'
 
-export default function ProductCard() {
+export default function ProductCard({product}) {
     return (
-        
+        <Link href={`products/${product.id}`}>
         <div className="product-card">
         <div className="product ProductCard">
                             
         <div className="ModuleImg-div">
-            <Image src="/module_1.svg" width="42%" height="47%"/>
+            <Image src={product.icon} width="42%" height="47%"/>
         </div>
     
     
-    <p className="pkg_numb">Package No. 1</p>
-    <p >$100</p>
+    <p className="pkg_numb">{product.name}</p>
+    <p >{product.price}</p>
     </div>
 <button /* onClick={Show_Form} */ className="buy_button">Buy</button>
 </div>
-
+</Link>
     )
 }

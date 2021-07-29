@@ -5,7 +5,7 @@ import Column from '../components/DeskVersion/ColumnSide'
 import Buy_form_desk from '../components/DeskVersion/Buy_Form'
 import ProductCard from '../components/DeskVersion/ProductCard'
 
-export default function Home() {
+export default function Home({products}) {
   
   const Show_Form =()=>{
     document.getElementById('buy_form_desk').style.display="block";
@@ -14,7 +14,8 @@ export default function Home() {
     document.getElementById('Pallets-divForm').style.display="none";
   }
 
-
+ 
+  
   return (
     <div>
       <Head>
@@ -38,10 +39,7 @@ export default function Home() {
                         
                     <div className="Right_side" id="Right_side">
                     
-                      <ProductCard/>
-                      <ProductCard/>
-                      <ProductCard/>
-                      
+                      {products.map(product=><ProductCard key = {product.id} product={product}/>)}
 
                      
                     </div>
@@ -60,4 +58,16 @@ export default function Home() {
       
     </div>
   )
+}
+
+export const getStaticProps  = async()=> {
+  const res = await fetch('https://elencanto-drf-api.herokuapp.com/products')
+  
+  const products = await res.json()
+
+  return {
+    props: {
+      products
+    }
+  }
 }

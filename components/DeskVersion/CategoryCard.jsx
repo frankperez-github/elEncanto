@@ -12,7 +12,7 @@ import Image from 'next/dist/client/image'
 
             <p className="prod_name">{category.name}</p>
             
-            <Link href="Categories/[id]" as={`Categories/${category.id}`} >
+            <Link href="categories/[id]" as={`categories/${category.id}`} >
                 <p className="see_product_desk">See More...</p>
             </Link>
             
