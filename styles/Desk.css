@@ -226,7 +226,7 @@ select:focus{
     width: 30%;
 }
 .ProductCard{
-    font-size: 17px;
+    font-size: 16px;
     width: 90%;
     padding: 1% 5%;
     border-radius: 0.4rem;
@@ -272,16 +272,19 @@ select:focus{
 
 /*-------- Product View----------*/
 .Right_side_products{
-    margin-top: -4%;
-    margin-bottom: 2.8%;
-    margin-right: 15%;
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -2%;
+    margin-bottom: 4%;
+    margin-right: 3.5%;
+    width: 57%;
+
 }
 .StaticTruck-divProd{ 
-    width: 60%;
+    width:40%;
     padding-top: 1.5%;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 2%;
+    margin-left: 2%;
 }
 .Products-div{
     margin-top: 5%;
@@ -290,6 +293,8 @@ select:focus{
 }
 .CardProducts{
     margin-bottom: 14%;
+    width: 48%;
+    margin-right: 2%;
 }
 .CardProducts:last-of-type{
     margin-bottom: 10.5%;
@@ -1362,7 +1367,6 @@ select{
         margin-bottom: 15%;
     }
     .Right_side_products{
-       
         width: 90%;
         margin-left: 5%;
         margin-bottom: 27%;

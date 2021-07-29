@@ -22,7 +22,7 @@ function Products({categories}){
                 <div className="Products-div">
                     
                     <div className="StaticTruck-divProd">
-                        <Image id="StaticTruck" src="/truck.svg" width="450%" height="200%"/>
+                        <Image id="StaticTruck" src="/truck.svg" width="400%" height="200%"/>
                     </div>
 
                     <div className="Right_side_products">
