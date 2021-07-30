@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import  Image from 'next/image';
+
+
 
 export const getStaticProps = async(context) => {
 
@@ -31,17 +33,24 @@ export const getStaticPaths = async() => {
 
 
 export default function ProductDetail({product}) {
+
+    useEffect(()=>{
+        console.log(product)
+    })
+
     return (
-        <div className="prodcut-detail">
+        <div className="product-detail">
             <h1>{product.name}</h1>
             <Image width={500} height={200} src={product.icon}/>
-            
+            {product.images.map(image=><Image key={image.id} width={500} height={200} src={image.image}/>)}
             <br />
             <br />
          <h1> Descripicion: {product.description}</h1>  
          <h1>Price: ${product.price}</h1>
          <h1>Quantity: {product.countInStock}</h1>
-         <br />
+         <button>Add to cart</button>
+         <button>Buy</button>
+        <br />
          <br />
         </div>
     )
