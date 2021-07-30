@@ -4,7 +4,7 @@ import Image from 'next/dist/client/image'
 
  const CategoryCard = ({category}) => {
     return (
-        <Link href="categories/[id]" as={`categories/${category.id}`} >
+        <Link href="categories/[id]" as={`Categories/${category.id}`} >
         <div className="product ProductCard CardProducts">
             
 

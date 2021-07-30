@@ -19,7 +19,7 @@ function Layout(props) {
                 </div>
 
                 <div className="Link-div">
-                    <a href="/categories" className="link_nav_mob">
+                    <a href="/Categories" className="link_nav_mob">
 
                         <Image src="/link_products.svg" width="30%" height="30%" className="link_nav_img"/>
                         
@@ -67,7 +67,7 @@ function Layout(props) {
                 </div>
 
                 <div className="link-div" >
-                    <Link href="/categories" className="link_a">
+                    <Link href="/Categories" className="link_a">
                         <div className="NavLink-div">
                             <div className="LinkImg">
                                 <Image src="/link_products.svg" width="40%" height="40%"/> 
