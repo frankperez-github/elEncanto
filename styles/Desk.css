@@ -212,6 +212,7 @@ select:focus{
     margin-left: 40%;
 }
 .Right_side{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-top: 6%;
