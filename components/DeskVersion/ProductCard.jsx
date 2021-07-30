@@ -8,7 +8,7 @@ export default function ProductCard({product}) {
 
     return (
 
-        <Link href={`products/${product.id}`}>
+        <Link href={`product/${product.id}`}>
         <div className="product-card">
         <div className="product ProductCard">
                             

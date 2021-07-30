@@ -54,7 +54,7 @@ export default function Home({products}) {
   )
 }
 
-export const getServerSideProps  = async()=> {
+export const getStaticProps  = async()=> {
   const res = await fetch('https://elencanto-drf-api.herokuapp.com/products')
   
   const products = await res.json()
