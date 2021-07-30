@@ -30,7 +30,7 @@ export default function ProductsByCategory ({products}) {
     
     <div className="ProductsByCategory Right_side TextCateg">
         { products.length>0 ?
-         products.map(product=><ProductCard  key = {product.id} product={product}/>):"No products found of the selected category"
+         products.map(product=><ProductCard  key = {product.id} product={product}/>): <p>"No products found of the selected category"</p>
         }
     </div>
 

@@ -156,30 +156,6 @@ span{
 /*End of Animations **************/
 
 
-
-/******Presentation********************/
-
-.Logo_present{
-    margin: 22% 0 9% 0;
-    text-align: center;
-}
-.Presentation_button{
-    font-size: 18px;
-    text-align: center;
-    width: 93%;
-    padding: 5% 0; 
-    box-shadow: 0.5px 3.5px 4px   rgb(218, 216, 216);
-    border-radius: 0.3rem;
-    border: none;
-    background-color: white;
-}
-.Continue{
-    text-align: center;
-    margin-top: 20%;
-}
-/*******end of Presentation*************************/
-
-
 /******Layout*************/
 .Boxes{
     text-align: right;
@@ -220,73 +196,6 @@ span{
 /******end of Layout******/
 
 
-
-
-/**GardenProducts**********/
-.bath_single_product_mob{
-    width: 35%;
-    margin-bottom: 5%;
-}
-.line{
-    display: flex;
-    justify-content: space-around;
-    margin: 13% 5%;
-}
-.line:first-of-type{
-    margin-top: 19%;
-}
-.buy_product_mob{
-    box-shadow: 3px 4px 3px   rgb(218, 216, 216) ;
-    font-size: 13px;
-    margin-top: 4%;
-    width: 98%;
-    padding: 4.5%;
-    border-radius: 1rem;
-    border: none;
-    text-align: center;
-    color: white;
-}
-.price_mob{
-    font-size: 14px;
-}
-.product_name_mob{
-    font-size: 13px;
-}
-.X_Bar_mob{
-    width: 82%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 23%;
-    margin-left: 8.5%;
-    height: 2vh;
-    margin-top: -1%;
-}
-.arrow_mob{
-    cursor: pointer;
-}
-.arrow-div_mob{
-    width: 50%;
-    text-align: center;
-}
-.numbers_mob{
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: -4.5%;
-    margin-right: 24%;
-}
-.numbers_mob p{
-    cursor: pointer;
-    font-size: 16px;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-weight: 250;
-}
-.actual_numb{
-    font-weight: 400 !important;
-}
-/*end of GardenProducts*/
 
 
 
@@ -391,56 +300,4 @@ span{
 /*******end of Animation_section********************/
 
 
-
-/*********************Buy Form*****************/
-#buy_form_mob{
-    display: block;
-    background-color: #fffffff5;
-    width: 95%;
-    height: 86.5%;
-    position: absolute;
-    top: 8.3%;
-    left: 5.4%;
-}
-.form_side_mob:last-of-type{
-    margin-left: 12%;
-    width: 90%;
-}
-.form_mob input{
-    padding: 4% 2.5%;
-    margin-left: 7%;
-    width: 75%;
-}
-.form_mob select{
-    padding: 5% 2.5%;
-    margin-left: 7%;
-    width: 75%;
-}
-.form_mob:first-of-type{
-    margin-top: -5%;
-}
-.form_mob label{
-    margin-left: 14%;
-}
-.form_button_mob{
-    width: 30%;
-    margin-left: 7%;
-    background-color: white;
-    margin-top: 7.5%;
-    padding: 2.5% 0;
-    border: none;
-    border-radius: 2rem;
-    text-align: center;
-    color: rgb(145, 145, 145);
-    font-size: 15px;
-    font-weight: 800;
-    box-shadow: 0.8px 3px 5px  rgb(199, 198, 198) ;
-}
-.form_button_mob:last-of-type{
-    margin-left: 15%;
-}
-.pathRed{
-    fill: green;
-}
-/****************end of Buy Form***************/
 
