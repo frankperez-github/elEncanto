@@ -212,10 +212,11 @@ select:focus{
     margin-left: 40%;
 }
 .Right_side{
+    justify-content: space-around;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 6%;
+    margin-top: 7%;
     margin-bottom: 5%;
     text-align: right;
 }
