@@ -212,10 +212,11 @@ select:focus{
     margin-left: 40%;
 }
 .Right_side{
+    justify-content: space-around;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 6%;
+    margin-top: 7%;
     margin-bottom: 5%;
     text-align: right;
 }
@@ -245,6 +246,7 @@ select:focus{
     align-self: flex-end;
 }
 
+
 .pkg_numb{
     margin-left: -15%;
 }
@@ -273,23 +275,26 @@ select:focus{
 .StaticTruck-divProd{ 
     display: none;
 }
-.Products-div{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-}
 .CardProducts{
     margin-bottom: 3%;
     padding: 1% 1.5%;
     width: 30%;
     margin-left: 3%;
+    
+}
+.CardProducts p{
+    text-align: center !important;
+    margin-right: 20%;
+    width: 50%;
 }
 .see_product_desk{
     cursor: pointer;
 }
 .prod_name{
-    text-align: left;
-    margin-left: -12%;
+    margin-right: center;
+}
+.TextCateg p{
+    margin: 13% 0;
 }
 /*--------end of Product View----------*/
 
@@ -380,76 +385,6 @@ select{
 /*--------end of buy_form----------*/
 
 
-/*--------Bathroom Products--------*/
-.upline{
-    display: flex;
-    justify-content: space-between;
-}
-.downline{
-    margin-top: -2%;
-    display: flex;
-    justify-content: space-between;
-}
-.product_name{
-    font-size: 11px;
-}
-.price{
-    font-size: 14px;
-    margin-top: 3%;
-}
-.buy_product{
-    box-shadow: 3px 4px 3px   rgb(218, 216, 216) ;
-    font-size: 13px;
-    margin-top: 4%;
-    width: 100%;
-    padding: 3.5%;
-    border-radius: 1rem;
-    border: none;
-    text-align: center;
-    color: white;
-}
-.bath_single_product{
-    margin-top: 0.5%;
-    width: 21%;
-    margin-bottom: 10%;
-    margin-right: -10%;
-}
-.red_button{
-    background-color: #FF524F;
-}
-.violet_button{
-    background-color: #605BB2;
-}
-.blue_button{
-    background-color: #1D4259;
-}
-.brown_button{
-    background-color: #B22825;
-}
-/*--------end of Bathroom_products----------*/
-
-
-/* Garden Products*******************/
-.spec-product-div{
-    display: flex;
-    justify-content: space-between;
-}
-.Garden_products{
-    margin-left: 7%;
-    margin-top: -2%;
-    width: 36%;
-}
-/*end of Garden Products*************/
-
-
-/* Tools Products*******************/
-.Tools_products{
-    display: none;/*Unvisible as default***************/
-    margin-left: 46.5%;
-    margin-top: -34%;
-    width: 36%;
-}
-/*end of Tools Products*************/
 
 
 /********X_Bar*************************/
@@ -839,7 +774,10 @@ select{
     .nav_bar{
         margin-bottom: 5%;
     }
-    .boxes{
+    .Networks_column{
+        margin-bottom: 0;
+    }
+    .Footer{
         margin-top: 5%;
     }
     
@@ -848,7 +786,10 @@ select{
     .nav_bar{
         margin-bottom: 3%;
     }
-    .boxes{
+    .Networks_column{
+        margin-bottom: 0;
+    }
+    .Footer{
         margin-top: 5%;
     }
     
