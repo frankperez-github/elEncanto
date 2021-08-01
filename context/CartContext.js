@@ -3,16 +3,23 @@ import { CartItemReducer } from "../reducers/CartItemsReducer";
 
 export const CartContext = createContext()
 
+/* const getLocal = async() => {
+ try {
+    const local = await localStorage.getItem("cartItems")
+    return JSON.parse(local)
+ }
+    catch(err) {
+        return []
+    }
+}
+ */
 const CartContextProvider = (props) => {
 
-    const [cartItems, dispatch] = useReducer(CartItemReducer, [], async ()=> {
-        const local = await localStorage.getItem("cartItems")
-        return local ? JSON.parse(local): []
-    })
+    const [cartItems, dispatch] = useReducer(CartItemReducer, [])
 
-    useEffect(()=>{
+    /* useEffect(()=>{
         localStorage.setItem("cartItems", JSON.stringify(cartItems))
-    },[cartItems])
+    },[cartItems]) */
 
   return(
       <CartContext.Provider value={{cartItems, dispatch}}>
