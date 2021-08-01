@@ -1,11 +1,8 @@
-import React, { useContext } from 'react'
 import Image from 'next/dist/client/image'
 import Link from 'next/link'
-import { CartContext } from '../../context/CartContext'
 
 export default function ProductCard({product}) {
 
-const {dispatch} = useContext(CartContext)
 
     return (
 
@@ -21,7 +18,6 @@ const {dispatch} = useContext(CartContext)
     <p className="pkg_numb">{product.name}</p>
     <p >${product.price}</p>
     </div>
-<button onClick={()=>{dispatch({type:'ADD_ITEM', payload:product})}} className="buy_button">Add to cart</button>
 </div>
 </Link>
 

@@ -61,7 +61,7 @@ export const getStaticProps  = async()=> {
 
   return {
     props: {
-      products:products.filter(product=>product.category==9)
+      products
     }
   }
 }

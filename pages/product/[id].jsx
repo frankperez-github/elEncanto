@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useContext } from 'react'
 import  Image from 'next/image';
-
+import { CartContext } from '../../context/CartContext'
 
 
 export const getStaticProps = async(context) => {
@@ -37,6 +37,9 @@ export default function ProductDetail({product}) {
     useEffect(()=>{
         console.log(product)
     })
+    const {dispatch} = useContext(CartContext)
+
+
 
     return (
         <div className="product-detail">
@@ -48,7 +51,7 @@ export default function ProductDetail({product}) {
          <h1> Descripicion: {product.description}</h1>  
          <h1>Price: ${product.price}</h1>
          <h1>Quantity: {product.countInStock}</h1>
-         <button>Add to cart</button>
+         <button onClick={()=>{dispatch({type:'ADD_ITEM', payload:product})}} className="buy_button">Add to cart</button>
          <button>Buy</button>
         <br />
          <br />
