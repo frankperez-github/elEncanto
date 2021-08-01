@@ -38,7 +38,7 @@ export default function ProductDetail({product}) {
 
     useEffect(()=>{
         console.log(product)
-        console.log([...Array(product.countInStock).keys()])
+        
 
     },[])
 
@@ -49,7 +49,7 @@ export default function ProductDetail({product}) {
         const item = {
             product:product.id,
             qty:Number(qty),
-            price:product.price*qty,
+            price:Number(product.price),
             image:product.icon
 
         }

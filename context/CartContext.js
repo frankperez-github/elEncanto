@@ -1,26 +1,29 @@
-import { createContext, useEffect, useReducer } from "react";
+import { createContext, useEffect, useReducer, useState } from "react";
 import { CartItemReducer } from "../reducers/CartItemsReducer";
 
 export const CartContext = createContext()
 
-/* const getLocal = async() => {
- try {
-    const local = await localStorage.getItem("cartItems")
-    return JSON.parse(local)
- }
-    catch(err) {
-        return []
-    }
-}
- */
+
 const CartContextProvider = (props) => {
 
     const [cartItems, dispatch] = useReducer(CartItemReducer, [])
+    const [init, setInit]= useState(false)
 
     useEffect(()=>{
-      //  localStorage.setItem("cartItems", JSON.stringify(cartItems))
+        if(init) {
+      localStorage.setItem("cartItems", JSON.stringify(cartItems))
       console.log(cartItems)
+        }
     },[cartItems])
+
+    useEffect(()=>{
+       
+        const data = localStorage.getItem("cartItems")
+        dispatch({type:"INITIAL", payload: data?JSON.parse(data):[]})
+      
+        setInit(true)
+       
+    },[])
 
   return(
       <CartContext.Provider value={{cartItems, dispatch}}>
