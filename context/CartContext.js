@@ -19,7 +19,7 @@ const CartContextProvider = (props) => {
     useEffect(()=>{
        
         const data = localStorage.getItem("cartItems")
-        dispatch({type:"INITIAL", payload: data?JSON.parse(data):[]})
+        dispatch({ payload: data?JSON.parse(data):[]})
       
         setInit(true)
        
