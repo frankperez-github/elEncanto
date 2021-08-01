@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react'
+import React, { useEffect, useContext, useState } from 'react'
 import  Image from 'next/image';
 import { CartContext } from '../../context/CartContext'
 
@@ -34,12 +34,27 @@ export const getStaticPaths = async() => {
 
 export default function ProductDetail({product}) {
 
+  const [qty, setQty] = useState(1)
+
     useEffect(()=>{
         console.log(product)
-    })
+        console.log([...Array(product.countInStock).keys()])
+
+    },[])
+
+    
     const {dispatch} = useContext(CartContext)
 
+    const addToCart = () => {
+        const item = {
+            product:product.id,
+            qty:Number(qty),
+            price:product.price*qty,
+            image:product.icon
 
+        }
+        dispatch({type:'ADD_ITEM', payload:item})
+}
 
     return (
         <div className="product-detail">
@@ -51,10 +66,14 @@ export default function ProductDetail({product}) {
          <h1> Descripicion: {product.description}</h1>  
          <h1>Price: ${product.price}</h1>
          <h1>Quantity: {product.countInStock}</h1>
-         <button onClick={()=>{dispatch({type:'ADD_ITEM', payload:product})}} className="buy_button">Add to cart</button>
+         <label htmlFor="qty-select">Select Quantity</label>
+         <select value={qty} onChange={(e)=>{setQty(e.target.value)}} name="" id="qty-select" className="qty-dropdown">
+             {[...Array(product.countInStock).keys()].map(option=>{return(<option key={option+1} value={option+1}>{option+1}</option>)})}
+         </select>
+         <button onClick={addToCart} className="buy_button">Add to cart</button>
          <button>Buy</button>
         <br />
          <br />
         </div>
     )
-}
+    }
