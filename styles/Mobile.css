@@ -163,6 +163,12 @@ span{
 .boxes_mob_img{
     padding-right: 10% !important;
 }
+.Networks{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 5%;
+    margin-top: 15%;
+}
 /******end of Layout******/
 
 
