@@ -48,7 +48,9 @@ export default function ProductDetail({product}) {
     const addToCart = () => {
         const item = {
             product:product.id,
+            name:product.name,
             qty:Number(qty),
+            countInStock:Number(product.countInStock),
             price:Number(product.price),
             image:product.icon
 
@@ -71,7 +73,7 @@ export default function ProductDetail({product}) {
              {[...Array(product.countInStock).keys()].map(option=>{return(<option key={option+1} value={option+1}>{option+1}</option>)})}
          </select>
          <button onClick={addToCart} className="buy_button">Add to cart</button>
-         <button>Buy</button>
+         <button className="buy_button">Buy</button>
         <br />
          <br />
         </div>

@@ -1,57 +1,24 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-function Layout(props) {
+import NavBar from './MobileVersion/NavBar'
 
+function Layout(props) {
+    
+   
 
     return(
     <div className="Layout">
-        <div className=""id="NavBar_mob">
-            <div className="navbar_mob" >
-                <div className="Link-div">
-                    <a href="/" className="link_nav_mob">
-                        <Image src="/link_pallets.svg" width="30%" height="30%" className="link_nav_img"/>
-                        
-                        <div className="link_name">
-                           Products
-                        </div>
-                    </a>
-                </div>
-
-                <div className="Link-div">
-                    <a href="/Categories" className="link_nav_mob">
-
-                        <Image src="/link_products.svg" width="30%" height="30%" className="link_nav_img"/>
-                        
-                        <div className="link_name">
-                            Categories
-                        </div>
-                    </a>
-                </div>
-
-                <div className="Link-div">
-                    <a href ="#" className="link_nav_mob">
-                    <Image src="/link_contact.svg" width="30%" height="30%" className="link_nav_img"/>
-                    
-                        <div className="link_name"> 
-                            Contact 
-                        </div>
-                    </a>
-                    
-                </div>
-
-                
-            </div>
-        </div>
+        <NavBar/>
         <div className="nav_bar" >
             <div className="logo">
                 <Image className="logo_img" src="/logo.svg" alt="Logo" width="150%" height="150%" />
             </div>
 
             <div className="nav" >
-
+            <Link href="/" className="link_a"> 
                 <div className="link-div">
-                    <Link href="/" className="link_a"> 
+                   
                         <div className="NavLink-div">
                             <div className="LinkImg">
                                 <Image src="/link_pallets.svg" width="40%" height="40%"/> 
@@ -61,13 +28,14 @@ function Layout(props) {
                                 Pallets
                             </div> 
                         </div>
-                    </Link>
+                   
                     
                     
                 </div>
-
+                </Link>
+                <Link href="/Categories" className="link_a">
                 <div className="link-div" >
-                    <Link href="/Categories" className="link_a">
+                    
                         <div className="NavLink-div">
                             <div className="LinkImg">
                                 <Image src="/link_products.svg" width="40%" height="40%"/> 
@@ -77,23 +45,24 @@ function Layout(props) {
                                 Categories
                             </div> 
                         </div>
-                    </Link>
+                    
                 </div>
-
+                </Link>
+                <Link href="/Cart">
                 <div className="link-div">
-                    <Link href="#">
+                   
                     <div className="NavLink-div">
                             <div className="LinkImg">
                                 <Image src="/link_contact.svg" width="40%" height="40%"/> 
                             </div>
 
                             <div className="LinkName">
-                                Contact
+                            Cart 
                             </div> 
                         </div>
-                    </Link>
+                   
                 </div>
-
+                </Link>
             </div>
         </div>
         

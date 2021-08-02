@@ -6,11 +6,13 @@ import CartContextProvider from '../context/CartContext'
 
 function MyApp({ Component, pageProps }) {
   return(
+    <CartContextProvider>
     <Layout>
-      <CartContextProvider>
+      
       <Component {...pageProps}/> 
-      </CartContextProvider>
+    
     </Layout>
+    </CartContextProvider>
   )
 }
 
