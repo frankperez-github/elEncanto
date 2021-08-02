@@ -279,8 +279,7 @@ select:focus{
     margin-bottom: 3%;
     padding: 1% 1.5%;
     width: 30%;
-    margin-left: 3%;
-    
+    margin-left: 3%;   
 }
 .CardProducts p{
     text-align: center !important;
@@ -1123,6 +1122,9 @@ select{
         display: none;
     }
     .nav_bar{
+        display: block;
+    }
+    .logo{
         display: none;
     }
     .X_Bar{
@@ -1166,6 +1168,9 @@ select{
     }
     .Footer_mob{
         display: block;
+    }
+    .nav{
+        display: flex !important;
     }
 
     /*Adjusting Desk to Mobile Version*/
@@ -1304,6 +1309,26 @@ select{
         padding: 1.5% 2.5%;
         width: 95%;
         margin-left: 2.5%;
+    }
+    .nav{
+        width: 100%;
+        align-items: center;
+        padding: 4% 0;
+        padding-top: 0%;
+        background-color: white; 
+        box-shadow: 0px 5px 7px   rgb(218, 216, 216);
+        border-bottom-left-radius: 1.7rem;
+        border-bottom-right-radius: 1.7rem;
+        font-size: 12px;
+    }
+    .link-div{
+        width: 21%;
+    }
+    .LinkImg{
+        margin-right: 10%;
+    }
+    .NavLink-div{
+        justify-content: space-around;
     }
 }    
 

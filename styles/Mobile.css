@@ -163,36 +163,6 @@ span{
 .boxes_mob_img{
     padding-right: 10% !important;
 }
-.Networks{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 5%;
-    margin-left: 5%;
-}
-.navbar_mob{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 6.5%;
-    background-color: white; 
-    box-shadow: 0px 5px 7px   rgb(218, 216, 216);
-    border-bottom-left-radius: 1.7rem;
-    border-bottom-right-radius: 1.7rem;
-}
-.link_nav_mob{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20% 0;
-    margin-right: 5%;
-    color: black;
-}
-.Link-div{
-    margin-right: 5.5%;
-}
-.link_name{
-    margin-left: 3%;
-}
 /******end of Layout******/
 
 

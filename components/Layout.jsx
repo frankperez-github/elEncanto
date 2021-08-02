@@ -1,24 +1,23 @@
 import Link from 'next/link';
 import Image from 'next/image';
-
-import NavBar from './MobileVersion/NavBar'
+import { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
 
 function Layout(props) {
     
-   
+    const {cartItems}  = useContext(CartContext)
 
     return(
     <div className="Layout">
-        <NavBar/>
         <div className="nav_bar" >
             <div className="logo">
                 <Image className="logo_img" src="/logo.svg" alt="Logo" width="150%" height="150%" />
             </div>
 
             <div className="nav" >
-            <Link href="/" className="link_a"> 
-                <div className="link-div">
-                   
+                <Link href="/" className="link_a"> 
+                    <div className="link-div">
+                    
                         <div className="NavLink-div">
                             <div className="LinkImg">
                                 <Image src="/link_pallets.svg" width="40%" height="40%"/> 
@@ -28,11 +27,10 @@ function Layout(props) {
                                 Pallets
                             </div> 
                         </div>
-                   
                     
-                    
-                </div>
+                    </div>
                 </Link>
+
                 <Link href="/Categories" className="link_a">
                 <div className="link-div" >
                     
@@ -48,19 +46,20 @@ function Layout(props) {
                     
                 </div>
                 </Link>
+                
                 <Link href="/Cart">
                 <div className="link-div">
-                   
+                
                     <div className="NavLink-div">
                             <div className="LinkImg">
                                 <Image src="/link_contact.svg" width="40%" height="40%"/> 
                             </div>
 
-                            <div className="LinkName">
-                            Cart 
-                            </div> 
+                            <div className="link_name"> 
+                                Cart {cartItems.length>0 && `(${cartItems.length})`}
+                            </div>
                         </div>
-                   
+                
                 </div>
                 </Link>
             </div>
