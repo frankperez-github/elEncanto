@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { CartContext } from "../context/CartContext"
+import Image from 'next/image'
 
 const CartItem = ({item}) => {
     
@@ -8,6 +9,7 @@ const CartItem = ({item}) => {
     return(
         <div className="cartItem">
              <h1>{item.name} </h1>
+             <Image width={100} height={100} src={item.image}/>
              <h2>Quantity: 
 
                  <select value={item.qty} onChange={(e)=>{dispatch({type:"ADD_ITEM", payload:{...item, qty:e.target.value}})}} name="" id="qty-select" className="qty-dropdown">
@@ -16,7 +18,7 @@ const CartItem = ({item}) => {
          </select>
          
           </h2>
-             <h2>Total Price: {item.qty*item.price}</h2>
+             <h2>Price: ${item.qty*item.price}</h2>
              
              <button className="buy_button" onClick={()=>{dispatch({type:"REMOVE_ITEM", payload:item})}}>Remove</button>
         </div>
