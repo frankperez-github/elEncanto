@@ -1180,7 +1180,7 @@ select{
     }
     .StaticTruck-div{
         width: 80.5%;
-        padding-top: 4%;
+        padding-top: 3.5%;
         margin-left: 10%;
     }
     
@@ -1195,7 +1195,7 @@ select{
     .Right_side{
         display: block;
         margin-left: 5%;
-        margin-top: 4%;
+        margin-top: 8%;
         width: 90%;
         text-align: right;
     }
