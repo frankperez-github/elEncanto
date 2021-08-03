@@ -71,7 +71,6 @@ function Layout(props) {
 
                     <div className="link_name"> 
                                {user.username?user.username:"Login"}
-                                
                             </div>
 
                            <div className="LinkImg">
