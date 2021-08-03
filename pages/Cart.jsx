@@ -18,7 +18,7 @@ const Cart = ()=> {
             <h1>Total Price: ${cartItems.map(item=>item.price*item.qty).reduce((a,b)=>a+b,0)
             }</h1>
 
-            <button onClick={()=>{router.push('/Login')}} className="buy_button" style={{height:"40px", width:"70%", justifySelf:"center"}}>Proceed to checkout</button>
+            <button onClick={()=>{router.push('/User')}} className="buy_button" style={{height:"40px", width:"70%", justifySelf:"center"}}>Proceed to checkout</button>
             </div>  }
      </div>
  )

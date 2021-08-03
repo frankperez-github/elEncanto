@@ -2,10 +2,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
+import { UserContext } from '../context/UserContext';
 
 function Layout(props) {
     
     const {cartItems}  = useContext(CartContext)
+    const {user} = useContext(UserContext)
 
     return(
     <div className="Layout">
@@ -58,6 +60,25 @@ function Layout(props) {
                             <div className="link_name"> 
                                 Cart {cartItems.length>0 && `(${cartItems.length})`}
                             </div>
+                        </div>
+                
+                </div>
+                </Link>
+                <Link href="/User">
+                <div className="link-div">
+                
+                    <div className="NavLink-div">
+
+                    <div className="link_name"> 
+                               {user.username?user.username:"Login"}
+                                
+                            </div>
+
+                           <div className="LinkImg">
+                                <Image src="/user.svg" width="40%" height="40%"/> 
+                            </div>
+
+                           
                         </div>
                 
                 </div>
