@@ -13,7 +13,7 @@ const User = ()=> {
         const data = await fetch("https://elencanto-drf-api.herokuapp.com/user/login/", {method:"POST", headers:{'Content-Type':"application/json"}, body:JSON.stringify({username, password})})
         const user = await data.json()
         console.log(user)
-        dispatch({type:"LOGIN", payload:user})
+        dispatch({ payload:user})
         setUsername("")
         setPassword("")
 
