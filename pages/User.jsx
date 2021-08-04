@@ -1,35 +1,51 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { UserContext } from "../context/UserContext"
+import {useRouter } from "next/router"
+import OrderCard from "../components/DeskVersion/OrderCard"
 
-const User = ()=> {
+const User = () => {
 
-    const [username, setUsername] = useState("")
-    const [password, setPassword] = useState("")
-    const {dispatch} = useContext(UserContext)
+    const {user, dispatch} = useContext(UserContext)
+    const [orders, setOrders] = useState([])
+    const router = useRouter()
 
-    const handleSubmit = async(e) => {
-        e.preventDefault()
-        console.log(JSON.stringify({username, password}))
-        const data = await fetch("https://elencanto-drf-api.herokuapp.com/user/login/", {method:"POST", headers:{'Content-Type':"application/json"}, body:JSON.stringify({username, password})})
-        const user = await data.json()
+    useEffect(()=>{
+        if (!user.username) {
+            router.push("Login")
+        }
+        else {
+        getOrders()
+        
+        }
+        console.log(orders)
+       
+        
+    }, [user])
+
+    const getOrders = ()=> {
         console.log(user)
-        dispatch({ payload:user})
-        setUsername("")
-        setPassword("")
 
+        fetch("https://elencanto-drf-api.herokuapp.com/orders/", {method:"GET", headers:{"Content-Type":"application/json", Authorization:`Bearer ${user.access}`}})
+        .then(res=>res.json())
+        .then(data=>setOrders(data))
+        console.log(orders)
     }
 
-    return (
-    <div onSubmit={handleSubmit} className="user">
-        <form action="POST" style={{display:"flex", flexDirection:"column", alignContent:"center"}} className="login">
-            <input placeholder="username" type="text" value={username} onChange={e=>setUsername(e.target.value)}/>
-            <input placeholder="password" type="password" value={password} onChange={e=>setPassword(e.target.value)}/>
-            <button style={{width:"70%",alignSelf:"center"}} className="buy_button" type="submit">
-                Submit
-            </button>
-            </form>
-    </div>
+    return(
+        <div className="user">
+            <h1>Welcome {user.username}</h1>
+        {orders.length>0? 
+          <div className="orders"><h1>This are your orders:</h1>
+           {orders.map(order=><OrderCard order={order} key={order.id}/>)}
+                </div> :
+                 <h1>You have no orders yet</h1>
+        }
+
+<button onClick={()=>{dispatch({type:'LOGOUT'});router.push('/')}} className="buy_button">Log out</button>
+
+        </div>
     )
 }
+
 
 export default User

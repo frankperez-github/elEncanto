@@ -12,7 +12,7 @@ const CartContextProvider = (props) => {
     useEffect(()=>{
         if(init) {
       localStorage.setItem("cartItems", JSON.stringify(cartItems))
-      console.log(cartItems)
+      
         }
     },[cartItems])
 
