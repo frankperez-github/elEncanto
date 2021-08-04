@@ -15,13 +15,13 @@ const Login = ()=> {
         const data = await fetch("https://elencanto-drf-api.herokuapp.com/user/login/", {method:"POST", headers:{'Content-Type':"application/json"}, body:JSON.stringify({username, password})})
         const userData = await data.json()
         
-        if (!userData.detail){
+        if (userData.access){
         dispatch({ payload:userData})
         setUsername("")
         setPassword("")
         router.push("User")
         }
-        else {alert(userData.detail)}
+        else {alert("Wrong username or password")}
         
         
         
