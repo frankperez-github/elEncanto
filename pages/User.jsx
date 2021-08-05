@@ -33,7 +33,7 @@ const User = () => {
 
     return(
         <div className="user">
-            <h1>Welcome {user.username}</h1>
+            <h1>Welcome {user.first_name && user.last_name?`${user.first_name} ${user.last_name}`:user.username}</h1>
         {orders.length>0? 
           <div className="orders"><h1>This are your orders:</h1>
            {orders.map(order=><OrderCard order={order} key={order.id}/>)}
