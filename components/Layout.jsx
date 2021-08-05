@@ -70,7 +70,7 @@ function Layout(props) {
                     <div className="NavLink-div">
 
                     <div className="link_name"> 
-                               {user.username?user.username:"Login"}
+                               {user.firstName?user.firstName:user.username?user.username:"Login"}
                             </div>
 
                            <div className="LinkImg">
