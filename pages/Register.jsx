@@ -31,12 +31,12 @@ const Register = ()=> {
 
     return (
         <div className="register">
-                   <div onSubmit={handleRegister} className="user">
-        <form action="POST" style={{display:"flex", flexDirection:"column", alignContent:"center"}} className="login">
+                   <div className="user">
+        <form  onSubmit={handleRegister}  action="POST" style={{display:"flex", flexDirection:"column", alignContent:"center"}} className="login">
 
             <input placeholder="email" type="email" value={email} onChange={e=>setEmail(e.target.value)}/>
-            <input placeholder="First Name" type="First Name" value={firstName} onChange={e=>setFirstName(e.target.value)}/>
-            <input placeholder="Last Name" type="Last Name" value={lastName} onChange={e=>setLastName(e.target.value)}/>
+            <input placeholder="First Name" type="text" value={firstName} onChange={e=>setFirstName(e.target.value)}/>
+            <input placeholder="Last Name" type="text" value={lastName} onChange={e=>setLastName(e.target.value)}/>
             <input placeholder="password" type="password" value={password} onChange={e=>setPassword(e.target.value)}/>
             <input placeholder="Confirm Password" type="password" value={confirmPassword} onChange={e=>setConfirmPassword(e.target.value)}/>
 
