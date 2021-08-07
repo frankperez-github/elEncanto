@@ -1,29 +1,33 @@
 import { useRouter } from "next/router"
 import { useContext, useEffect, useState } from "react"
+import { ShippingContext } from "../context/ShippingContext"
 import { UserContext } from "../context/UserContext"
+import PlaceOrder from "./PlaceOrder"
 
 const Shipping = () => {
 
     const {user} = useContext(UserContext)
+    const {shippingAddress, setShippingAddress} = useContext(ShippingContext)
     const router = useRouter()
     const [street, setStreet] = useState("")
     const [city, setCity] = useState("")
     const [state, setState] = useState("")
     const [zipcode, setZipcode] = useState("")
+    
 
 
     useEffect(()=>{
         if (!user.username) {
         router.push("Login")
         }
-    },[user])
+        if (shippingAddress) router.push("/PlaceOrder")
+    },[user, shippingAddress])
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        localStorage.setItem("shippingAddress", JSON.stringify({
+        setShippingAddress({
             street, city, state, zipcode
-        }))
-        router.push("/Payment")
+        })
     }
     return(
         <div className="shipping User">
