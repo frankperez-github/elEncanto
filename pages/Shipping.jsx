@@ -2,7 +2,6 @@ import { useRouter } from "next/router"
 import { useContext, useEffect, useState } from "react"
 import { ShippingContext } from "../context/ShippingContext"
 import { UserContext } from "../context/UserContext"
-import PlaceOrder from "./PlaceOrder"
 
 const Shipping = () => {
 
@@ -20,8 +19,8 @@ const Shipping = () => {
         if (!user.username) {
         router.push("Login")
         }
-        if (shippingAddress) router.push("/PlaceOrder")
-    },[user, shippingAddress])
+        
+    },[user])
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -40,6 +39,7 @@ const Shipping = () => {
            
              <input placeholder="Zipcode" type="text" value={zipcode} onChange={e=>setZipcode(e.target.value)}/>
 
+                <input type="checkbox" name="" id="" /> Make default address?
              <button style={{width:"70%",alignSelf:"center"}} className="buy_button" type="submit">
                 Submit
             </button>

@@ -2,13 +2,11 @@ import { useRouter } from "next/router"
 import { useContext, useEffect, useState } from "react"
 import { UserContext } from "../context/UserContext"
 import Link from 'next/link'
-import  { CartContext } from "../context/CartContext"
 
 const Login = ()=> {
 
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
-    const {cartItems} = useContext(CartContext)
     const {user, dispatch} = useContext(UserContext)
     const router = useRouter()
 
@@ -22,10 +20,7 @@ const Login = ()=> {
         dispatch({ payload:userData})
         setUsername("")
         setPassword("")
-        if (cartItems.length>0) router.push("/Shipping")
-        else {
-        router.push("/User")
-        }
+        router.back()
         }
         else {alert("Wrong username or password")}
     }
