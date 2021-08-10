@@ -381,6 +381,18 @@ select{
 #FakeRightSide{
     margin-top: 74%;
 }
+.dfltAddress{
+    margin-top: 4%;
+    margin-right: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+.dfltAddress input{
+    margin-top: 0;
+    margin-right: -15%;
+    width: 7%;
+    height: 2.5vh;
+}
 /*--------end of buy_form----------*/
 
 
