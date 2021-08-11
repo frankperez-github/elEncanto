@@ -41,7 +41,7 @@ const Login = ()=> {
                 Submit
             </button>
 
-          <p>Don't have an account? Create one <a style={{color:"red"}}><Link  href="/Register">here</Link></a></p>  
+          <p>Don't have an account? Create one <span style={{color:"red"}}><Link  href="/Register">here</Link></span></p>  
             </form>
     </div>
     )

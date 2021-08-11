@@ -12,9 +12,9 @@ const Shipping = () => {
     const [city, setCity] = useState("")
     const [state, setState] = useState("")
     const [zipcode, setZipcode] = useState("")
+    const [save, setSave] = useState(false)
+    const [defaultAdresss, setDefaultAddress] = useState(false)
     
-
-
     useEffect(()=>{
         if (!user.username) {
         router.push("Login")
@@ -22,11 +22,20 @@ const Shipping = () => {
         
     },[user])
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async(e) => {
         e.preventDefault()
         setShippingAddress({
             street, city, state, zipcode
         })
+        if (save) {
+             await fetch("https://elencanto-drf-api.herokuapp.com/orders/shipping/", {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access}`}, body:JSON.stringify({...shippingAddress, "default":defaultAdresss})})
+        }
+        setCity("")
+        setSave(false)
+        setStreet("")
+        setZipcode("")
+        setState("")
+        router.push("/PlaceOrder")
     }
     return(
         <div className="shipping User">
@@ -38,9 +47,14 @@ const Shipping = () => {
                              </select>
            
              <input placeholder="Zipcode" type="text" value={zipcode} onChange={e=>setZipcode(e.target.value)}/>
-                <div className="dfltAddress">
-                    <input type="checkbox" name="" id="" /> Make default address?
-                </div>
+                
+                    <br />
+                    <div className="dfltAddress">
+                    <input type="checkbox" name="" id="" checked={save} onChange={()=>setSave(!save)}/> Save this address?
+                    </div>
+                    <div className="dfltAddress">
+                    <input type="checkbox" name="" id="" checked={defaultAdresss} onChange={()=>setDefaultAddress(!defaultAdresss)}/>  Make default address? 
+                    </div>
              <button style={{width:"70%",alignSelf:"center"}} className="buy_button" type="submit">
                 Submit
             </button>

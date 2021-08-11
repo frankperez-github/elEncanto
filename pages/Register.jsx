@@ -44,7 +44,7 @@ const Register = ()=> {
                 Submit
             </button>
 
-          <p>Already have an account? Login <a style={{color:"red"}}><Link  href="/Login">here</Link></a></p>  
+          <p>Already have an account? Login <span style={{color:"red"}}><Link  href="/Login">here</Link></span></p>  
             </form>
     </div>
         </div>
