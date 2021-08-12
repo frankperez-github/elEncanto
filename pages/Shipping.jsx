@@ -19,8 +19,14 @@ const Shipping = () => {
         if (!user.username) {
         router.push("Login")
         }
+        if (shippingAddress.street) {
+            setStreet(shippingAddress.street)
+            setCity(shippingAddress.city)
+            setZipcode(shippingAddress.zipcode)
+            setState(shippingAddress.state)
+        }
         
-    },[user])
+    },[])
 
     const handleSubmit = async(e) => {
         e.preventDefault()
@@ -30,11 +36,7 @@ const Shipping = () => {
         if (save) {
              await fetch("https://elencanto-drf-api.herokuapp.com/orders/shipping/", {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access}`}, body:JSON.stringify({...shippingAddress, "default":defaultAdresss})})
         }
-        setCity("")
-        setSave(false)
-        setStreet("")
-        setZipcode("")
-        setState("")
+      
         router.push("/PlaceOrder")
     }
     return(
