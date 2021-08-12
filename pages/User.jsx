@@ -62,6 +62,7 @@ const User = () => {
             <div  className="orders" style={{display:showOrders?"block":"none"}}>
         {orders.length>0? 
           <div className="orders"><h1>This are your orders:</h1>
+          <br />
            {orders.map(order=><OrderCard order={order} key={order.id}/>)}
                 </div> :
                  <h1>You have no orders yet</h1>
