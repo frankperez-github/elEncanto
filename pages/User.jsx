@@ -67,14 +67,14 @@ const User = () => {
                  <h1>You have no orders yet</h1>
         }
         </div>
-        <button onClick={()=>{setShowAddresses(!showAddresses)}} className="buy_button">{showAddresses?"Hide addresses":"See addresses"}</button>
+      {/*   <button onClick={()=>{setShowAddresses(!showAddresses)}} className="buy_button">{showAddresses?"Hide addresses":"See addresses"}</button>
     <div style={{display:showAddresses?"block":"none"}} className="addresses">
         <h2>Your addresses:</h2>
         <br />
         <div className="">
         {addresses.map(address=>{return <AddressCard makeDefault={makeDefaultAddress} address={address} key={address.id}/>})}
         </div>
-    </div>
+    </div> */}
 
 <button onClick={()=>{dispatch({type:'LOGOUT'});router.push('/')}} className="buy_button">Log out</button>
 

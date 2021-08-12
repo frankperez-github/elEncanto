@@ -48,13 +48,13 @@ const Shipping = () => {
            
              <input placeholder="Zipcode" type="text" value={zipcode} onChange={e=>setZipcode(e.target.value)}/>
                 
-                    <br />
+                   {/*  <br />
                     <div className="dfltAddress">
                     <input type="checkbox" name="" id="" checked={save} onChange={()=>setSave(!save)}/> Save this address?
                     </div>
                     <div className="dfltAddress">
                     <input type="checkbox" name="" id="" checked={defaultAdresss} onChange={()=>setDefaultAddress(!defaultAdresss)}/>  Make default address? 
-                    </div>
+                    </div> */}
              <button style={{width:"70%",alignSelf:"center"}} className="buy_button" type="submit">
                 Submit
             </button>
