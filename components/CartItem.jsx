@@ -8,11 +8,13 @@ const CartItem = ({item}) => {
     const {dispatch} = useContext(CartContext)
 
     return(
-        <Link href={`/product/${item.product}`}>
+        
         <div className="cartItem">
             
              <h1>{item.name} </h1>
+             <Link href={`/product/${item.product}`}>
               <Image width={100} height={100} src={item.image}/> 
+              </Link>
              <h2>Quantity: 
 
                  <select value={item.qty} onChange={(e)=>{dispatch({type:"ADD_ITEM", payload:{...item, qty:e.target.value}})}} name="" id="qty-select" className="qty-dropdown">
@@ -27,7 +29,7 @@ const CartItem = ({item}) => {
             
      
         </div>
-         </Link>
+         
     )
 }
 

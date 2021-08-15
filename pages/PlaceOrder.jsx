@@ -14,7 +14,7 @@ const PlaceOrder = () => {
 
     const sendOrder = async() => {
         await fetch('http://localhost:8000/orders/', {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access}`},body:JSON.stringify({"order_items":cartItems, "shipping_address":shippingAddress, "total_price":cartItems.map(item=>item.price*item.qty).reduce((a,b)=>a+b,0)})})
-        router.push("/User")
+        router.push("/ User")
     }
 
     return (
