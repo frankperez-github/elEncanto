@@ -1,5 +1,5 @@
 import { useRouter } from "next/router"
-import { useContext } from "react"
+import { useContext, useEffect, useState } from "react"
 import OrderItem from "../components/DeskVersion/OrderItem"
 import { CartContext } from "../context/CartContext"
 import { ShippingContext } from "../context/ShippingContext"
@@ -10,10 +10,20 @@ const PlaceOrder = () => {
     const {cartItems} = useContext(CartContext)
     const {shippingAddress} = useContext(ShippingContext) 
     const {user} = useContext(UserContext)
+    const [subTotal, setSubTotal] = useState(0)
+    const [tax, setTax] = useState(0)
     const router = useRouter()
 
+    useEffect(()=>{
+        if (cartItems.length>0) { 
+            setSubTotal(cartItems.map(item=>item.price*item.qty).reduce((a,b)=>a+b,0)
+            )}
+            setTax(Number((subTotal*0.08375).toFixed(2)))
+       
+    },[cartItems, subTotal])
+
     const sendOrder = async() => {
-        await fetch('http://localhost:8000/orders/', {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access}`},body:JSON.stringify({"order_items":cartItems, "shipping_address":shippingAddress, "total_price":cartItems.map(item=>item.price*item.qty).reduce((a,b)=>a+b,0)})})
+        await fetch('http://localhost:8000/orders/', {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access}`},body:JSON.stringify({"order_items":cartItems, "shipping_address":shippingAddress, "total_price":subTotal+tax})})
         router.push("/ User")
     }
 
@@ -36,9 +46,11 @@ const PlaceOrder = () => {
             </div>
             <br />
 
-<h1>Total Price: ${cartItems.map(item=>item.price*item.qty).reduce((a,b)=>a+b,0)
-}</h1>
+<h2>Subtotal: ${subTotal}</h2>
+<h2>Tax: ${tax}</h2>
+<h1>Total Price: ${subTotal+tax}</h1>
  <button onClick={sendOrder} className="buy_button">Place Order</button>
+ <h2>(You don't need to pay your order until it is approved)</h2>
         </div>
     )
 }
