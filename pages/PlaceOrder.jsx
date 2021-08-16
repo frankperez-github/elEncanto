@@ -7,7 +7,7 @@ import { UserContext } from "../context/UserContext"
 
 const PlaceOrder = () => {
 
-    const {cartItems} = useContext(CartContext)
+    const {cartItems, dispatch} = useContext(CartContext)
     const {shippingAddress} = useContext(ShippingContext) 
     const {user} = useContext(UserContext)
     const [subTotal, setSubTotal] = useState(0)
@@ -24,7 +24,8 @@ const PlaceOrder = () => {
 
     const sendOrder = async() => {
         await fetch('http://localhost:8000/orders/', {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access}`},body:JSON.stringify({"order_items":cartItems, "shipping_address":shippingAddress, "total_price":subTotal+tax})})
-        router.push("/ User")
+        dispatch({type:"CLEAN"})
+        router.push("/User")
     }
 
     return (

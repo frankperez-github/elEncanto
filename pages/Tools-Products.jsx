@@ -60,7 +60,7 @@ function Tools_products(){
                             <div className="image">
                                 <Image src="/toilet.svg" width="100%" height="100%" className="product_image"/>
                             </div>
-                            <div className="product_name">
+                                <div className="product_name">
                                 <p>Bath Toilet</p>
                             </div>
                             <div className="price">

@@ -13,6 +13,8 @@ export const  CartItemReducer = (state, action) => {
         case"REMOVE_ITEM":
         
        { return state.filter(i=>i.product!==item.product)}
+
+       case"CLEAN": {return {}}
         
         default: return item
     }
