@@ -19,7 +19,7 @@ const Shipping = () => {
         if (!user.username) {
         router.push("Login")
         }
-        if (shippingAddress.street) {
+        if (shippingAddress) {
             setStreet(shippingAddress.street)
             setCity(shippingAddress.city)
             setZipcode(shippingAddress.zipcode)

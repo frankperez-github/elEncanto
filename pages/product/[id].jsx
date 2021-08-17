@@ -67,13 +67,14 @@ export default function ProductDetail({product}) {
             <br />
          <h1> Descripicion: {product.description}</h1>  
          <h1>Price: ${product.price}</h1>
-         <h1>Quantity: {product.countInStock}</h1>
+         {product.countInStock>0? <div className=""> <h1>Quantity: {product.countInStock}</h1>
          <label htmlFor="qty-select">Select Quantity</label>
          <select value={qty} onChange={(e)=>{setQty(e.target.value)}} name="" id="qty-select" className="qty-dropdown">
              {[...Array(product.countInStock).keys()].map(option=>{return(<option key={option+1} value={option+1}>{option+1}</option>)})}
-         </select>
-         <button onClick={addToCart} className="buy_button">Add to cart</button>
-         <button className="buy_button">Buy</button>
+         </select><button onClick={addToCart} className="buy_button">Add to cart</button>
+         <button className="buy_button">Buy</button></div>: <h1>Out of stock</h1>}
+        
+         
         <br />
          <br />
         </div>

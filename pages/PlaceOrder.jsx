@@ -17,9 +17,10 @@ const PlaceOrder = () => {
     useEffect(()=>{
         if (cartItems.length>0) { 
             setSubTotal(cartItems.map(item=>item.price*item.qty).reduce((a,b)=>a+b,0)
-            )}
+            )
             setTax(Number((subTotal*0.08375).toFixed(2)))
-       
+        }
+        else router.push('/User')
     },[cartItems, subTotal])
 
     const sendOrder = async() => {
@@ -34,7 +35,7 @@ const PlaceOrder = () => {
                 <h1>Your order summary:</h1>
                 <br />
                 <h2>Items:</h2>
-                {cartItems.map(item=><OrderItem key={item.product} item={item}/>)}
+                {cartItems.length>0?cartItems.map(item=><OrderItem key={item.product} item={item}/>):<h1>Y</h1>}
             </div>
            
             <br />
