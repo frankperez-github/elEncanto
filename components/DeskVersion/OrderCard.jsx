@@ -1,6 +1,19 @@
+import { useRouter } from "next/router"
+import { useContext } from "react"
+import { UserContext } from "../../context/UserContext"
 import OrderItem from "./OrderItem"
 
 const OrderCard = ({order}) => {
+
+  const router = useRouter()
+  const {user} = useContext(UserContext)
+
+    const deleteOrder = async() => {
+      await fetch(`https://elencanto-drf-api.herokuapp.com/orders/${order.id}/`, {method:"DELETE", headers:{"Content-Type": "application/json", authorization:`Bearer ${user.access}`}})
+      router.reload(window.location.pathname)
+      
+    }
+
     return(
         <div className="orderCard">
                 <h4>Order id: {order.id}</h4>
@@ -14,10 +27,10 @@ const OrderCard = ({order}) => {
                <h2>Total Price: ${order.total_price}</h2>
                 {order.is_paid?<div><h5>`Paid at: {order.paid_at}`</h5> </div> :<button className="buy_button">Pay this Order</button>}
                 <h5>{order.is_delivered?`Delivered at ${order.delivered_at}`:"Not delivered yet"}</h5>
-               
+                <button onClick= {deleteOrder} className="buy_button">Delete this order</button>
                 <hr />
                 <br />
-                
+               
         </div>
     )
 }
