@@ -61,7 +61,7 @@ export const getStaticProps  = async()=> {
 
   return {
     props: {
-      products:products.slice(9)
+      products:products
     }
   }
 }
