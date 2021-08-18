@@ -14,7 +14,7 @@ export const  CartItemReducer = (state, action) => {
         
        { return state.filter(i=>i.product!==item.product)}
 
-       case"CLEAN": {return {}}
+       case"CLEAN": {return []}
         
         default: return item
     }
