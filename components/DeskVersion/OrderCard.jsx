@@ -1,5 +1,5 @@
 import { useRouter } from "next/router"
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { UserContext } from "../../context/UserContext"
 import OrderItem from "./OrderItem"
 
@@ -7,6 +7,7 @@ const OrderCard = ({order}) => {
 
   const router = useRouter()
   const {user} = useContext(UserContext)
+  const [sdk, setSdk] = useState(false)
 
     const deleteOrder = async() => {
       await fetch(`https://elencanto-drf-api.herokuapp.com/orders/${order.id}/`, {method:"DELETE", headers:{"Content-Type": "application/json", authorization:`Bearer ${user.access}`}})
@@ -14,6 +15,16 @@ const OrderCard = ({order}) => {
       
     }
 
+const addPaypalScript = ()=>{
+  const script = document.createElement("script")
+  script.type = 'text/javascript'
+  script.src = "https://www.paypal.com/sdk/js? client-id=AYfvlWFE-FyeSm2NBubForDud-H-5OAv98pe4_Y7-mqNSvbukVej_qzzcnumwu4IGf1gs7uASF2km1dp" 
+  script.async = true
+  script.onload = () => {
+    setSdk(true)
+  }
+  document.body.appendChild(script)
+}
     return(
         <div className="orderCard">
                 <h4>Order id: {order.id}</h4>
