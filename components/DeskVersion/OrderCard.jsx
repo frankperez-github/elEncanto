@@ -9,6 +9,7 @@ const OrderCard = ({order}) => {
   const router = useRouter()
   const {user} = useContext(UserContext)
   const [sdk, setSdk] = useState(false)
+  const [success, setSuccess] = useState(false)
 
     const deleteOrder = async() => {
       await fetch(`https://elencanto-drf-api.herokuapp.com/orders/${order.id}/`, {method:"DELETE", headers:{"Content-Type": "application/json", authorization:`Bearer ${user.access}`}, })
@@ -29,7 +30,10 @@ const addPaypalScript = ()=>{
 
 const successPaymentHandler = async(paymentResult)  => {
 
-
+  const res = await fetch(`https://elencanto-drf-api.herokuapp.com/orders/${order.id}/`, {method:"PUT", headers:{"Content-Type": "application/json", authorization:`Bearer ${user.access}`},body:JSON.stringify({"action":"pay"})})
+  const data = await res.json()
+  console.log(data)
+  router.reload(window.location.pathname)
 }
 
 
@@ -41,8 +45,9 @@ useEffect(()=>{
     if (!window.script) addPaypalScript()
     else setSdk(true)
   }
+  if (success) successPaymentHandler()
   
-},[user])
+},[user, sdk])
     return(
         <div className="orderCard">
                 <h4>Order id: {order.id}</h4>
@@ -58,13 +63,14 @@ useEffect(()=>{
                 
                 {!order.is_approved? <h1>Your order will be approved soon. Wait for an email from <a style={{color:"#FF524F", textDecoration:"underline"}}>elencantoliquidation@gmail.com</a> </h1>:
                 <div>
-                  <h1>Your order is approved</h1>
+                  <h1>Your order is {order.is_paid?"paid" : "approved"}</h1>
                    {order.is_paid?<div><h5>`Paid at: {order.paid_at}`</h5> <h5>{order.is_delivered?`Delivered at ${order.delivered_at}`:"Not delivered yet"}</h5></div> :
-                 <div> <h1>Pay your order</h1>{sdk && <PayPalButton amount={order.total_price} onSuccess={async()=>{
+                 <div> <h1>Pay your order</h1>{sdk && <PayPalButton amount={order.total_price} onSuccess={()=>{
                   
-                  const res  = await fetch(`https://elencanto-drf-api.herokuapp.com/orders/${order.id}/`, {method:"PUT", headers:{"Content-Type": "application/json", authorization:`Bearer ${user.access}`},body:{"action":"pay"}})
-                  const data = await(res.json())
-                  console.log(data)
+               
+                  alert("Payed")
+                  setSdk(false)
+                  setSuccess(true)
                 }}/>} </div> 
     }
                 </div>}
