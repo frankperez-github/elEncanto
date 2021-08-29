@@ -1,6 +1,4 @@
-import Column from '../components/DeskVersion/ColumnSide'
-import Image from 'next/image';
-
+import Image from 'next/image'
 import CategoryCard from '../components/DeskVersion/CategoryCard'
 
 
@@ -19,21 +17,39 @@ function Products({categories}){
         
             <div className="Products">
 
-                <div className="Pallets-div">
-                    
-                    <div className="StaticTruck-divProd">
-                        <Image id="StaticTruck" src="/truck.svg" width="400%" height="200%"/>
-                    </div>
-
-                    <div className="Right_side">
-                        {categories.map(category=> <CategoryCard key={category["id"]} category = {category}/>)}
-                    </div>
-
-                    <Column />
-                    
-                </div>
-
                 
+                <div className="Pallets-div " id="Pallets-div">
+              
+                
+                    <div className="Right_side Category-div" id="Right_side ">
+                    
+                    {categories.map(category=> <CategoryCard key={category["id"]} category = {category}/>)}
+
+                    
+
+                        <div className="pagination-bar ">
+                        
+                            <div className="arrow-div">
+                                <Image className="arrow-pag leftarr" src="/Larrow.svg" width="45%" height="45%" />
+                            </div>
+
+                                <p>1</p>
+                                <p>2</p>
+                                <p className="selectedNumber">3</p>
+                                <p>4</p>
+                                <p>5</p>
+
+                            <div className="arrow-div">
+                                <Image className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
+                            </div>
+
+                        </div>  
+                    
+                    </div>
+
+
+                </div>
+                              
 
             </div>
         

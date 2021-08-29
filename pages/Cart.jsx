@@ -10,8 +10,35 @@ const Cart = ()=> {
     const {cartItems}= useContext(CartContext)
 
  return (
-     <div className="">
-         {cartItems.length==0? <h1>Your cart is empty</h1>: <div  style={{display:"flex", justifyContent:"space-around", flexWrap:"wrap"}} className="cart" >
+     <div className="container-cart">
+
+        <div className="Cart-title">
+            <h2>Your Cart</h2>
+        </div>
+
+        <div className="Caracts">
+            <p>Items</p>
+            <p>Quantity</p>
+            <p>Price</p>
+        </div>
+
+        <div className="ProductoCart">
+            
+            <div className="Item">
+
+            </div>
+
+            <div className="Quantity">
+
+            </div>
+
+            <div className="Price">
+                
+            </div>
+
+        </div>
+
+         {cartItems.length==0? <h1>Empty</h1>: <div  style={{display:"flex", justifyContent:"space-around", flexWrap:"wrap"}} className="cart" >
 
             {cartItems.map(item=><CartItem key={item.product} item={item}/>)} 
 

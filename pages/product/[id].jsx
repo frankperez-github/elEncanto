@@ -34,6 +34,7 @@ export const getStaticPaths = async() => {
 
 export default function ProductDetail({product}) {
 
+
   const [qty, setQty] = useState(1)
 
     useEffect(()=>{
@@ -60,23 +61,70 @@ export default function ProductDetail({product}) {
 
     return (
         <div className="product-detail">
-            <h1>{product.name}</h1>
-            <Image width={500} height={200} src={product.icon}/>
-            {product.images.map(image=><Image key={image.id} width={500} height={200} src={image.image}/>)}
-            <br />
-            <br />
-         <h1> Descripicion: {product.description}</h1>  
-         <h1>Price: ${product.price}</h1>
-         {product.countInStock>0? <div className=""> <h1>Quantity: {product.countInStock}</h1>
-         <label htmlFor="qty-select">Select Quantity</label>
-         <select value={qty} onChange={(e)=>{setQty(e.target.value)}} name="" id="qty-select" className="qty-dropdown">
-             {[...Array(product.countInStock).keys()].map(option=>{return(<option key={option+1} value={option+1}>{option+1}</option>)})}
-         </select><button onClick={addToCart} className="buy_button">Add to cart</button>
-         <button className="buy_button">Buy</button></div>: <h1>Out of stock</h1>}
-        
-         
-        <br />
-         <br />
+
+            <div className="LeftSideId">
+
+                <div className="SwiperDetail">
+                    <div className="arrow-div detArrow">
+                        <Image className="arrow-pag leftarr" src="/Larrow.svg" width="45%" height="45%" />
+                    </div>
+
+                    <div className="imageProduct">
+                        <Image width={600} height={450} src={product.icon} />
+                    </div>
+
+                    <div className="arrow-div detArrow">
+                        <Image className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
+                    </div>
+                </div>
+
+                <div className="imageProduct">
+                    {product.images.map(image=> <Image key={image.id} width={600} height={450} src={image.image} />)}
+                </div>
+            </div>
+
+            <div className="RightSideId">
+                
+                <div className="PriceProd">
+                    <p >${product.price}</p>
+                </div>
+                
+                <div className="NameProd">
+                    <p>{product.name}</p>
+                </div>
+                
+                <div className="DescrProd">
+                    <p>{product.description}</p>
+                </div>
+                 
+
+                {product.countInStock>0? 
+                <div className="InfoProd"> 
+
+                    <div className="Stock">
+                        <select value={qty} onChange={(e)=>{setQty(e.target.value)}} name="" id="qty-select" className="qty-dropdown">
+
+                        {[...Array(product.countInStock).keys()].map(option=>{return(<option key={option+1} value={option+1}>{option+1}</option>)})}
+
+                        </select>
+
+                        <p>*{product.countInStock} in Stock</p>
+                    </div>
+
+                    <label htmlFor="qty-select"></label>
+
+                    <button onClick={addToCart} className=" white_button">Add to cart</button>
+
+                    <button className="buy_button">Buy</button>
+                </div> : <h1>Out of stock</h1>}
+
+            </div>
+
+             
+
+            
+            
+            
         </div>
     )
     }

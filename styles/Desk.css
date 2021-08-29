@@ -76,42 +76,39 @@ select:focus{
 /*--------NAV-BAR----------*/
 
 .nav_bar{
+    position: relative;
+    top: 0;
     margin-top: -0.5%;
-    margin-bottom: 1.5%;
     display: flex;
     justify-content: space-between;
     font-size: 16px;
-    max-height: 15vh;
+    box-shadow: 1px 3px 5px   rgb(196, 191, 191) ;
 }
 .logo{
-    width: 15%;
-    margin-left: 5%;
+    margin-bottom: -3.5%;
+    margin-top: -4.6%;
+    width: 14%;
+    margin-left: 7%;
 }
 .logo_img{
     margin-top: 15% !important;
     padding-bottom: 20% !important;
 }
 .nav{
-    margin-top: 5%;
-    width: 60%;
+    width:60%;
     display: flex;
     justify-content: space-around;
-    margin-right: 1%;
 }
 .link-div{
-    width: 17%;
-}
-.link-div:last-of-type{
-    margin-right: 0;
+    width: 15%;
 }
 .link-div{
     cursor: pointer;
     display: flex ;
     justify-content: space-around !important;
-    align-items: center !important;
 }
 .LinkImg{
-    width: 40%;
+    width: 37%;
 }
 .LinkName{
     width: 50%;
@@ -120,7 +117,7 @@ select:focus{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 77%;
+    width: 70%;
 }
 #NavBar_mob{
     display: none;
@@ -131,26 +128,35 @@ select:focus{
 
 /*--------Fotter----------*/
 .Footer{
+    background-color: white;
+    width: 100%;
+    height: 2vh;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0px -5px 7px   rgb(218, 216, 216) !important;
 }
 .boxes{
-    width: 30%;
+    width: 11%;
+    margin-top: 0.7% !important;
     text-align: end;
-    margin-right: 3%;
+    margin-right: 5.6%;
 }
 .boxes_img{
-    width: 70%;
+    width: 50%; 
 }
 
 /*--------end Fotter----------*/
 
-/*--------Pallets View----------*/
+
+
+/*--------Products View----------*/
 .ColumnLink{
-    width: 35%;
+    margin-bottom: -5%;
 }
 .Pallets-div{
-    margin-top: 0.5%;
+    margin: 0 5%;
+    margin-left: 4%;
+    width: 90.2%;
     display: flex;
     justify-content: space-between;
 }
@@ -162,74 +168,101 @@ select:focus{
 .StaticTruck-div{ 
     display: none;
 }
-#EmptyTruck{
-    width: 34%;
-    position: absolute;
-    top: 32%;
-    left: 6.6%;
-    animation-name: Down_truck;
-    animation-duration: 6s;
-    animation-timing-function: ease;
+.Search-div{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: gray;
+    margin: 0 5.5%;
+    margin-left: 6.1%;
+    width: 88%;
+    margin-bottom: -5%;
 }
-#OpenTruck{
-    width: 36%;
-    position: absolute;
-    opacity: 0;
-    top: 38%;
-    left: 5%;
-    animation-name: To_open_truck;
-    animation-duration: 6s;
+.Search-div input{
+    width: 35%;
+    font-size: 13px;
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(179, 175, 175);
+    box-shadow: 1px 2px 5px   rgb(196, 191, 191) ;
+    border-radius: 0.3rem;
+    padding: 0.25% 1%;
+    border-width: 2px;
+    margin: 2% 26%;
+    margin-right: 1%;
 }
-#ChargeDron{
-    width: 9%;
-    position: absolute;
-    padding-top: 0%;
-    left: -25%;
-    animation-name: ChargeDron;
-    animation-duration: 6s;
-    animation-timing-function: linear;
+
+.Search-div button{
+    width: 12%;
+    text-align: center;
+    background-color: white;
+    color: #F56764;
+    padding: 0.4% 1%;
+    border-radius: 1rem;
+    box-shadow: 1px 3px 7px   rgb(196, 191, 191) ;
+    margin-left: 0.5% !important;
+    margin-top: 0%;
+    border: none;
 }
-#EmptyDron{
-    opacity: 0;
-    width: 9%;
-    position: absolute;
-    padding-top: 0%;
-    left: -25%;
-    animation-name: EmptyDron;
-    animation-duration: 6s;
-    animation-timing-function: linear;
-}
-#TextTruck{
-    opacity: 0;
-    position: absolute;
-    top: 90%;
-    margin-left: 13%;
-    font-size: 20px;
-    animation-name: Show_Text;
-    animation-duration: 6s;
-}
-#Pallets{
-    margin-left: 40%;
+button:hover{
+    cursor: pointer;
 }
 .Right_side{
-    justify-content: space-around;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-top: 7%;
+    margin-left: 1.2%;
     margin-bottom: 5%;
     text-align: right;
 }
+.pagination-bar{
+    margin-bottom: -5%;
+    left: 0%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    margin-left: 41%;
+}
+.pagination-bar p{
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    cursor: pointer;
+}
+.selectedNumber{
+    width: 4%;
+    background-color: #FF524F;
+    color: white;
+    border-radius: 2rem;
+    padding-left: 1.2%;
+}
+.leftarr{
+    margin-right: 15% !important;
+}
+.rightarr{
+    margin-left: 15% !important;
+}
+.arrow-pag{
+    margin-top: 7% !important;
+}
+.arrow-div{
+    width: 10%;
+}
+.arrow-pag:hover{
+    cursor:pointer;
+}
 .product-card{
-    margin-left: 3%;
-    width: 30%;
+    cursor: pointer;
+    margin-left: 1%;
+    margin-bottom: 1.5%;
+    width: 24%;
 }
 .ProductCard{
     font-size: 16px;
-    width: 90%;
+    width: 100%;
     padding: 1% 5%;
     border-radius: 0.4rem;
-    box-shadow: 1px 2.5px 5px   rgb(218, 216, 216) ;
+    box-shadow: 0px 0.5px 5px   rgb(197, 191, 191) ;
 }
 
 .buy_button{
@@ -245,32 +278,126 @@ select:focus{
     color: white;
     align-self: flex-end;
 }
-
-
+.white_button{
+    box-shadow: 1px 2px 15px   rgb(218, 216, 216) ;
+    margin: 5% 10% 10% 0;
+    font-size: 14px;
+    width: 30%;
+    padding: 0.9% 0%;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    background-color: white; 
+    color: #FF524F;
+    align-self: flex-end;
+}
 .pkg_numb{
-    margin-left: -15%;
+    width: 60%;
 }
 .Networks_column{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 3%;
-    margin-top: -1%;
-    width: 100% ;
-    margin-left: 9.5%;
+    justify-content: space-around;
+    margin-top: 1.5%;
+    width: 28%;
+    margin-left: 4.5%;
+}
+.ColumnLink{
+    width: 10%;
 }
 .ModuleImg-div{
     width: 19%;
     padding-right: 2%;
 }
+.ColumnLink:first-of-type{
+    margin-right: 5%;
+}
 .Footer_mob{
     display: none;
 }
-/*--------end of Pallets View----------*/
+.Category-div{
+    margin-top: 2% !important;
+}
+/*--------end of Products View----------*/
 
+/*Product Detail*/
+.product-detail{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 3%;
+}
+.product-detail button{
+    margin-left: -4.3%;
+}
+.LeftSideId{
+    width: 45%;
+}
+.RightSideId{
+    width: 40%;
+    margin-top: 2%;
+    margin-left: -8%;
+}
+.imageProduct{
+    width: 75%;
+}
+.PriceProd{
+    font-size: 25px;
+}
+.NameProd{
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: 380;
+}
+.DescrProd{
+    font-size: 14px;
+    margin-top: 2%;
+    margin-bottom: 1.5%;
+    line-height: 20px;
+    width: 80%;
+}
+.Stock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin: 3% 0;
+}
+.Stock select{
+    width: 35%;
+    padding-left: 12%;
+}
+.Stock p{
+    width: 55%;
+    margin-bottom: 2%;
+}
+.SwiperDetail{
+    display: flex;
+    justify-content: space-around;
+}
+.detArrow{
+    margin-top: 22%;
+}
+/*end of Product Detail*/
 
+/*Cart View***********************************/
+.container-cart{
+    width: 60%;
+    margin-left: 20%;
+}
+.Cart-title{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: gray;
+}
+.Cart-title h2{
+    margin: 0.5% 1%;
+    margin-top: 2.4%;
+    font-weight: 360;
+    font-size: 35px;
+}
+/*end of Cart View***********************************/
 
-
-/*-------- Product View----------*/
+/*-------- Categories View----------*/
 
 .StaticTruck-divProd{ 
     display: none;
@@ -295,7 +422,28 @@ select:focus{
 .TextCateg p{
     margin: 13% 0;
 }
-/*--------end of Product View----------*/
+.CategoryName-div{
+    width: 99.2%;
+    margin-left: 2%;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: gray;
+    margin-bottom: -6%;
+}
+.CategoryName-div h2{
+    margin: 0.5% 1%;
+    margin-top: 2.4%;
+    font-weight: 360;
+    font-size: 35px;
+}
+.Pallets-divCateg{
+    margin: 0 5%;
+    margin-top: 1.5%;
+    margin-left: 4%;
+    width: 90.2%;   
+}
+/*--------end of Categories View----------*/
+
 
 
 /*--------buy_form----------*/
@@ -398,40 +546,7 @@ select{
 
 
 
-/********X_Bar*************************/
-.X_Bar{
-    width: 28%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 43.5%;
-    height: 5vh;
-    margin-bottom: -1.2%;
-}
-.arrow{
-    cursor: pointer;
-}
-.arrow-div{
-    text-align: center;
-    width: 29%;
-}
-.numbers{
-    width: 15%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: -4.5%;
-    margin-right: 30%;
-}
-.numbers p{
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 35%;
-    font-weight: 200;
-}
-.actual_numb{
-    font-weight: 400;
-}
-/********end of X_Bar*************************/
+
 
 
 /*JS Functions****************/
@@ -755,36 +870,28 @@ select{
 
 
 @media(max-height:900px){
-    .nav_bar{
-        margin-bottom: 5%;
-    }
+    
     .boxes{
         margin-top: 5%;
     }
     
 }
 @media(max-height:600px){
-    .nav_bar{
-        margin-bottom: 1%;
-    }
+    
     .boxes{
         margin-top: -4%;
     }
     
 }
 @media(min-width:1600px){
-    .nav_bar{
-        margin-bottom: 5%;
-    }
+    
     .boxes{
         margin-top: 5%;
     }
     
 }
 @media(min-width:1950px){
-    .nav_bar{
-        margin-bottom: 5%;
-    }
+    
     .Networks_column{
         margin-bottom: 0;
     }
@@ -794,9 +901,7 @@ select{
     
 }
 @media(min-width:2400px){
-    .nav_bar{
-        margin-bottom: 3%;
-    }
+    
     .Networks_column{
         margin-bottom: 0;
     }
@@ -809,7 +914,7 @@ select{
     .nav_bar{
         font-size: 15px;
     }
-    .numbers p{
+    .pagination-bar p{
         font-size: 15px;
     }
     .ProductCard{
@@ -843,6 +948,9 @@ select{
     input{
         font-size: 15px;
     }
+    .Search-div input{
+        font-size: 12px;
+    }
     select{
         font-size: 15px;
     }
@@ -858,7 +966,7 @@ select{
     .nav_bar{
         font-size: 13px;
     }
-    .numbers p{
+    .pagination-bar p{
         font-size: 13px;
     }
     .ProductCard{
@@ -892,6 +1000,9 @@ select{
     input{
         font-size: 14px;
     }
+    .Search-div input{
+        font-size: 11px;
+    }
     select{
         font-size: 14px;
     }
@@ -905,7 +1016,7 @@ select{
     .nav_bar{
         font-size: 10.5px;
     }
-    .numbers p{
+    .pagination-bar p{
         font-size: 12px;
     }
     .ProductCard{
@@ -940,6 +1051,9 @@ select{
         font-size: 13px;
         height: 10%;
     }
+    .Search-div input{
+        font-size: 10px;
+    }
     select{
         font-size: 13px;
         height: 10%;
@@ -956,7 +1070,7 @@ select{
     .nav_bar{
         font-size: 9px;
     }
-    .numbers p{
+    .pagination-bar p{
         font-size: 11px;
     }
     .ProductCard{
@@ -991,6 +1105,9 @@ select{
         font-size: 13px;
         height: 9%;
     }
+    .Search-div input{
+        font-size: 9px;
+    }
     select{
         font-size: 13px;
         height: 9%;
@@ -1004,7 +1121,7 @@ select{
     .nav_bar{
         font-size: 9px;
     }
-    .numbers p{
+    .pagination-bar p{
         font-size: 9px;
     }
     .ProductCard{
@@ -1038,6 +1155,9 @@ select{
         font-size: 12px;
         height: 7%;
     }
+    .Search-div input{
+        font-size: 8px;
+    }
     select{
         font-size: 12px;
         height: 7%;
@@ -1051,7 +1171,7 @@ select{
     .nav_bar{
         font-size: 8px;
     }
-    .numbers p{
+    .pagination-bar p{
         font-size: 8px;
     }
     .ProductCard{
@@ -1084,6 +1204,9 @@ select{
     input{
         font-size: 11px;
         height: 7%;
+    }
+    .Search-div input{
+        font-size: 7px;
     }
     select{
         font-size: 10px;

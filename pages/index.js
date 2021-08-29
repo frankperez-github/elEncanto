@@ -1,11 +1,10 @@
 import Head from 'next/head'
-import Animation from '../components/DeskVersion/Animation'
 import Image from 'next/image'
 import Buy_form_desk from '../components/DeskVersion/Buy_Form'
 import ProductCard from '../components/DeskVersion/ProductCard'
 
+
 export default function Home({products}) {
-  
   
   
   return (
@@ -21,26 +20,47 @@ export default function Home({products}) {
       <main >
         <div className="Pallets">
 
-            <Animation />
-            <div id="Pallets-divForm">    
-                <div className="Pallets-div" id="Pallets-div">
+            <div id="Pallets-divForm">   
+
+              <div className="Search-div">
+
+                <input placeholder="Looking for something?" />
+                <button className="form_button buttonSearch">Search</button>
+
+              </div>
+            
+              
+
+              <div className="Pallets-div" id="Pallets-div">
+              
+              
+                <div className="Right_side " id="Right_side">
                 
-                
-                    <div className="StaticTruck-div">
-                        <Image id="StaticTruck" src="/truck.svg" width="450%" height="300%"/>
+                  {products.map(product=><ProductCard key = {product.id} product={product}/>)}
+
+                  <div className="pagination-bar ">
+                    
+                    <div className="arrow-div">
+                      <Image className="arrow-pag leftarr" src="/Larrow.svg" width="45%" height="45%" />
                     </div>
 
-                        
-                    <div className="Right_side" id="Right_side">
-                    
-                      {products.map(product=><ProductCard key = {product.id} product={product}/>)}
+                      <p>1</p>
+                      <p>2</p>
+                      <p className="selectedNumber">3</p>
+                      <p>4</p>
+                      <p>5</p>
 
-                     
+                    <div className="arrow-div">
+                      <Image className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
                     </div>
-                    
-                    
 
+                  </div>  
+                  
                 </div>
+
+
+              </div>
+            
             </div>
 
             <Buy_form_desk />
