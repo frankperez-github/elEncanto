@@ -4,11 +4,11 @@ import { useEffect } from 'react'
 
 export const getStaticProps = async(context) => {
     const res  = await fetch(`https://elencanto-drf-api.herokuapp.com/products/categories/${context.params.id}`)
-    const products = await res.json()
+    const category = await res.json()
 
     return {
         props : {
-            products
+            category
         }
     }
 }
@@ -26,10 +26,10 @@ export const getStaticPaths = async() => {
 }
 
 
-export default function ProductsByCategory ({products}) {
+export default function ProductsByCategory ({category}) {
     
     useEffect(()=>{
-        console.log(products);
+        console.log(category.products);
     }, [])
 
     return (
@@ -42,13 +42,13 @@ export default function ProductsByCategory ({products}) {
 
         <div className="CategoryName-div">
             
-            <h2>Kitchen</h2>
-            
+            <h2>{category.name}</h2>
+            <Image src={category.icon} width={50} height={50}/>
         </div>
 
         <div className=" Right_side ">
-            { products.length>0 ?
-            products.map(product=><ProductCard  key = {product.id} product={product}/>): <h2>"No products found of the selected category"</h2>}
+            { category.products.length>0 ?
+            category.products.map(product=><ProductCard  key = {product.id} product={product}/>): <h2>"No products found of the selected category"</h2>}
             
             
 
