@@ -32,6 +32,11 @@ const CartItem = ({item}) => {
                         {[...Array(item.countInStock).keys()].map(option=>{return(<option key={option+1} value={option+1}>{option+1}</option>)})}
 
                     </select>
+
+                    <div className="trash">
+                        <Image src="/trash.svg" width="100%" height="100%" onClick={()=>{dispatch({type:"REMOVE_ITEM", payload:item})}}/>
+                    </div>
+                    
                 </div>
 
                 <div className="Price">
@@ -41,8 +46,6 @@ const CartItem = ({item}) => {
             </div>
 
              
-{/*              
-            <button className="buy_button" onClick={()=>{dispatch({type:"REMOVE_ITEM", payload:item})}}>Remove</button> */}
             
      
         </div>

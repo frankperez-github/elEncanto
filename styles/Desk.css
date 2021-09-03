@@ -128,9 +128,12 @@ select:focus{
 
 /*--------Fotter----------*/
 .Footer{
-    background-color: white;
+    z-index: 15 !important;
+    background-color: white !important;
     width: 100%;
-    height: 2vh;
+    height: 12vh;
+    position: static;
+    bottom: 1%;
     display: flex;
     justify-content: space-between;
     box-shadow: 0px -5px 7px   rgb(218, 216, 216) !important;
@@ -216,6 +219,8 @@ button:hover{
     text-align: right;
 }
 .pagination-bar{
+    position: relative;
+    bottom: 0;
     margin-bottom: -5%;
     left: 0%;
     width: 40%;
@@ -380,6 +385,15 @@ button:hover{
 /*end of Product Detail*/
 
 /*Cart View***********************************/
+
+.container-cart p{
+    font-size: 18px;
+}
+.YourCart{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: gray;
+}
 .container-cart{
     width: 60%;
     margin-left: 20%;
@@ -394,6 +408,111 @@ button:hover{
     margin-top: 2.4%;
     font-weight: 360;
     font-size: 35px;
+}
+.Caracts{
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 5%;
+    margin-right: 0%;
+}
+.ItemP{
+    width: 34%;
+    margin-left: 7%;
+}
+.QuantityP{
+    width: 25%;
+    text-align: center;
+}
+.PriceP{
+    width: 10%;
+    text-align: center;
+}
+.ProductoCart{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.7%;
+    margin-bottom: 1%;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: gray;
+}
+.cartItem{
+    width: 100%;
+}
+.Item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+}
+.Quantity{
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+}
+.trash{
+    width: 20%;
+    cursor: pointer;
+}
+.Price{
+    width: 10%;
+}
+.Price p{
+    text-align: center;
+}
+.qty-dropdown{
+    width: 70%;
+    margin-left: 2.5%;
+    height: 4vh;
+    padding-left: 29%;
+}
+.ItemPic{
+    width: 20%;
+}
+.ItemName{
+    width: 75%;
+}
+.ItemName p{
+    text-align: left;
+}
+.Sub{
+    width: 10%;
+    margin-bottom: 1.5%;
+}
+.Total{
+    width: 50%;
+}
+.TotalSect{
+    width: 30%;
+    margin-left: 76.8%;
+    line-height: 27px;
+    display: flex;
+    justify-content: space-between;
+}
+.TotalSect p{
+    text-align: right !important;
+}
+.Subts{
+    width: 30%;
+}
+.redText{
+    color: #F56764;
+}
+.CartBuy{
+    width: 25% !important;
+    height: 5% !important;
+    margin-left: 70%;
+}
+.emptyButton{
+    margin: 19% 0;
+}
+.EmptyCart{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    margin: 13.5vh 0;
 }
 /*end of Cart View***********************************/
 
