@@ -32,7 +32,7 @@ const User = () => {
         fetch("https://elencanto-drf-api.herokuapp.com/orders/", {method:"GET", headers:{"Content-Type":"application/json", Authorization:`Bearer ${user.access}`}})
         .then(res=>res.json())
         .then(data=>setOrders(data))
-       
+    
     }
 
     const getAddresses = ()=> {

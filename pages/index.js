@@ -36,7 +36,7 @@ export default function Home({products}) {
               
                 <div className="Right_side " id="Right_side">
                 
-                  {products.map(product=><ProductCard key = {product.id} product={product}/>)}
+                  {products.map (product=><ProductCard key = {product.id} product={product}/>)}
 
                   <div className="pagination-bar ">
                     

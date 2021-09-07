@@ -1,6 +1,7 @@
+import Image from 'next/image'
 import { useRouter } from "next/router"
 import { useContext, useEffect, useState } from "react"
-import OrderItem from "../components/DeskVersion/OrderItem"
+import CartItem from "../components/CartItem"
 import { CartContext } from "../context/CartContext"
 import { ShippingContext } from "../context/ShippingContext"
 import { UserContext } from "../context/UserContext"
@@ -30,31 +31,91 @@ const PlaceOrder = () => {
     }
 
     return (
-        <div className="PlaceOrder">
-            <div className="orderItems">
-                <h1>Your order summary:</h1>
-                <br />
-                <h2>Items:</h2>
-                {cartItems.length>0?cartItems.map(item=><OrderItem key={item.product} item={item}/>):<h1>Y</h1>}
+        <div className="container-cart">
+            
+            <div className="YourCart">
+
+                <div className="Step-div2">
+                    <Image src="/Step2.svg" width="600%" height="40%" />
+                </div>
+
+                <div className="Cart-title OrderTitle">
+                    <h2>Your order summary:</h2>
+                </div>
+            
+                <div className="CartSection">
+                
+                <div className="">
+                
+                    <div className="Caracts">
+                        <p className="ItemP">Items</p>
+                        <p className="QuantityP">Quantity</p>
+                        <p className="PriceP">Price</p>
+                        <p className="TrashP"></p>
+                    </div>
+
+
+                    <div  style={{display:"flex", justifyContent:"space-around", flexWrap:"wrap"}} className="cart" >
+
+                        {cartItems.map(item=><CartItem key={item.product} item={item}/>)} 
+                    
+                    </div>
+
+                    <div className="TotalSect">
+
+                        <div className="Subts">
+                            <div className="">
+                                <p>SubTotal:</p>
+                            </div>
+                            <div className="">
+                                <p>Taxes:</p>
+                            </div>
+                            <div className="">
+                                <p className="redText">Total:</p>
+                            </div>
+                        </div>
+
+                        <div className="Total">
+                            <div className="Sub">
+                                <p>${cartItems.map(item=>item.price*item.qty).reduce((a,b)=>a+b,0)
+                                }</p>
+                            </div>
+                            
+                            <div className="Sub">
+                                <div className="">
+                                    <p>${tax}</p>
+                                </div>
+                            </div>
+
+                            <div className="Sub">
+                                <div className="">
+                                    <p className="redText">${subTotal + tax}</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
-           
-            <br />
+            </div>
+
             <div className="ShippingAddress">
                 <h2>Shipping Address:</h2>
-                <address>{shippingAddress.street}, {shippingAddress.city}, {shippingAddress.zipcode}</address> 
-                <button className="buy_button" onClick={()=>{router.push("/Shipping")}}>
+                <p>{shippingAddress.street}, {shippingAddress.city}, {shippingAddress.zipcode}</p> 
+                <button className="buy_button modify_button" onClick={()=>{router.push("/Shipping")}}>
                     Modify
                 </button>
             </div>
-            <br />
+            
 
-<h2>Subtotal: ${subTotal}</h2>
-<h2>Tax: ${tax}</h2>
-<h1>Total Price: ${subTotal+tax}</h1>
- <button onClick={sendOrder} className="buy_button">Place Order</button>
- <h2>(You don't need to pay your order until it is approved)</h2>
+            <button onClick={sendOrder} className="buy_button OrderButton">Place Order</button>
+
+            <div className="PlaceOrderP">
+                <p>( You don't need to pay your order until it is approved )</p>
+            </div>
+
         </div>
-    )
+            )
 }
 
 export default PlaceOrder

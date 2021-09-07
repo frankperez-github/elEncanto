@@ -14,10 +14,13 @@ import Image from 'next/dist/client/image'
                     <Image src={category.icon} width="42%" height="50%"/>
                 </div>
 
-                <p className="prod_name">{category.name}</p>
+                <div className="category_name">
+                    <p>{category.name}</p>
+                </div>
+
                 
-            
                 
+
             </div>
         </div>
         </Link>

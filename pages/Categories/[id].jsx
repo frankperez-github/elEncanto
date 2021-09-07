@@ -40,15 +40,16 @@ export default function ProductsByCategory ({category}) {
 
         
 
-        <div className="CategoryName-div">
-            
+        <div className="CategoryName-div h2Title">
             <h2>{category.name}</h2>
-            <Image src={category.icon} width={50} height={50}/>
         </div>
 
         <div className=" Right_side ">
             { category.products.length>0 ?
-            category.products.map(product=><ProductCard  key = {product.id} product={product}/>): <h2>"No products found of the selected category"</h2>}
+            category.products.map(product=><ProductCard  key = {product.id} product={product}/>): 
+            <div className="NoProdcts h2Title">
+                <h2>"No products found on the selected category"</h2>
+            </div>}
             
             
 

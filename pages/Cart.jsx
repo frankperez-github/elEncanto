@@ -1,13 +1,31 @@
-import { useContext } from "react"
+import { useContext, useEffect, useState } from "react"
 import CartItem from "../components/CartItem"
 import { CartContext } from "../context/CartContext"
 import {useRouter} from 'next/router'
 
+
 const Cart = ()=> {
 
+    const [subTotal, setSubTotal] = useState(0)
+    const [tax, setTax] = useState(0)
     const router = useRouter()
 
     const {cartItems}= useContext(CartContext)
+
+    useEffect(()=>{
+        if (cartItems.length>0) { 
+            setSubTotal(cartItems.map(item=>item.price*item.qty).reduce((a,b)=>a+b,0)
+            )
+            setTax(Number((subTotal*0.08375).toFixed(2)))
+        }
+        else router.push('/User')
+    },[cartItems, subTotal])
+
+    const sendOrder = async() => {
+        await fetch('https://elencanto-drf-api.herokuapp.com/orders/', {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access}`},body:JSON.stringify({"order_items":cartItems, "shipping_address":shippingAddress, "total_price":subTotal+tax})})
+        dispatch({type:"CLEAN"})
+        router.push("/User")
+    }
 
  return (
      <div className="container-cart">
@@ -25,6 +43,7 @@ const Cart = ()=> {
                     <p className="ItemP">Items</p>
                     <p className="QuantityP">Quantity</p>
                     <p className="PriceP">Price</p>
+                    <p className="TrashP"></p>
                 </div>
 
 
@@ -56,19 +75,20 @@ const Cart = ()=> {
                         
                         <div className="Sub">
                             <div className="">
-                                <p>$xx.xx</p>
+                                <p>${tax}</p>
                             </div>
                         </div>
 
                         <div className="Sub">
                             <div className="">
-                                <p className="redText">$99999</p>
+                                <p className="redText">${subTotal + tax}</p>
                             </div>
                         </div>
                         
                     </div>
                 </div>
             </div>}
+        
         </div>
         
         {cartItems.length==0 ? <div className="emptyButton"></div> :

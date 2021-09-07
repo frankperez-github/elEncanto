@@ -1,4 +1,5 @@
 import { useRouter } from "next/router"
+import Image from 'next/image';
 import { useContext, useEffect, useState } from "react"
 import { ShippingContext } from "../context/ShippingContext"
 import { UserContext } from "../context/UserContext"
@@ -40,7 +41,13 @@ const Shipping = () => {
         router.push("/PlaceOrder")
     }
     return(
-        <div className="shipping User">
+
+        <div className="shipping User container-shipping">
+
+            <div className="Step-div">
+                <Image src="/Step1.svg" width="600%" height="80%" />
+            </div>
+
             <form action="POST" onSubmit={handleSubmit} style={{display:"flex", flexDirection:"column", alignContent:"center"}}>
              <input placeholder="Street" type="text" value={street} onChange={e=>setStreet(e.target.value)}/>
              <input placeholder="City" type="text" value={city} onChange={e=>setCity(e.target.value)}/>
@@ -50,14 +57,10 @@ const Shipping = () => {
            
              <input placeholder="Zipcode" type="text" value={zipcode} onChange={e=>setZipcode(e.target.value)}/>
                 
-                   {/*  <br />
                     <div className="dfltAddress">
-                    <input type="checkbox" name="" id="" checked={save} onChange={()=>setSave(!save)}/> Save this address?
+                    <input className="checkBox" type="checkbox" name="" id="" checked={defaultAdresss} onChange={()=>setDefaultAddress(!defaultAdresss)}/>  Make default address? 
                     </div>
-                    <div className="dfltAddress">
-                    <input type="checkbox" name="" id="" checked={defaultAdresss} onChange={()=>setDefaultAddress(!defaultAdresss)}/>  Make default address? 
-                    </div> */}
-             <button style={{width:"70%",alignSelf:"center"}} className="buy_button" type="submit">
+             <button style={{width:"70%",alignSelf:"center"}} className="submit_button" type="submit">
                 Submit
             </button>
             </form>

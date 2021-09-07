@@ -33,9 +33,7 @@ const CartItem = ({item}) => {
 
                     </select>
 
-                    <div className="trash">
-                        <Image src="/trash.svg" width="100%" height="100%" onClick={()=>{dispatch({type:"REMOVE_ITEM", payload:item})}}/>
-                    </div>
+                    
                     
                 </div>
 
@@ -43,11 +41,15 @@ const CartItem = ({item}) => {
                     <p>${item.qty*item.price}</p>
                 </div>
 
+                <div className="trash">
+                    <Image src="/trash.svg" width="100%" height="100%" onClick={()=>{dispatch({type:"REMOVE_ITEM", payload:item})}}/>
+                </div>
+                
+                
+                
             </div>
 
-             
-            
-     
+           
         </div>
          
     )
