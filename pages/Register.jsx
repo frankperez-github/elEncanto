@@ -30,23 +30,33 @@ const Register = ()=> {
     }
 
     return (
-        <div className="register">
-                   <div className="user">
-        <form  onSubmit={handleRegister}  action="POST" style={{display:"flex", flexDirection:"column", alignContent:"center"}} className="login">
+        <div className="shipping User container-shipping">
 
-            <input placeholder="email" type="email" value={email} onChange={e=>setEmail(e.target.value)}/>
-            <input placeholder="First Name" type="text" value={firstName} onChange={e=>setFirstName(e.target.value)}/>
-            <input placeholder="Last Name" type="text" value={lastName} onChange={e=>setLastName(e.target.value)}/>
-            <input placeholder="password" type="password" value={password} onChange={e=>setPassword(e.target.value)}/>
-            <input placeholder="Confirm Password" type="password" value={confirmPassword} onChange={e=>setConfirmPassword(e.target.value)}/>
+            <div className="Cart-title OrderTitle">
+                <h2>New Account</h2>
+            </div>
 
-            <button style={{width:"70%",alignSelf:"center"}} className="buy_button" type="submit">
-                Submit
-            </button>
+            <div className="user">
+                <form  onSubmit={handleRegister}  action="POST" style={{display:"flex", flexDirection:"column", alignContent:"center"}} className="login">
 
-          <p>Already have an account? Login <span style={{color:"red"}}><Link  href="/Login">here</Link></span></p>  
-            </form>
-    </div>
+                    <input placeholder="email" type="email" value={email} onChange={e=>setEmail(e.target.value)}/>
+
+                    <input placeholder="First Name" type="text" value={firstName} onChange={e=>setFirstName(e.target.value)}/>
+
+                    <input placeholder="Last Name" type="text" value={lastName} onChange={e=>setLastName(e.target.value)}/>
+
+                    <input placeholder="password" type="password" value={password} onChange={e=>setPassword(e.target.value)}/>
+
+                    <input placeholder="Confirm Password" type="password" value={confirmPassword} onChange={e=>setConfirmPassword(e.target.value)}/>
+
+                    <p>Already have an account? Login <span style={{color:"red"}}><Link  href="/Login">here</Link></span></p>  
+
+                    <button style={{width:"70%",alignSelf:"center"}} className="buy_button LogInButton" type="submit">
+                        Create
+                    </button>
+                    
+                </form>
+            </div>
         </div>
     )
 }

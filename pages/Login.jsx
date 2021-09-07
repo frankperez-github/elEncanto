@@ -33,16 +33,25 @@ const Login = ()=> {
     }, [])
 
     return (
-    <div onSubmit={handleLogin} className="user">
-        <form action="POST" style={{display:"flex", flexDirection:"column", alignContent:"center"}} className="login">
+    <div onSubmit={handleLogin} className="shipping User container-shipping">
+
+        <div className="Cart-title OrderTitle">
+            <h2>Login</h2>
+        </div>
+
+
+        <form  action="POST" style={{display:"flex", flexDirection:"column", alignContent:"center"}} className="login">
             <input placeholder="email" type="text" value={username} onChange={e=>setUsername(e.target.value)}/>
             <input placeholder="password" type="password" value={password} onChange={e=>setPassword(e.target.value)}/>
-            <button style={{width:"70%",alignSelf:"center"}} className="buy_button" type="submit">
-                Submit
+
+            <p>Don't have an account? Create one <span style={{color:"red"}}><Link  href="/Register">here</Link></span></p>
+
+            <button style={{width:"70%",alignSelf:"center"}} className="buy_button LogInButton" type="submit">
+                Login
             </button>
 
-          <p>Don't have an account? Create one <span style={{color:"red"}}><Link  href="/Register">here</Link></span></p>  
-            </form>
+              
+        </form>
     </div>
     )
 }

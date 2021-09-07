@@ -558,7 +558,7 @@ button:hover{
     margin: 2.9% 33.3%;
 }
 .OrderTitle h2{
-    margin-left: 35.5%;
+    text-align: center;
 }
 .ShippingAddress{
     margin-top: 2%;
@@ -592,6 +592,22 @@ button:hover{
     margin-top: -1%;
 }
 /*End of PlaceOrder View*/
+
+
+/*LogIn View*/
+
+.login{
+    margin-top: 5%;
+}
+.login p{
+    text-align: center;
+}
+.LogInButton{
+    width: 35% !important;
+    margin-left: 10%;
+}
+
+/*End of LogIn View*/
 
 
 /*-------- Categories View----------*/
