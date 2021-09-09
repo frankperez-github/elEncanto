@@ -1683,6 +1683,12 @@ select{
     .Products-div{
         display: block;
     }
+    .linkCategoryName{
+        margin-left: -35%;
+    }
+    .linkProductsName{
+        margin-left: -15%;
+    }
     .StaticTruck-divProd{ 
         display: block;
         width: 80%;
@@ -1767,7 +1773,7 @@ select{
         width: 50%;
     }
     .selectedNumber{
-        width: 12%;
+        width: 15%;
         border-radius: 2rem;
         padding-left: 2%;
     }
@@ -1822,6 +1828,89 @@ select{
         border: solid;
         border-width: 1px;
     }
+    
+    
+    /******************/
+
+
+    .product-detail{
+        display: block;
+    }
+    .LeftSideId{
+        width: 100%;
+    }
+    .RightSideId{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .RightSideId h1{
+        font-weight: 300;
+        text-align: center;
+        margin-top: 10%;
+        font-size: 30px;
+    }
+    .DescrProd{
+        width: 100%;
+    }
+    .Stock{
+        width: 100%;
+    }
+    .qty-dropdown{
+        width: 90%;
+        padding: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+    .arrow-div{
+        width: 15%;
+        margin-top: 25%;
+    }
+    .imageProduct{
+        width: 100%;
+    }
+    .white_button{
+        margin-left: -10% !important;
+        margin-right: 12%;
+        width: 45%;
+        padding: 2.5%;
+    }
+    .buyPhone{
+        width: 45%;
+        padding: 2.5%;
+    }
+
+    /*******************/
+
+    .container-cart{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .container-cart p{
+        font-size: 14px;
+    }
+    .YourCart{
+        width: 100%;
+    }
+    .Item{
+        width: 50%;
+    }
+    .Price{
+        margin-right: 4%;
+    }
+    .TotalSect{
+        margin-left: 51%;
+        width: 50%;
+    }
+    .trash{
+        width: 12%;
+        margin-right: -5%;
+    }
+    .CartBuy{
+        width: 60% !important;
+        margin-left: 40%;
+        margin-bottom: 25% !important;
+    }
+
 }    
 @media (max-width:320px) {
     h2{

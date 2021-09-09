@@ -70,7 +70,7 @@ export default function ProductDetail({product}) {
                     </div>
 
                     <div className="imageProduct">
-                        <Image width={600} height={450} src={product.icon} />
+                        <Image width={1000} height={900} src={product.icon} />
                     </div>
 
                     <div className="arrow-div detArrow">
@@ -115,16 +115,10 @@ export default function ProductDetail({product}) {
 
                     <button onClick={addToCart} className=" white_button">Add to cart</button>
 
-                    <button className="buy_button">Buy</button>
+                    <button className="buy_button buyPhone">Buy</button>
                 </div> : <h1>Out of stock</h1>}
 
             </div>
-
-             
-
-            
-            
-            
         </div>
     )
     }

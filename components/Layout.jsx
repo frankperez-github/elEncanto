@@ -25,7 +25,7 @@ function Layout(props) {
                                 <Image src="/link_pallets.svg" width="40%" height="40%"/> 
                             </div>
 
-                            <div className="LinkName">
+                            <div className="LinkName linkProductsName">
                                 Products
                             </div> 
                         </div>
@@ -41,7 +41,7 @@ function Layout(props) {
                                     <Image className="categ" src="/link_products.svg" width="40%" height="40%"/> 
                                 </div>
 
-                                <div className="LinkName">
+                                <div className="LinkName linkCategoryName">
                                     Categories
                                 </div> 
                             </div>
