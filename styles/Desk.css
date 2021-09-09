@@ -315,7 +315,11 @@ button:hover{
     width: 20%;
 }
 .category_name{
-    width: 70%;
+    width:50%;
+    margin-right: 20%;
+}
+.category_name p{
+    text-align: center;
 }
 .ColumnLink:first-of-type{
     margin-right: 5%;
@@ -324,7 +328,7 @@ button:hover{
     display: none;
 }
 .Category-div{
-    margin-top: 2% !important;
+    margin-top: 2%;
 }
 /*--------end of Products View----------*/
 
@@ -1573,12 +1577,10 @@ select{
         padding-top: 3.7%;
         margin-left: 10%;
     }
-    
     .product-card{
         margin-left: 3%;
         width: 94%;
     }
-    
     .StaticTruck-div{
         display: block;
     }
@@ -1699,23 +1701,146 @@ select{
     }
     .nav{
         width: 100%;
-        align-items: center;
         padding: 4% 0;
-        padding-top: 0%;
-        background-color: white; 
-        box-shadow: 0px 5px 7px   rgb(218, 216, 216);
-        border-bottom-left-radius: 1.7rem;
-        border-bottom-right-radius: 1.7rem;
+        padding-top: 5%;
         font-size: 12px;
     }
+    .nav_bar{
+        box-shadow: 0px 2.5px 10px   rgb(218, 216, 216);
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        margin-bottom: 5%;
+    }
     .link-div{
-        width: 21%;
+        width: 25%;
     }
-    .LinkImg{
-        margin-right: 10%;
-    }
+    
     .NavLink-div{
+        flex-direction: column;
         justify-content: space-around;
     }
+    .Footer_mob{
+        background-color: white;
+        box-shadow: 0px -4px 10px   rgb(218, 216, 216);
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    .Networks{
+        margin-top: 5% !important;
+    }
+    .Search-div{
+        width: 90%;
+        margin: 0% 5%;
+        align-items: center;
+    }
+    .Search-div input{
+        width: 62%;
+        padding: 1%;
+        margin-left: 5%;
+        margin-bottom: 4%;
+        font-size: 11px;
+    }
+    .Search-div button{
+        width: 27%;
+        padding: 1% 0;
+        font-size: 14px;
+    }
+    .ProductCard{
+        margin-bottom: 6%;
+        width: 100%;
+    }
+    .Pallets-div{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .pagination-bar{
+        position: relative;
+        width: 60%;
+        margin-left: 20%;
+    }
+    .pagination-bar p{
+        font-size: 16px;
+        margin-right: 4%;
+    }
+    .arrow-div{
+        width: 50%;
+    }
+    .selectedNumber{
+        width: 12%;
+        border-radius: 2rem;
+        padding-left: 2%;
+    }
+    .CategoryName-div{
+        margin-bottom: 5%;
+        width: 95%;
+    }
+    .CategoryName-div h2{
+        margin-bottom: 2%;
+        margin-left: 3%;
+    }
+    .Pallets-divCateg{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .category_name{
+        width: 90%;
+    }
+    .login{
+        width: 100%;
+    }
+    .container-shipping{
+        width: 80%;
+        margin: 0 10% ;
+    }
+    .container-shipping button{
+        width: 50%;
+    }
+    .container-shipping h2{
+        font-size: 20px;
+        margin-bottom: 2%;
+    }
+    .Boxes{
+        width: 50%;
+        margin-left: 50%;
+    }
+    .networks-link{
+        width: 13%;
+    }
+    .login p{
+        margin: 5% 0;
+        font-size: 14px;
+    }
+    .login button{
+        width: 60% !important;
+    }
+    input{
+        font-size: 15px;
+        padding: 1.5% !important;
+        background-color: white;
+        color: black;
+        border: solid;
+        border-width: 1px;
+    }
 }    
+@media (max-width:320px) {
+    h2{
+        font-size: 17px !important;
+    }
+    input{
+        padding: 1% !important;
+        font-size: 12px;
+    }
+    .networks-link{
+        width: 12%;
+    }
+    .Networks{
+        padding-top: 5%;
+        margin-bottom: 0%;
+    }
+    .Footer_mob{
+        position: relative;
+        bottom: 0;
+    }
+}
 

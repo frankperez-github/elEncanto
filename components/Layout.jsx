@@ -34,55 +34,56 @@ function Layout(props) {
                 </Link>
 
                 <Link href="/Categories" className="link_a">
-                <div className="link-div" >
-                    
-                        <div className="NavLink-div">
-                            <div className="LinkImg">
-                                <Image className="categ" src="/link_products.svg" width="40%" height="40%"/> 
-                            </div>
+                    <div className="link-div" >
+                        
+                            <div className="NavLink-div">
+                                <div className="LinkImg">
+                                    <Image className="categ" src="/link_products.svg" width="40%" height="40%"/> 
+                                </div>
 
-                            <div className="LinkName">
-                                Categories
-                            </div> 
-                        </div>
-                    
-                </div>
+                                <div className="LinkName">
+                                    Categories
+                                </div> 
+                            </div>
+                        
+                    </div>
                 </Link>
                 
                 <Link href="/Cart">
-                <div className="link-div">
-                
-                    <div className="NavLink-div">
-                            <div className="LinkImg">
-                                <Image src="/link_contact.svg" width="40%" height="40%"/> 
-                            </div>
+                    <div className="link-div">
+                    
+                        <div className="NavLink-div">
+                                <div className="LinkImg">
+                                    <Image src="/link_contact.svg" width="40%" height="40%"/> 
+                                </div>
 
-                            <div className="link_name"> 
-                                Cart {cartItems.length>0 && `(${cartItems.length})`}
+                                <div className="link_name"> 
+                                    Cart {cartItems.length>0 && `(${cartItems.length})`}
+                                </div>
                             </div>
-                        </div>
-                
-                </div>
+                    
+                    </div>
                 </Link>
+
                 <Link href="/User">
-                <div className="link-div">
-                
-                    <div className="NavLink-div">
+                    <div className="link-div">
+                    
+                        <div className="NavLink-div">
 
 
-                            <div className="LinkImg">
-                                <Image src="/user.svg" width="40%" height="40%"/> 
-                            </div>
-
-                           
-                            <div className="link_name"> 
-                               {user.first_name?user.first_name:user.username?user.username:"Login"}
-                            </div>
+                                <div className="LinkImg">
+                                    <Image src="/user.svg" width="40%" height="40%"/> 
+                                </div>
 
                             
-                        </div>
-                
-                </div>
+                                <div className="link_name"> 
+                                {user.first_name?user.first_name:user.username?user.username:"Login"}
+                                </div>
+
+                                
+                            </div>
+                    
+                    </div>
                 </Link>
             </div>
         </div>
@@ -142,26 +143,26 @@ function Layout(props) {
 
                 <div className="Networks" >
                         
-                    <div>
+                    <div className="networks-link">
                         <a href="https://www.facebook.com/El-Encanto-Liquidation-100615011645519">
                             <Image className="link_net" src="/facebook.svg" width="45%" height="50%"></Image>
                         </a>
                     </div>
                     
                 
-                    <div>
+                    <div className="networks-link">
                         <a href="https://wa.me/+17029576836">
                             <Image className="link_net" src="/whatsapp.svg" width="45%" height="50%"></Image>
                         </a>
                     </div>
                     
-                    <div>
+                    <div className="networks-link">
                         <a href="https://www.instagram.com/liquidationelencanto/?hl=en">
                             <Image className="link_net" src="/instagram.svg" width="45%" height="50%"></Image>
                         </a>
                     </div>
                     
-                    <div>
+                    <div className="networks-link">
                         <a href="tel:+17029576836">
                             <Image className="link_net" src="/to_call.svg" width="45%" height="50%"></Image>   
                         </a>
@@ -169,7 +170,7 @@ function Layout(props) {
                     
                     
                     
-                    <div>
+                    <div className="networks-link">
                         <a href="mailto:elencantoliquidation@gmail.com">
                             <Image className="link_net" src="/message.svg" width="45%" height="50%"></Image>
                         </a>
