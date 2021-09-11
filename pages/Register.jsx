@@ -17,7 +17,7 @@ const Register = ()=> {
         e.preventDefault()
         if (password==confirmPassword) {
             try {
-            const data = await fetch("https://elencanto-drf-api.herokuapp.com/user/register/", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({email, "first_name":firstName, "last_name":lastName, password })})
+            const data = await fetch("http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com/user/register/", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({email, "first_name":firstName, "last_name":lastName, password })})
             const user = await data.json()
             dispatch({payload:user})
             router.push("/")

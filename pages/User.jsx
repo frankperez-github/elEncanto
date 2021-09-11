@@ -29,7 +29,7 @@ const User = () => {
     const getOrders = ()=> {
         
 
-        fetch("https://elencanto-drf-api.herokuapp.com/orders/", {method:"GET", headers:{"Content-Type":"application/json", Authorization:`Bearer ${user.access}`}})
+        fetch("http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com/orders/", {method:"GET", headers:{"Content-Type":"application/json", Authorization:`Bearer ${user.access}`}})
         .then(res=>res.json())
         .then(data=>setOrders(data))
     
@@ -38,7 +38,7 @@ const User = () => {
     const getAddresses = ()=> {
         
 
-        fetch("https://elencanto-drf-api.herokuapp.com/orders/shipping/", {method:"GET", headers:{"Content-Type":"application/json", Authorization:`Bearer ${user.access}`}})
+        fetch("http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com/shipping/", {method:"GET", headers:{"Content-Type":"application/json", Authorization:`Bearer ${user.access}`}})
         .then(res=>res.json())
         .then(data=>setAdresses(data))
        
@@ -46,7 +46,7 @@ const User = () => {
 
     const makeDefaultAddress = async(id) => {
        let newAddresses = []
-      addresses.forEach(async(address)=>{ const res = await fetch(`https://elencanto-drf-api.herokuapp.com/orders/shipping/${address.id}/`, {method:"PUT", headers:{"Content-Type":"application/json", Authorization:`Bearer ${user.access}`},body:JSON.stringify({...address, "default":!address["is_default"]})})
+      addresses.forEach(async(address)=>{ const res = await fetch(`http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com/orders/shipping/${address.id}/`, {method:"PUT", headers:{"Content-Type":"application/json", Authorization:`Bearer ${user.access}`},body:JSON.stringify({...address, "default":!address["is_default"]})})
            const data = await res.json()
            newAddresses.push(data)
         })

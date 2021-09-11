@@ -51,7 +51,7 @@ export default function Home({products}) {
                       <p>5</p>
 
                     <div className="arrow-div">
-                      <Image className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
+                      <Image  className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
                     </div>
 
                   </div>  
@@ -75,7 +75,7 @@ export default function Home({products}) {
 }
 
 export const getStaticProps  = async()=> {
-  const res = await fetch('https://elencanto-drf-api.herokuapp.com/products')
+  const res = await fetch('http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com/products')
   
   const products = await res.json()
 

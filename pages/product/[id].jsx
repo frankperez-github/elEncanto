@@ -5,7 +5,7 @@ import { CartContext } from '../../context/CartContext'
 
 export const getStaticProps = async(context) => {
 
-    const res = await fetch(`https://elencanto-drf-api.herokuapp.com/products/${context.params.id}`)
+    const res = await fetch(`http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com/products/${context.params.id}`)
   
     const product = await res.json()
     
@@ -20,7 +20,7 @@ export const getStaticProps = async(context) => {
 
 export const getStaticPaths = async() => {
 
-    const res = await fetch('https://elencanto-drf-api.herokuapp.com/products')
+    const res = await fetch('http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com//products')
   
     const products = await res.json()
     const paths =  products.map(product=>{return{params:{id:product.id.toString()}}})

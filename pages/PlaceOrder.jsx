@@ -25,7 +25,7 @@ const PlaceOrder = () => {
     },[cartItems, subTotal])
 
     const sendOrder = async() => {
-        await fetch('https://elencanto-drf-api.herokuapp.com/orders/', {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access}`},body:JSON.stringify({"order_items":cartItems, "shipping_address":shippingAddress, "total_price":subTotal+tax})})
+        await fetch('http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com/orders/', {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access}`},body:JSON.stringify({"order_items":cartItems, "shipping_address":shippingAddress, "total_price":subTotal+tax})})
         dispatch({type:"CLEAN"})
         router.push("/User")
     }
