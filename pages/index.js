@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
 import Buy_form_desk from '../components/DeskVersion/Buy_Form'
 import ProductCard from '../components/DeskVersion/ProductCard'
 
@@ -7,7 +8,12 @@ import ProductCard from '../components/DeskVersion/ProductCard'
 
 export default function Home({products}) {
 
-
+  const [page, setPage] = useState(0)
+  const [pages, setPages] = useState([])
+  useEffect(()=>{
+    
+    setPages([...Array(Math.ceil(products.length/5)).keys()])
+  }, [])
   return (
 
 
@@ -45,12 +51,8 @@ export default function Home({products}) {
                       <Image alt="No Image" className="arrow-pag leftarr" src="/Larrow.svg" width="45%" height="45%" />
                     </div>
 
-                      <p>1</p>
-                      <p>2</p>
-                      <p className="selectedNumber">3</p>
-                      <p>4</p>
-                      <p>5</p>
-
+                
+    {pages.map(item=><p>{item+1}</p>)}
                     <div className="arrow-div">
                       <Image alt="No Image"  className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
                     </div>
@@ -79,10 +81,12 @@ export const getStaticProps  = async()=> {
   const res = await fetch('http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com/products')
   
   const products = await res.json()
+  
 
   return {
     props: {
-      products:products
+      products,
+     // pages:[...Array(Math.ceil(products.lenght/5)).keys()]
     }
   }
 }
