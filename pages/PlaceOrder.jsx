@@ -36,7 +36,7 @@ const PlaceOrder = () => {
             <div className="YourCart">
 
                 <div className="Step-div2">
-                    <Image src="/Step2.svg" width="600%" height="40%" />
+                    <Image alt="No Image" src="/Step2.svg" width="600%" height="40%" />
                 </div>
 
                 <div className="Cart-title OrderTitle">

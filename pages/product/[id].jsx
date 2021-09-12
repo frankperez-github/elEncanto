@@ -66,20 +66,20 @@ export default function ProductDetail({product}) {
 
                 <div className="SwiperDetail">
                     <div className="arrow-div detArrow">
-                        <Image className="arrow-pag leftarr" src="/Larrow.svg" width="45%" height="45%" />
+                        <Image alt="No Image" className="arrow-pag leftarr" src="/Larrow.svg" width="45%" height="45%" />
                     </div>
 
                     <div className="imageProduct">
-                        <Image width={1000} height={900} src={product.icon} />
+                        <Image alt="No Image" width={1000} height={900} src={product.icon} />
                     </div>
 
                     <div className="arrow-div detArrow">
-                        <Image className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
+                        <Image alt="No Image" className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
                     </div>
                 </div>
 
                 <div className="imageProduct">
-                    {product.images.map(image=> <Image key={image.id} width={600} height={450} src={image.image} />)}
+                    {product.images.map(image=> <Image alt="No Image" key={image.id} width={600} height={450} src={image.image} />)}
                 </div>
             </div>
 

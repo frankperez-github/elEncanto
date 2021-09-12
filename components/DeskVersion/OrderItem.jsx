@@ -11,7 +11,7 @@ const OrderItem = ({item}) => {
         <Link href={`/product/${item.product}`}>
         <div className="OrderItem">
              <h1>{item.name} </h1>
-             <Image width={100} height={100} src={item.image}/>
+             <Image alt="No Image" width={100} height={100} src={item.image}/>
              <h2>Quantity: {item.qty}
           </h2>
              <h2>Price: ${item.qty*item.price}</h2>

@@ -30,7 +30,7 @@ function Products({categories}){
                         <div className="pagination-bar ">
                         
                             <div className="arrow-div">
-                                <Image className="arrow-pag leftarr" src="/Larrow.svg" width="45%" height="45%" />
+                                <Image alt="No Image" className="arrow-pag leftarr" src="/Larrow.svg" width="45%" height="45%" />
                             </div>
 
                                 <p>1</p>
@@ -40,7 +40,7 @@ function Products({categories}){
                                 <p>5</p>
 
                             <div className="arrow-div">
-                                <Image className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
+                                <Image alt="No Image" className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
                             </div>
 
                         </div>  

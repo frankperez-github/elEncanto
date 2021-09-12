@@ -17,7 +17,7 @@ const CartItem = ({item}) => {
 
                     <div className="ItemPic">
                         <Link href={`/product/${item.product}`}>
-                            <Image width={100} height={100} src={item.image}/> 
+                            <Image alt="No Image" width={100} height={100} src={item.image}/> 
                         </Link>
                     </div>
                     
@@ -42,7 +42,7 @@ const CartItem = ({item}) => {
                 </div>
 
                 <div className="trash">
-                    <Image src="/trash.svg" width="100%" height="100%" onClick={()=>{dispatch({type:"REMOVE_ITEM", payload:item})}}/>
+                    <Image alt="No Image" src="/trash.svg" width="100%" height="100%" onClick={()=>{dispatch({type:"REMOVE_ITEM", payload:item})}}/>
                 </div>
                 
                 

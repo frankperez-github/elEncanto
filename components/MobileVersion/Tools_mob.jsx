@@ -18,7 +18,7 @@ function Tools_mob(){
                     <div className="bath_single_product_mob">
                         
                         <div >
-                            <Image src="/toilet.svg" width="150%" height="150%" />
+                            <Image alt="No Image" src="/toilet.svg" width="150%" height="150%" />
                         </div>
                         <div className="product_name_mob">
                             <p>Bath Toilet</p>
@@ -35,7 +35,7 @@ function Tools_mob(){
                     <div className="bath_single_product_mob">
                         
                         <div >
-                        <Image src="/toilet.svg" width="150%" height="150%" />
+                        <Image alt="No Image" src="/toilet.svg" width="150%" height="150%" />
                         </div>
                         <div className="product_name_mob">
                             <p>Bath Toilet</p>
@@ -54,7 +54,7 @@ function Tools_mob(){
                     <div className="bath_single_product_mob">
                         
                         <div >
-                            <Image src="/toilet.svg" width="150%" height="150%" />
+                            <Image alt="No Image" src="/toilet.svg" width="150%" height="150%" />
                         </div>
                         <div className="product_name_mob">
                             <p>Bath Toilet</p>
@@ -71,7 +71,7 @@ function Tools_mob(){
                     <div className="bath_single_product_mob">
                         
                         <div >
-                            <Image src="/toilet.svg" width="150%" height="150%" />
+                            <Image alt="No Image" src="/toilet.svg" width="150%" height="150%" />
                         </div>
                         <div className="product_name_mob">
                             <p>Bath Toilet</p>
@@ -90,7 +90,7 @@ function Tools_mob(){
                     <div className="bath_single_product_mob">
                         
                         <div >
-                            <Image src="/toilet.svg" width="150%" height="150%" />
+                            <Image alt="No Image" src="/toilet.svg" width="150%" height="150%" />
                         </div>
                         <div className="product_name_mob">
                             <p>Bath Toilet</p>
@@ -108,7 +108,7 @@ function Tools_mob(){
                     <div className="bath_single_product_mob">
                         
                         <div >
-                            <Image src="/toilet.svg" width="150%" height="150%" />
+                            <Image alt="No Image" src="/toilet.svg" width="150%" height="150%" />
                         </div>
                         <div className="product_name_mob">
                             <p>Bath Toilet</p>
@@ -126,7 +126,7 @@ function Tools_mob(){
 
                 <div className="X_Bar_mob">
                     <div className="arrow-div_mob">
-                        <Image className="arrow_mob" src="/prev.svg" width="90%" height="90%"/>
+                        <Image alt="No Image" className="arrow_mob" src="/prev.svg" width="90%" height="90%"/>
                     </div>
                     
                     <div className="numbers_mob">
@@ -139,7 +139,7 @@ function Tools_mob(){
                     </div>
 
                     <div className="arrow-div_mob">
-                         <Image className="arrow_mob" src="/next.svg" width="90%" height="90%"/>
+                         <Image alt="No Image" className="arrow_mob" src="/next.svg" width="90%" height="90%"/>
                     </div>
                 </div>
 

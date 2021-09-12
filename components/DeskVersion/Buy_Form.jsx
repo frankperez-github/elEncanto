@@ -96,29 +96,29 @@ function Buy_form_desk() {
                     
                     <div className="Truck_Animation">
                         <div id="closeTruck">
-                            <Image src="/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck" />
+                            <Image alt="No Image" src="/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck" />
                         </div>
                         <div id="closeTruck2">
-                            <Image src="/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck2" />
+                            <Image alt="No Image" src="/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck2" />
                         </div>
                         <div id="closeTruck3">
-                            <Image src="/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck3" />
+                            <Image alt="No Image" src="/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck3" />
                         </div>
                         <div id="closeTruck4">
-                            <Image src="/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck4" />
+                            <Image alt="No Image" src="/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck4" />
                         </div>
                         
 
                         <div id="OpenTruck_mob">
-                            <Image src="/empty_truck.svg" width="400%" height="250%" />
+                            <Image alt="No Image" src="/empty_truck.svg" width="400%" height="250%" />
                         </div>
 
                         <div id="ChargeDron_mob">
-                            <Image src="/charge_dron.svg" width="370%" height="200%" />
+                            <Image alt="No Image" src="/charge_dron.svg" width="370%" height="200%" />
                         </div>
 
                         <div className="emptyDron">
-                            <Image src="/empty_dron.svg"  width ="370%" height="100%" id="EmptyDron_mob"/>
+                            <Image alt="No Image" src="/empty_dron.svg"  width ="370%" height="100%" id="EmptyDron_mob"/>
                         </div>
 
                         <div id="Text_animation_mob">
@@ -133,7 +133,7 @@ function Buy_form_desk() {
                         <div className="product ProductCard">
                             
                                 <div className="ModuleImg-div">
-                                    <Image src="/module_1.svg" width="42%" height="47%"/>
+                                    <Image alt="No Image" src="/module_1.svg" width="42%" height="47%"/>
                                 </div>
                             
                             
@@ -146,7 +146,7 @@ function Buy_form_desk() {
 
                         <div className="product ProductCard">
                             <div className="ModuleImg-div">
-                                <Image src="/module_2.svg" width="42%" height="50%"/>
+                                <Image alt="No Image" src="/module_2.svg" width="42%" height="50%"/>
                             </div>
                             <p className="pkg_numb">Package No. 2</p>
                             <p >$100</p>
@@ -157,7 +157,7 @@ function Buy_form_desk() {
 
                         <div className="product ProductCard">
                             <div className="ModuleImg-div">
-                                <Image src="/module_3.svg" width="42%" height="50%"/>
+                                <Image alt="No Image" src="/module_3.svg" width="42%" height="50%"/>
                             </div>
 
                             <p className="pkg_numb">Package No. 3</p>

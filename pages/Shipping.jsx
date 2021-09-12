@@ -45,7 +45,7 @@ const Shipping = () => {
         <div className="shipping User container-shipping">
 
             <div className="Step-div">
-                <Image src="/Step1.svg" width="600%" height="80%" />
+                <Image alt="No Image" src="/Step1.svg" width="600%" height="80%" />
             </div>
 
             <form action="POST" onSubmit={handleSubmit} style={{display:"flex", flexDirection:"column", alignContent:"center"}}>

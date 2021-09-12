@@ -11,7 +11,7 @@ import Image from 'next/dist/client/image'
                 
 
                 <div className="ModuleImg-div">
-                    <Image src={category.icon} width="42%" height="50%"/>
+                    <Image alt="No Image" src={category.icon} width="42%" height="50%"/>
                 </div>
 
                 <div className="category_name">
