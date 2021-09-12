@@ -18,7 +18,7 @@ const Cart = ()=> {
             )
             setTax(Number((subTotal*0.08375).toFixed(2)))
         }
-        else router.push('/User')
+       
     },[cartItems, subTotal])
 
     const sendOrder = async() => {

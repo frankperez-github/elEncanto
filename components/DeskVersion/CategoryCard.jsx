@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/dist/client/image'
 
+
+
  const CategoryCard = ({category}) => {
+
+   
+
     return (
         <Link href="Categories/[id]" as={`Categories/${category.id}`} >
 

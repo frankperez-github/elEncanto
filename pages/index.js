@@ -3,10 +3,11 @@ import Image from 'next/image'
 import Buy_form_desk from '../components/DeskVersion/Buy_Form'
 import ProductCard from '../components/DeskVersion/ProductCard'
 
+  
 
 export default function Home({products}) {
-  
-  
+
+
   return (
 
 
