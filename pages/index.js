@@ -11,9 +11,16 @@ export default function Home({products}) {
   const [page, setPage] = useState(0)
   const [pages, setPages] = useState([])
   useEffect(()=>{
-    
-    setPages([...Array(Math.ceil(products.length/5)).keys()])
-  }, [])
+    var pages = []
+    for (let i=0;i<products.length;i+=5)
+    {
+      pages.push({"index":i/5, "isActive":i/5==page?true:false})
+    }
+    setPages(pages)
+  }, [pages]
+  )
+
+ 
   return (
 
 
@@ -43,7 +50,7 @@ export default function Home({products}) {
               
                 <div className="Right_side " id="Right_side">
                 
-                  {products.map (product=><ProductCard key = {product.id} product={product}/>)}
+                  {products.slice(page*5,page*5+5).map(product=><ProductCard key = {product.id} product={product}/>)}
 
                   <div className="pagination-bar ">
                     
@@ -52,7 +59,7 @@ export default function Home({products}) {
                     </div>
 
                 
-    {pages.map(item=><p>{item+1}</p>)}
+    {pages.map(item=><p key={item.index} onClick={()=>{setPage(item.index)}} className={item["isActive"]?"selectedNumber":""}>{item.index+1}</p>)}
                     <div className="arrow-div">
                       <Image alt="No Image"  className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
                     </div>
