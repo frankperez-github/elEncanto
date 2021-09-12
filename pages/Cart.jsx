@@ -14,18 +14,12 @@ const Cart = ()=> {
 
     useEffect(()=>{
         if (cartItems.length>0) { 
-            setSubTotal(cartItems.map(item=>item.price*item.qty).reduce((a,b)=>a+b,0)
-            )
-            setTax(Number((subTotal*0.08375).toFixed(2)))
+            setSubTotal(Number(cartItems.map(item=>item.price*item.qty).reduce((a,b)=>a+b,0)
+            ))
+            setTax(Number((subTotal*0.08375)))
         }
        
     },[cartItems, subTotal])
-
-    const sendOrder = async() => {
-        await fetch('http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com/orders/', {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access}`},body:JSON.stringify({"order_items":cartItems, "shipping_address":shippingAddress, "total_price":subTotal+tax})})
-        dispatch({type:"CLEAN"})
-        router.push("/User")
-    }
 
  return (
      <div className="container-cart">
@@ -69,19 +63,18 @@ const Cart = ()=> {
 
                     <div className="Total">
                         <div className="Sub">
-                            <p>${cartItems.map(item=>item.price*item.qty).reduce((a,b)=>a+b,0)
-                            }</p>
+                            <p>${subTotal.toFixed(2)}</p>
                         </div>
                         
                         <div className="Sub">
                             <div className="">
-                                <p>${tax}</p>
+                                <p>${tax.toFixed(2)}</p>
                             </div>
                         </div>
 
                         <div className="Sub">
                             <div className="">
-                                <p className="redText">${subTotal + tax}</p>
+                                <p className="redText">${Number(subTotal + tax).toFixed(2)}</p>
                             </div>
                         </div>
                         
