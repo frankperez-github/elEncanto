@@ -299,7 +299,8 @@ button:hover{
     align-self: flex-end;
 }
 .pkg_numb{
-    width: 60%;
+    width: 55%;
+    margin-right: 3%;
 }
 .Networks_column{
     display: flex;
