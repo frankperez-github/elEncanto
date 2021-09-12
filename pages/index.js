@@ -17,7 +17,7 @@ export default function Home({products}) {
       pages.push({"index":i/5, "isActive":i/5==page?true:false})
     }
     setPages(pages)
-  }, [pages]
+  }, [page]
   )
 
  
@@ -55,13 +55,13 @@ export default function Home({products}) {
                   <div className="pagination-bar ">
                     
                     <div className="arrow-div">
-                      <Image alt="No Image" className="arrow-pag leftarr" src="/Larrow.svg" width="45%" height="45%" />
+                      <Image onClick={()=> {if(page>0) setPage(page-1) }} alt="No Image" className="arrow-pag leftarr" src="/Larrow.svg" width="45%" height="45%" />
                     </div>
 
                 
     {pages.map(item=><p key={item.index} onClick={()=>{setPage(item.index)}} className={item["isActive"]?"selectedNumber":""}>{item.index+1}</p>)}
                     <div className="arrow-div">
-                      <Image alt="No Image"  className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
+                      <Image onClick={()=> {if(page<products.length/5-1) setPage(page+1) }} alt="No Image"  className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
                     </div>
 
                   </div>  
