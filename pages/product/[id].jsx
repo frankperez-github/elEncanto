@@ -1,9 +1,12 @@
 import React, { useEffect, useContext, useState } from 'react'
 import  Image from 'next/image';
 import { CartContext } from '../../context/CartContext'
+import router, { useRouter } from 'next/router';
 
 
 export const getServerSideProps = async(context) => {
+
+  
 
     const res = await fetch(`http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com/products/${context.params.id}`)
   
@@ -21,7 +24,7 @@ export const getServerSideProps = async(context) => {
 
 export default function ProductDetail({product}) {
 
-
+   const router = useRouter()
   const [qty, setQty] = useState(1)
 
     useEffect(()=>{
@@ -102,7 +105,7 @@ export default function ProductDetail({product}) {
 
                     <button onClick={addToCart} className=" white_button">Add to cart</button>
 
-                    <button className="buy_button buyPhone">Buy</button>
+                    <button onClick={()=> {addToCart();router.push("/Cart")}} className="buy_button buyPhone">Buy</button>
                 </div> : <h1>Out of stock</h1>}
 
             </div>
