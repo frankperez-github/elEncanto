@@ -20,6 +20,10 @@ button:focus{
 select:focus{
     outline: none;
 }
+.main{
+    position: relative;
+    top: 0;
+}
 
 /**************Animations************************/
 #Animation{
@@ -224,7 +228,7 @@ button:hover{
     position: fixed;
     bottom: 25%;
     margin-bottom: -5%;
-    left: 0%;
+    left: 6%;
     width: 40%;
     display: flex;
     align-items: center;
@@ -237,11 +241,11 @@ button:hover{
     cursor: pointer;
 }
 .selectedNumber{
-    width: 4%;
+    width: 3%;
     background-color: #FF524F;
     color: white;
     border-radius: 2rem;
-    padding-left: 1.2%;
+    padding-left: 0.7%;
 }
 .leftarr{
     margin-right: 15% !important;
@@ -324,9 +328,6 @@ button:hover{
 }
 .ColumnLink:first-of-type{
     margin-right: 5%;
-}
-.Footer_mob{
-    display: none;
 }
 .Category-div{
     margin-top: 2%;
@@ -1484,13 +1485,13 @@ select{
 
     /* ************Hiding Desk Views******** */
     .Column{
-        display: none;
+        display: block;
     }
     .Networks_column{
-        display: none;
+        display: block;
     }
     .Footer{
-        display: none;
+        display: block;
     }
     .spec-product-div{
         display: none;
@@ -1559,9 +1560,6 @@ select{
         display: block;  
     }
     #NavBar_mob{
-        display: block;
-    }
-    .Footer_mob{
         display: block;
     }
     .nav{
@@ -1719,22 +1717,26 @@ select{
         margin-bottom: 5%;
     }
     .link-div{
-        width: 25%;
+        width: 28%;
     }
     
     .NavLink-div{
         flex-direction: column;
         justify-content: space-around;
     }
-    .Footer_mob{
+    .Footer{
         background-color: white;
         box-shadow: 0px -4px 10px   rgb(218, 216, 216);
-        position: relative;
+        position: absolute;
         width: 100%;
         bottom: 0;
     }
-    .Networks{
+    .Networks_column{
+        display: flex;
+        justify-content: space-between;
+        margin: 5% 5%;
         padding-top: 5%;
+        width: 90%;
     }
     .Search-div{
         width: 90%;
@@ -1769,14 +1771,16 @@ select{
     .pagination-bar p{
         font-size: 16px;
         margin-right: 4%;
+        margin-top: 23%;
     }
     .arrow-div{
         width: 50%;
     }
     .selectedNumber{
-        width: 15%;
+        width: 10%;
         border-radius: 2rem;
-        padding-left: 2%;
+        padding-left: 2.8%;
+        padding-top: 0.5%;
     }
     .CategoryName-div{
         margin-bottom: 5%;
@@ -1807,9 +1811,10 @@ select{
         font-size: 20px;
         margin-bottom: 2%;
     }
-    .Boxes{
+    .boxes{
         width: 50%;
-        margin-left: 50%;
+        margin-left: 45%;
+        padding-top: 5%;
     }
     .networks-link{
         width: 13%;
@@ -1911,7 +1916,9 @@ select{
         margin-left: 40%;
         margin-bottom: 25% !important;
     }
-
+    .ColumnLink{
+        width: 13%;
+    }
 }    
 @media (max-width:320px) {
     h2{
@@ -1923,10 +1930,6 @@ select{
     }
     .networks-link{
         width: 12%;
-    }
-    .Networks{
-        padding-top: 5%;
-        margin-bottom: 0%;
     }
 }
 
