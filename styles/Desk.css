@@ -20,10 +20,6 @@ button:focus{
 select:focus{
     outline: none;
 }
-.main{
-    position: relative;
-    top: 0;
-}
 
 /**************Animations************************/
 #Animation{
@@ -136,8 +132,6 @@ select:focus{
     background-color: white !important;
     width: 100%;
     height: 12.5vh;
-    position: fixed;
-    bottom: 0%;
     display: flex;
     justify-content: space-between;
     box-shadow: 0px -5px 7px   rgb(218, 216, 216) !important;
@@ -228,7 +222,7 @@ button:hover{
     position: fixed;
     bottom: 25%;
     margin-bottom: -5%;
-    left: 6%;
+    left: 0%;
     width: 40%;
     display: flex;
     align-items: center;
@@ -254,7 +248,7 @@ button:hover{
     margin-left: 15% !important;
 }
 .arrow-pag{
-    margin-top: 7% !important;
+    margin-top: 3% !important;
 }
 .arrow-div{
     width: 10%;
@@ -1719,23 +1713,26 @@ select{
     .link-div{
         width: 28%;
     }
-    
     .NavLink-div{
         flex-direction: column;
         justify-content: space-around;
     }
+    .pagination-bar{
+        left: 10%;
+        margin-bottom: 5%;
+    }
     .Footer{
+        position: relative;
+        bottom: 0;
         background-color: white;
         box-shadow: 0px -4px 10px   rgb(218, 216, 216);
-        position: absolute;
-        width: 100%;
-        bottom: 0;
+        height: 25vh;
     }
     .Networks_column{
         display: flex;
         justify-content: space-between;
         margin: 5% 5%;
-        padding-top: 5%;
+        padding-top: 2%;
         width: 90%;
     }
     .Search-div{
@@ -1779,8 +1776,8 @@ select{
     .selectedNumber{
         width: 10%;
         border-radius: 2rem;
+        padding-top: 0.6%;
         padding-left: 2.8%;
-        padding-top: 0.5%;
     }
     .CategoryName-div{
         margin-bottom: 5%;
@@ -1814,7 +1811,6 @@ select{
     .boxes{
         width: 50%;
         margin-left: 45%;
-        padding-top: 5%;
     }
     .networks-link{
         width: 13%;

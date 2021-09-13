@@ -76,7 +76,7 @@ export default function Home({products}) {
             <Buy_form_desk />
 
         </div>
-
+        
       </main>
 
       
