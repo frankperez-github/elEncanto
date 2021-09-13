@@ -10,13 +10,14 @@ export default function Home({products}) {
 
   const [page, setPage] = useState(0)
   const [pages, setPages] = useState([])
+  const [perPage] = useState(8)
   useEffect(()=>{
-    var pages = []
-    for (let i=0;i<products.length;i+=5)
+    var pagesArr = []
+    for (let i=0;i<products.length;i+=perPage)
     {
-      pages.push({"index":i/5, "isActive":i/5==page?true:false})
+      pagesArr.push({"index":i/perPage, "isActive":i/perPage==page?true:false})
     }
-    setPages(pages)
+    setPages(pagesArr)
   }, [page]
   )
 
@@ -50,9 +51,12 @@ export default function Home({products}) {
               
                 <div className="Right_side " id="Right_side">
                 
-                  {products.slice(page*5,page*5+5).map(product=><ProductCard key = {product.id} product={product}/>)}
+                  {products.slice(page*perPage,page*perPage+perPage).map(product=><ProductCard key = {product.id} product={product}/>)}
 
-                  <div className="pagination-bar ">
+              
+                  
+                </div>
+                <div className="pagination-bar ">
                     
                     <div className="arrow-div">
                       <Image onClick={()=> {if(page>0) setPage(page-1) }} alt="No Image" className="arrow-pag leftarr" src="/Larrow.svg" width="45%" height="45%" />
@@ -61,13 +65,10 @@ export default function Home({products}) {
                 
     {pages.map(item=><p key={item.index} onClick={()=>{setPage(item.index)}} className={item["isActive"]?"selectedNumber":""}>{item.index+1}</p>)}
                     <div className="arrow-div">
-                      <Image onClick={()=> {if(page<products.length/5-1) setPage(page+1) }} alt="No Image"  className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
+                      <Image onClick={()=> {if(page<products.length/perPage-1) setPage(page+1) }} alt="No Image"  className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
                     </div>
 
-                  </div>  
-                  
-                </div>
-
+                  </div> 
 
               </div>
             

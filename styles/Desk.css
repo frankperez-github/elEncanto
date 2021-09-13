@@ -131,8 +131,8 @@ select:focus{
     z-index: 15 !important;
     background-color: white !important;
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    
+    
     height: 12.5vh;
     display: flex;
     justify-content: space-between;
@@ -221,7 +221,7 @@ button:hover{
 }
 
 .pagination-bar{
-    position: fixed;
+    position: absolute;
     bottom: 25%;
     margin-bottom: -5%;
     left: 0%;
@@ -1724,11 +1724,10 @@ select{
         margin-bottom: 5%;
     }
     .Footer{
-        position: relative;
-        bottom: 0;
+      
         background-color: white;
         box-shadow: 0px -4px 10px   rgb(218, 216, 216);
-        height: 25vh;
+      
     }
     .Networks_column{
         display: flex;
@@ -1931,3 +1930,11 @@ select{
     }
 }
 
+/*Solution*/
+
+.Pallets-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 75vh;
+}
