@@ -131,6 +131,8 @@ select:focus{
     z-index: 15 !important;
     background-color: white !important;
     width: 100%;
+    position: absolute;
+    bottom: 0;
     height: 12.5vh;
     display: flex;
     justify-content: space-between;
