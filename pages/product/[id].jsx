@@ -44,7 +44,7 @@ export default function ProductDetail({product}) {
             qty:Number(qty),
             countInStock:Number(product.countInStock),
             price:Number(product.price),
-            image:product.icon
+            image:product.images[0].image
 
         }
         dispatch({type:'ADD_ITEM', payload:item})
