@@ -1,26 +1,35 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import Buy_form_desk from '../components/DeskVersion/Buy_Form'
 import ProductCard from '../components/DeskVersion/ProductCard'
 
-  
 
 export default function Home({products}) {
 
+
+  const router = useRouter()
   const [page, setPage] = useState(0)
+  const [keyword, setKeyword] = useState("")
   const [pages, setPages] = useState([])
   const [perPage] = useState(8)
   useEffect(()=>{
     var pagesArr = []
-    for (let i=0;i<products.length;i+=perPage)
+    let len = products.filter(product=>product.name.toLowerCase().includes(keyword.toLowerCase())).length
+    for (let i=0;i<len;i+=perPage)
     {
       pagesArr.push({"index":i/perPage, "isActive":i/perPage==page?true:false})
     }
     setPages(pagesArr)
-  }, [page]
+  }, [page, keyword]
   )
 
+  const search = () => {
+    let key = keyword
+    router.reload(window.location.pathname);
+   
+  }
  
   return (
 
@@ -39,8 +48,8 @@ export default function Home({products}) {
 
               <div className="Search-div">
 
-                <input placeholder="Looking for something?" />
-                <button className="form_button buttonSearch">Search</button>
+                <input value={keyword} onChange={(e)=>setKeyword(e.target.value)} placeholder="Looking for something?" />
+                <button disabled={true} onClick={search} className="form_button buttonSearch">Search</button>
 
               </div>
             
@@ -51,7 +60,7 @@ export default function Home({products}) {
               
                 <div className="Right_side " id="Right_side">
                 
-                  {products.slice(page*perPage,page*perPage+perPage).map(product=><ProductCard key = {product.id} product={product}/>)}
+                  {products.filter(product=>product.name.toLowerCase().includes(keyword.toLowerCase())).slice(page*perPage,page*perPage+perPage).map(product=><ProductCard key = {product.id} product={product}/>)}
 
               
                   
