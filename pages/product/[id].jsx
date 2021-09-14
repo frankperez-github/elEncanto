@@ -26,6 +26,7 @@ export default function ProductDetail({product}) {
 
    const router = useRouter()
   const [qty, setQty] = useState(1)
+  const [currentImg, setCurrentImg] = useState(0)
 
     useEffect(()=>{
         console.log(product)
@@ -56,15 +57,15 @@ export default function ProductDetail({product}) {
 
                 <div className="SwiperDetail">
                     <div className="arrow-div detArrow">
-                        <Image alt="No Image" className="arrow-pag leftarr" src="/Larrow.svg" width="45%" height="45%" />
+                        <Image onClick={()=>{ if (currentImg>0) setCurrentImg(currentImg-1)}} alt="No Image" className="arrow-pag leftarr" src="/Larrow.svg" width="45%" height="45%" />
                     </div>
 
                     <div className="imageProduct">
-                        <Image className="ImageProductsDetails" alt="No Image" width={1000} height={900} src={product.images[0].image} />
+                        <Image className="ImageProductsDetails" alt="No Image" width={1000} height={900} src={product.images[currentImg].image} />
                     </div>
 
                     <div className="arrow-div detArrow">
-                        <Image alt="No Image" className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
+                        <Image onClick={()=>{ if (currentImg<product.images.length-1) setCurrentImg(currentImg+1)}} alt="No Image" className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
                     </div>
                 </div>
 
