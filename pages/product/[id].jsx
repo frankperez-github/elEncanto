@@ -60,7 +60,7 @@ export default function ProductDetail({product}) {
                     </div>
 
                     <div className="imageProduct">
-                        <Image className="ImageProductsDetails" alt="No Image" width={1000} height={900} src={product.icon} />
+                        <Image className="ImageProductsDetails" alt="No Image" width={1000} height={900} src={product.images[0].image} />
                     </div>
 
                     <div className="arrow-div detArrow">
@@ -68,9 +68,7 @@ export default function ProductDetail({product}) {
                     </div>
                 </div>
 
-                <div className="imageProduct">
-                    {product.images.map(image=> <Image alt="No Image" key={image.id} width={600} height={450} src={image.image} />)}
-                </div>
+              
             </div>
 
             <div className="RightSideId">
