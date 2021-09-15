@@ -27,13 +27,21 @@ export default function ProductDetail({product}) {
    const router = useRouter()
   const [qty, setQty] = useState(1)
   const [currentImg, setCurrentImg] = useState(0)
+  const [pages, setPages] = useState([])
 
     useEffect(()=>{
         console.log(product)
-        
+        var pagesArr = []
+      let len = product.images.length
+      for (let i=0;i<len;i++)
+      {
+        pagesArr.push({"index":i, "isActive":i==currentImg?true:false})
+      }
+      setPages(pagesArr)
 
-    },[])
+    },[currentImg])
 
+   
     
     const {dispatch} = useContext(CartContext)
 
@@ -71,18 +79,10 @@ export default function ProductDetail({product}) {
 
                 <div className="PaginationProductDetails">
 
-                    <div className="Circlepagination-div">
-                        <svg className="CirclePagination" fill="#F56764" height="24" stroke="#F56764" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/></svg>
-                    </div>
-                    <div className="Circlepagination-div">
-                        <svg className="CirclePagination" fill="none" height="24" stroke="#F56764" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/></svg>
-                    </div>
-                    <div className="Circlepagination-div">
-                        <svg className="CirclePagination" fill="none" height="24" stroke="#F56764" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/></svg>
-                    </div>
-                    <div className="Circlepagination-div">
-                        <svg className="CirclePagination" fill="none" height="24" stroke="#F56764" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/></svg>
-                    </div>
+                    {pages.map(page=> <div className="Circlepagination-div">
+                        <svg className="CirclePagination" fill={page.isActive?"#F56764":"none"} height="24" stroke="#F56764" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/></svg>
+                    </div>)}
+    
                 </div>
               
             </div>
