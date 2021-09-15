@@ -22,12 +22,12 @@ export default function Home({products}) {
       pagesArr.push({"index":i/perPage, "isActive":i/perPage==page?true:false})
     }
     setPages(pagesArr)
+    if (page>=pages.length) {setPage(0)}
   }, [page, keyword]
   )
 
   const search = () => {
-    let key = keyword
-    router.reload(window.location.pathname);
+    setPage(0)
    
   }
  
@@ -49,7 +49,7 @@ export default function Home({products}) {
               <div className="Search-div">
 
                 <input value={keyword} onChange={(e)=>setKeyword(e.target.value)} placeholder="Looking for something?" />
-                <button disabled={true} onClick={search} className="form_button buttonSearch">Search</button>
+                <button onClick={search} className="form_button buttonSearch">Search</button>
 
               </div>
             
@@ -74,7 +74,7 @@ export default function Home({products}) {
                 
     {pages.map(item=><p key={item.index} onClick={()=>{setPage(item.index)}} className={item["isActive"]?"selectedNumber":""}>{item.index+1}</p>)}
                     <div className="arrow-div">
-                      <Image onClick={()=> {if(page<products.length/perPage-1) setPage(page+1) }} alt="No Image"  className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
+                      <Image onClick={()=> {if(page<products.filter(product=>product.name.toLowerCase().includes(keyword.toLowerCase())).length/perPage-1) setPage(page+1) }} alt="No Image"  className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
                     </div>
 
                   </div> 
