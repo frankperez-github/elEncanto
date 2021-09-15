@@ -1,7 +1,7 @@
 import React, { useEffect, useContext, useState } from 'react'
 import  Image from 'next/image';
 import { CartContext } from '../../context/CartContext'
-import router, { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 
 
 export const getServerSideProps = async(context) => {
@@ -69,6 +69,21 @@ export default function ProductDetail({product}) {
                     </div>
                 </div>
 
+                <div className="PaginationProductDetails">
+
+                    <div className="Circlepagination-div">
+                        <svg className="CirclePagination" fill="#F56764" height="24" stroke="#F56764" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/></svg>
+                    </div>
+                    <div className="Circlepagination-div">
+                        <svg className="CirclePagination" fill="none" height="24" stroke="#F56764" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/></svg>
+                    </div>
+                    <div className="Circlepagination-div">
+                        <svg className="CirclePagination" fill="none" height="24" stroke="#F56764" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/></svg>
+                    </div>
+                    <div className="Circlepagination-div">
+                        <svg className="CirclePagination" fill="none" height="24" stroke="#F56764" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/></svg>
+                    </div>
+                </div>
               
             </div>
 

@@ -38,7 +38,7 @@ const CartItem = ({item}) => {
                 </div>
 
                 <div className="Price">
-                    <p>${item.qty*item.price}</p>
+                    <p>${(item.qty*item.price).toFixed(2)}</p>
                 </div>
 
                 <div className="trash">

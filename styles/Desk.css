@@ -110,6 +110,9 @@ select:focus{
 .LinkImg{
     width: 37%;
 }
+.LinkSVG{
+    width: 100%;
+}
 .LinkName{
     width: 50%;
 }
@@ -232,16 +235,17 @@ button:hover{
     margin-left: 41%;
 }
 .pagination-bar p{
+    margin-top: -1%;
     margin-right: 1.5%;
     margin-left: 1.5%;
     cursor: pointer;
 }
 .selectedNumber{
-    width: 3%;
+    width: 4%;
     background-color: #FF524F;
     color: white;
     border-radius: 2rem;
-    padding-left: 0.7%;
+    padding-left: 1.2%;
 }
 .leftarr{
     margin-right: 15% !important;
@@ -301,6 +305,7 @@ button:hover{
 .pkg_numb{
     width: 55%;
     margin-right: 3%;
+    margin-left: 4%;
 }
 .Networks_column{
     display: flex;
@@ -386,7 +391,21 @@ button:hover{
     justify-content: space-around;
 }
 .detArrow{
-    margin-top: 22%;
+    margin-top: 30%;
+}
+.PaginationProductDetails{
+    width: 100%;
+    margin-top: 0.5%;
+    margin-bottom: 6%;
+    padding-left: 43%;
+    display: flex;
+}
+.Circlepagination-div{
+    width: 6%;
+    margin-right: 0.5%;
+}
+.CirclePagination{
+    width: 100%;
 }
 /*end of Product Detail*/
 
@@ -396,14 +415,14 @@ button:hover{
     font-size: 18px;
 }
 .YourCart{
-    width: 80%;
+    width: 100%;
     border-bottom-style: solid;
     border-bottom-width: 2px;
     border-color: gray;
 }
 .container-cart{
-    width: 80%;
-    margin-left: 16%;
+    width: 60%;
+    margin-left: 20%;
 }
 .Cart-title{
     border-bottom-style: solid;
@@ -509,9 +528,9 @@ button:hover{
     color: #F56764;
 }
 .CartBuy{
-    width: 25% !important;
+    width: 28% !important;
     height: 5% !important;
-    margin-left: 55%;
+    margin-left: 72%;
 }
 .emptyButton{
     margin: 19% 0;
@@ -1147,6 +1166,9 @@ select{
     .TextTruck{
         font-size: 17px;
     }
+    .container-cart,.login p{
+        font-size: 17px;
+    }
     .buy_button{
         font-size: 13px;
     }
@@ -1171,6 +1193,7 @@ select{
     #TextTruck{
         font-size: 20px;
     }
+
     
     label{
         font-size: 19px;
@@ -1204,6 +1227,9 @@ select{
     }
     .TextTruck{
         font-size: 14.5px;
+    }
+    .container-cart,.login p{
+        font-size: 15.5px;
     }
     .buy_button{
         font-size: 11px;
@@ -1260,6 +1286,12 @@ select{
     }
     .TextTruck{
         font-size: 13px;
+    }
+    .TotalSect{
+        line-height: 24px;
+    }
+    .container-cart,.login p{
+        font-size: 14px;
     }
     .buy_button{
         font-size: 9px;
@@ -1321,6 +1353,12 @@ select{
     .TextTruck{
         font-size: 10px;
     }
+    .container-cart,.login p{
+        font-size: 11px;
+    }
+    .TotalSect{
+        line-height: 20px;
+    }
     .buy_button{
         font-size: 8px;
     }
@@ -1370,10 +1408,13 @@ select{
         font-size: 9px;
     }
     .ProductCard{
-        font-size: 8px;
+        font-size: 6px;
     }
     .TextTruck{
         font-size: 8px;
+    }
+    .container-cart,.login p{
+        font-size: 9px;
     }
     .buy_button{
         font-size: 7px;
@@ -1426,10 +1467,16 @@ select{
         font-size: 8px;
     }
     .ProductCard{
-        font-size: 7px;
+        font-size: 5px;
     }
     .TextTruck{
         font-size: 7px;
+    }
+    .container-cart,.login p{
+        font-size: 8px;
+    }
+    .TotalSect{
+        line-height: 15px;
     }
     .buy_button{
         font-size: 6px;
@@ -1775,7 +1822,7 @@ select{
         width: 50%;
     }
     .selectedNumber{
-        width: 10%;
+        width: 9%;
         border-radius: 2rem;
         padding-top: 0.6%;
         padding-left: 2.8%;
@@ -1930,11 +1977,26 @@ select{
     }
 }
 
-/*Solution*/
-
-.Pallets-div {
+.main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 75vh;
+    min-height: 78vh;
+}
+@media (height:792px) {
+    .main {
+        min-height: 80vh;
+    }
+}
+@media (min-width:2500px) {
+    .selectedNumber{
+        width: 2.2%;
+    }
+    .pagination-bar p:last-of-type{
+        margin-right:5%;
+    }
+    .pagination-bar{
+        margin-left: 43%;
+        bottom: 5%;
+    }
 }
