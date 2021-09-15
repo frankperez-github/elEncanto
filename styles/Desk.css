@@ -256,9 +256,6 @@ button:hover{
 .arrow-pag{
     margin-top: 3% !important;
 }
-.arrow-div{
-    width: 10%;
-}
 .arrow-pag:hover{
     cursor:pointer;
 }
@@ -395,7 +392,7 @@ button:hover{
 }
 .PaginationProductDetails{
     width: 100%;
-    margin-top: 0.5%;
+    margin-top: 1%;
     margin-bottom: 6%;
     padding-left: 43%;
     display: flex;
@@ -1991,12 +1988,14 @@ select{
 @media (min-width:2500px) {
     .selectedNumber{
         width: 2.2%;
-    }
-    .pagination-bar p:last-of-type{
-        margin-right:5%;
+        padding-left: 0.7%;
+        padding-top: 0.5%;
     }
     .pagination-bar{
         margin-left: 43%;
-        bottom: 5%;
+        bottom: 18%;
+    }
+    .arrow-div{
+        margin-bottom: 0.5%;
     }
 }

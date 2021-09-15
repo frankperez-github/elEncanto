@@ -27,7 +27,7 @@ function Products({categories}){
 
                     
 
-                        <div className="pagination-bar ">
+                        {/* <div className="pagination-bar ">
                         
                             <div className="arrow-div">
                                 <Image alt="No Image" className="arrow-pag leftarr" src="/Larrow.svg" width="45%" height="45%" />
@@ -44,7 +44,8 @@ function Products({categories}){
                             </div>
 
                         </div>  
-                    
+                     */}
+                     
                     </div>
 
 
