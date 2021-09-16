@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
 export const getServerSideProps = async(context) => {
-    const res  = await fetch(`http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com/products/categories/${context.params.id}`)
+    const res  = await fetch(`https://elencantoapi.com/products/categories/${context.params.id}`)
     const category = await res.json()
 
     return {

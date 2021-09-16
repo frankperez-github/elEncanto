@@ -22,10 +22,11 @@ const PlaceOrder = () => {
             setTax(Number((subTotal*0.08375).toFixed(2)))
         }
         else router.push('/User')
+        console.log(user)
     },[cartItems, subTotal])
 
     const sendOrder = async() => {
-        await fetch('http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com/orders/', {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access}`},body:JSON.stringify({"order_items":cartItems, "shipping_address":shippingAddress, "total_price":Number(subTotal+tax)})})
+        await fetch('https://elencantoapi.com/orders/', {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access?user.access:user.token}`},body:JSON.stringify({"order_items":cartItems, "shipping_address":shippingAddress, "total_price":Number(subTotal+tax)})})
         dispatch({type:"CLEAN"})
         router.push("/User")
     }

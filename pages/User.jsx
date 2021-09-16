@@ -29,7 +29,7 @@ const User = () => {
     const getOrders = ()=> {
         
 
-        fetch("http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com/orders/", {method:"GET", headers:{"Content-Type":"application/json", Authorization:`Bearer ${user.access}`}})
+        fetch("https://elencantoapi.com/orders/", {method:"GET", headers:{"Content-Type":"application/json", Authorization:`Bearer ${user.access?user.access:user.token}`}})
         .then(res=>res.json())
         .then(data=>setOrders(data))
     
@@ -38,7 +38,7 @@ const User = () => {
     const getAddresses = ()=> {
         
 
-        fetch("http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com/shipping/", {method:"GET", headers:{"Content-Type":"application/json", Authorization:`Bearer ${user.access}`}})
+        fetch("https://elencantoapi.com/shipping/", {method:"GET", headers:{"Content-Type":"application/json", Authorization:`Bearer ${user.access}`}})
         .then(res=>res.json())
         .then(data=>setAdresses(data))
        

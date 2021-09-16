@@ -35,7 +35,7 @@ const Shipping = () => {
             street, city, state, zipcode
         })
         if (save) {
-             await fetch("http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com/orders/shipping/", {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access}`}, body:JSON.stringify({...shippingAddress, "default":defaultAdresss})})
+             await fetch("https://elencantoapi.com/orders/shipping/", {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access}`}, body:JSON.stringify({...shippingAddress, "default":defaultAdresss})})
         }
       
         router.push("/PlaceOrder")
@@ -57,9 +57,10 @@ const Shipping = () => {
            
              <input placeholder="Zipcode" type="text" value={zipcode} onChange={e=>setZipcode(e.target.value)}/>
                 
-                    <div className="dfltAddress">
+                {/*    <div className="dfltAddress">
                     <input className="checkBox" type="checkbox" name="" id="" checked={defaultAdresss} onChange={()=>setDefaultAddress(!defaultAdresss)}/>  Make default address? 
                     </div>
+                    */} 
              <button style={{width:"70%",alignSelf:"center"}} className="submit_button" type="submit">
                 Submit
             </button>
