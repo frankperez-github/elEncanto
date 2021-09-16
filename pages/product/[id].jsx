@@ -8,7 +8,7 @@ export const getServerSideProps = async(context) => {
 
   
 
-    const res = await fetch(`http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com/products/${context.params.id}`)
+    const res = await fetch(`https://elencantoapi.com/products/${context.params.id}`)
   
     const product = await res.json()
     

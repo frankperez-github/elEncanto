@@ -61,7 +61,7 @@ function Products({categories}){
 }export default Products
 
 export const getStaticProps = async() => {
-    const res = await fetch('http://django-env.eba-mpfqdpns.us-west-2.elasticbeanstalk.com/products/categories/')
+    const res = await fetch('https://elencantoapi.com/products/categories/')
     const categories = await res.json()
     
 
