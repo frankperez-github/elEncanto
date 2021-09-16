@@ -392,7 +392,7 @@ button:hover{
     width: 100%;
     margin-top: 1%;
     margin-bottom: 6%;
-    padding-left:48.7%;
+    padding-left: 48.7%;
     display: flex;
 }
 .Circlepagination-div{
@@ -1711,7 +1711,6 @@ select{
         font-size: 16px;
         margin-left: 7.5%;
         width: 85%;
-        padding: 5% 3%;
     }
     
 
@@ -1958,6 +1957,31 @@ select{
     .ColumnLink{
         width: 13%;
     }
+    .Step-div2{
+        width: 80%;
+        margin: 5% 10%;
+    }
+    .ShippingAddress h2{
+        font-size: 18px;
+        margin-top: 5%;
+    }
+    .YourCart p{
+        font-size: 12px;
+    }
+    .YourCart select{
+        height: 3vh;
+    }
+    .OrderButton{
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .modify_button{
+        width: 40%;
+    }
+    .PlaceOrderP p{
+        width: 100%;  
+        margin-left: 2%;
+    }
 }    
 @media (max-width:320px) {
     h2{
@@ -1969,6 +1993,8 @@ select{
     }
     .networks-link{
         width: 12%;
+    }.YourCart select{
+        height: 5vh;
     }
 }
 
