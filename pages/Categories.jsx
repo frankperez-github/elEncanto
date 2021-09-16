@@ -23,29 +23,8 @@ function Products({categories}){
                 
                     <div className="Right_side Category-div" id="Right_side ">
                     
-                    {categories.map(category=> <CategoryCard key={category["id"]} category = {category}/>)}
+                        {categories.map(category=> <CategoryCard key={category["id"]} category = {category}/>)}
 
-                    
-
-                        {/* <div className="pagination-bar ">
-                        
-                            <div className="arrow-div">
-                                <Image alt="No Image" className="arrow-pag leftarr" src="/Larrow.svg" width="45%" height="45%" />
-                            </div>
-
-                                <p>1</p>
-                                <p>2</p>
-                                <p className="selectedNumber">3</p>
-                                <p>4</p>
-                                <p>5</p>
-
-                            <div className="arrow-div">
-                                <Image alt="No Image" className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
-                            </div>
-
-                        </div>  
-                     */}
-                     
                     </div>
 
 

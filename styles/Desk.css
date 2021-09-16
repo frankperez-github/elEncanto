@@ -225,14 +225,12 @@ button:hover{
 
 .pagination-bar{
     position: absolute;
-    bottom: 25%;
-    margin-bottom: -5%;
-    left: 0%;
+    bottom: 18%;
+    left: 43%;
     width: 40%;
     display: flex;
     align-items: center;
     justify-items: space-between;
-    margin-left: 41%;
 }
 .pagination-bar p{
     margin-top: -1%;
@@ -394,7 +392,7 @@ button:hover{
     width: 100%;
     margin-top: 1%;
     margin-bottom: 6%;
-    padding-left: 43%;
+    padding-left:48.7%;
     display: flex;
 }
 .Circlepagination-div{
