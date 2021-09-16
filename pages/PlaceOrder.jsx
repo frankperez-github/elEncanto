@@ -26,7 +26,7 @@ const PlaceOrder = () => {
     },[cartItems, subTotal])
 
     const sendOrder = async() => {
-        await fetch('https://elencantoapi.com/orders/', {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.token}`},body:JSON.stringify({"order_items":cartItems, "shipping_address":shippingAddress, "total_price":Number(subTotal+tax)})})
+        await fetch('https://elencantoapi.com/orders/', {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access?user.access:user.token}`},body:JSON.stringify({"order_items":cartItems, "shipping_address":shippingAddress, "total_price":Number(subTotal+tax)})})
         dispatch({type:"CLEAN"})
         router.push("/User")
     }
