@@ -832,7 +832,20 @@ select{
 }
 /*--------end of buy_form----------*/
 
+/*User*/
 
+.ActualState{
+    margin: 2% 0;
+    margin-top: -3%;
+}
+.approved{
+    color: #54cf49;
+}
+.Pending{
+    color: #F56764;
+}
+
+/*End of User*/
 
 
 /*Hiding Mobile version*/

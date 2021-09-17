@@ -74,6 +74,8 @@ const OrderCard = ({order}) => {
     return(
         <div className="orderCard" style={order.is_approved ?{borderColor:"#54cf49", borderWidth:"2px"}:{borderColor:"gray"}}>
 
+          {order.is_approved ? <h2 className="ActualState approved">Order Approved</h2>:<h2 className="ActualState Pending">Order Pending Approval</h2>}
+
           <p>Order Id: {order.id}</p>
           <p>Placed: {order.created_at}</p>
           <br/>
@@ -138,6 +140,7 @@ const OrderCard = ({order}) => {
 
                 
             {!order.is_approved? <p className="IfApproved">Your order will be approved soon. Wait for an email from <br/>
+
             <a style={{color:"#F56764"}}>elencantoliquidation@gmail.com</a> </p>:
             
             <div className="OrderState">

@@ -1,6 +1,5 @@
 import '../styles/globals.css'
 import '../styles/Desk.css'
-import '../styles/Mobile.css'
 import Image from 'next/image'
 import Layout from '../components/Layout'
 import CartContextProvider from '../context/CartContext'
