@@ -16,6 +16,7 @@ const OrderCard = ({order}) => {
   const [tax, setTax] = useState(0)
   const [sdk, setSdk] = useState(false)
   const [success, setSuccess] = useState(false)
+  const [paying, setPaying] = useState(false)
 
     const PayPal_button = () =>{
       displayPayPal = "block"
@@ -147,8 +148,9 @@ const OrderCard = ({order}) => {
                   <h3>`Paid at: {order.paid_at}`</h3> 
 
                   <h3>{order.is_delivered?`Delivered at ${order.delivered_at}`:"Not delivered yet"}</h3>
-
+                  
                 </div> :
+<<<<<<< HEAD
 
                 <div className="">
                   <div className="PaypalSustitute">
@@ -157,6 +159,12 @@ const OrderCard = ({order}) => {
 
                   </div>
                   <div className=""> 
+=======
+                <div className="">
+                  <button style={{display:paying?"none":'block'}} onClick= {()=>setPaying(true)} className="buy_button cancelButton">Pay this order</button>
+              
+                <div style={{display:paying?"block":"none"}} className=""> 
+>>>>>>> 1ec818472930e03f41ce33ad03d52f83a21928f5
                   
                     {sdk && <PayPalButton  amount={order.total_price} onSuccess={()=>{
                 
@@ -164,12 +172,18 @@ const OrderCard = ({order}) => {
                       setSdk(false)
                       setSuccess(true)
 
+<<<<<<< HEAD
                     }}/>} 
 
                   </div> 
                 </div>
                 
                 
+=======
+                  }}/>} 
+  </div>
+                </div> 
+>>>>>>> 1ec818472930e03f41ce33ad03d52f83a21928f5
             }
 
             </div>}
