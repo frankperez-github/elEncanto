@@ -31,14 +31,14 @@ const PlaceOrder = () => {
         "total_price":Number(subTotal+tax)})})
         dispatch({type:"CLEAN"})
 
-        setTimeout(router.push("/User"), 7500);
-        
     }
 
-    const showAnim = () =>{
-        
+    const showAnim =() =>{
+
+        setTimeout(()=>{router.push("/User")}, 7500);
         document.getElementById('Animation').style.display="block";
         document.getElementById('Place_Order').style.display="none";
+        
     }
     
     return (
@@ -121,7 +121,7 @@ const PlaceOrder = () => {
                 </div>
                 
 
-                <button onClick={()=>{showAnim()}} className="buy_button OrderButton">Place Order</button>
+                <button onClick={()=>{showAnim();sendOrder()}} className="buy_button OrderButton">Place Order</button>
 
                 <div className="PlaceOrderP">
                     <p>( You don't need to pay your order until it is approved )</p>
