@@ -430,6 +430,37 @@ button:hover{
     font-weight: 360;
     font-size: 35px;
 }
+.userName h2{
+    text-align: center;
+    margin: 5% 0;
+    font-size: 30px !important;
+}
+.userName{
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 10%;
+}
+.ordersTitle{
+    margin-bottom: 6%;
+    width: 88%;
+    margin: -2% 6%;
+}
+.ordersTitle h2{
+    font-size: 22px !important;
+    color: #F56764;
+}
+.cancelButton{
+    width: 40%;
+    height: 7vh;
+    margin-top: 15% !important;
+    margin-left: 30%;
+    font-size: 18px !important;
+}
+.NoTrash{
+    margin-left: 2%;
+    margin-right: 10% !important;
+}
+
 .Caracts{
     display: flex;
     justify-content: space-between;
@@ -455,12 +486,16 @@ button:hover{
     align-items: center;
     padding-bottom: 0.7%;
     margin-bottom: 1%;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-color: gray;
+}
+.PayPalButton{
+    width: 40%;
 }
 .cartItem{
+    border-bottom:solid ;
+    border-color: gray;
+    border-bottom-width: 1px;
     width: 100%;
+    margin-bottom: 2%;
     display: flex;
 }
 .Item{
@@ -535,6 +570,59 @@ button:hover{
     font-weight: 300;
     text-align: center;
     margin: 13.5vh 0;
+}
+.Order{
+    margin: 3% 0;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-color: gray;
+}
+.Order-Card{
+    border-top: solid;
+    margin: 5% 0;
+    border-top-width: 2px;
+    border-color: gray;
+}
+.IfApproved{
+    font-size: 17px !important;
+}
+.orderCard{
+    border: solid;
+    border-radius: 0.5rem;
+    border-width: 1.5px;
+    border-color: gray;
+    padding: 5%;
+    margin: 5% 10%;
+    width: 80%;
+}
+.Quantity p{
+    font-size: 17px !important;
+    margin-left: 12%;
+    margin-top: 0%;
+}
+.paid h1{
+    font-weight: 200 !important;
+}
+.orderCard h3{
+    font-weight: 300;
+}
+.NoOrders{
+    font-weight: 300;
+    margin-left: 17.5%;
+}
+.LogOut{
+    box-shadow: 1px 2px 15px   rgb(218, 216, 216) ;
+    margin:5% 35%;
+    font-size: 14px;
+    padding: 0.9% 0%;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    background-color: white; 
+    color: #FF524F;
+    align-self: flex-end;
+    font-size: 18px;
+    width: 30%;
 }
 /*end of Cart View***********************************/
 
@@ -1982,6 +2070,48 @@ select{
         width: 100%;  
         margin-left: 2%;
     }
+    
+    
+    /******************/
+
+    .orderCard{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .bigPic{
+        width: 42% ;
+    }
+    .totalsub{
+        margin: 3% 0;
+        margin-left: 54.5% !important;
+    }
+    .cancelButton{
+        width: 70% !important;
+        height: 4vh;
+        margin-top: 15% !important;
+        margin-left: 15% !important;
+        font-size: 18px !important;
+    }
+
+    .Quantity p{
+        font-size: 17px !important;
+        margin-left: 35%;
+        margin-top: 20%;
+    }
+    .LogOut{
+        box-shadow: 1px 2px 15px   rgb(218, 216, 216) ;
+        margin: 10% 0% 10% 20%;
+        font-size: 14px;
+        padding: 2% 0%;
+        border-radius: 1rem;
+        border: none;
+        text-align: center;
+        background-color: white; 
+        color: #FF524F;
+        align-self: flex-end;
+        font-size: 18px;
+        width: 60%;
+    }
 }    
 @media (max-width:320px) {
     h2{
@@ -1996,6 +2126,10 @@ select{
     }.YourCart select{
         height: 5vh;
     }
+    .cancelButton{
+        height: 6.5vh;
+    }
+    
 }
 
 .main {
