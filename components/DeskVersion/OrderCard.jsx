@@ -12,7 +12,7 @@ const OrderCard = ({order}) => {
   const [success, setSuccess] = useState(false)
 
     const deleteOrder = async() => {
-      await fetch(`https://elencanto-drf-api.herokuapp.com/orders/${order.id}/`, {method:"DELETE", headers:{"Content-Type": "application/json", authorization:`Bearer ${user.access}`}, })
+      await fetch(`https://elencantoapi.com/orders/${order.id}/`, {method:"DELETE", headers:{"Content-Type": "application/json", authorization:`Bearer ${user.access?user.access:user.token}`}, })
       router.reload(window.location.pathname)
       
     }
@@ -30,7 +30,7 @@ const addPaypalScript = ()=>{
 
 const successPaymentHandler = async(paymentResult)  => {
 
-  const res = await fetch(`https://elencanto-drf-api.herokuapp.com/orders/${order.id}/`, {method:"PUT", headers:{"Content-Type": "application/json", authorization:`Bearer ${user.access}`},body:JSON.stringify({"action":"pay"})})
+  const res = await fetch(`https://elencantoapi.com//orders/${order.id}/`, {method:"PUT", headers:{"Content-Type": "application/json", authorization:`Bearer ${user.access}`},body:JSON.stringify({"action":"pay"})})
   const data = await res.json()
   console.log(data)
   router.reload(window.location.pathname)
