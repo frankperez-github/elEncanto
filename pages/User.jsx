@@ -19,7 +19,7 @@ const User = () => {
         }
         else {
         getOrders()
-        getAddresses()
+    //    getAddresses()
         }
        
        
