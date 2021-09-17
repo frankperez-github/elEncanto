@@ -55,29 +55,31 @@ const User = () => {
 
     return(
         <div className="user">
+            <div className="Cart-title userName">
+                <h2>{user.first_name ?`${user.first_name}`:user.username}</h2>
+            </div>
             
-            <h1>Welcome {user.first_name && user.last_name?`${user.first_name} ${user.last_name}`:user.username}</h1>
-            <button onClick={()=>{setShowOrders(!showOrders)}} className="buy_button">{showOrders?"Hide your orders":"See your orders"}</button>
             
-            <div  className="orders" style={{display:showOrders?"block":"none"}}>
-        {orders.length>0? 
-          <div className="orders"><h1>This are your orders:</h1>
-          <br />
-           {orders.map(order=><OrderCard order={order} key={order.id}/>)}
-                </div> :
-                 <h1>You have no orders yet</h1>
-        }
-        </div>
-      {/*   <button onClick={()=>{setShowAddresses(!showAddresses)}} className="buy_button">{showAddresses?"Hide addresses":"See addresses"}</button>
-    <div style={{display:showAddresses?"block":"none"}} className="addresses">
-        <h2>Your addresses:</h2>
-        <br />
-        <div className="">
-        {addresses.map(address=>{return <AddressCard makeDefault={makeDefaultAddress} address={address} key={address.id}/>})}
-        </div>
-    </div> */}
+            <div  className="orders" style={{display:"block"}}>
+                {orders.length > 0 ? 
+                
+                    <div className="orders">
 
-<button onClick={()=>{dispatch({type:'LOGOUT'});router.push('/')}} className="buy_button">Log out</button>
+                        <div className="Cart-title ordersTitle ">
+                            <h2>Your Orders</h2>
+                        </div>
+                        
+                        
+                        {orders.map(order=><OrderCard order={order} key={order.id}/>)}
+
+                    </div> :
+
+                    <h2 className="NoOrders">You have no orders yet</h2>
+                }
+            </div>
+      
+
+            <button onClick={()=>{dispatch({type:'LOGOUT'});router.push('/')}} className=" LogOut">Log out</button>
 
         </div>
     )
