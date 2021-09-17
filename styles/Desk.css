@@ -827,6 +827,9 @@ select{
 .PayPal-div{
     text-align: center;
 }
+#Animation{
+    display: none;
+}
 /*--------end of buy_form----------*/
 
 
