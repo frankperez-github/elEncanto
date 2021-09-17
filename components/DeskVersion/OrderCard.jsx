@@ -43,19 +43,11 @@ const OrderCard = ({order}) => {
 
     const successPaymentHandler = async(paymentResult)  => {
 
-<<<<<<< HEAD
   const res = await fetch(`https://elencantoapi.com//orders/${order.id}/`, {method:"PUT", headers:{"Content-Type": "application/json", authorization:`Bearer ${user.access}`},body:JSON.stringify({"action":"pay"})})
   const data = await res.json()
   console.log(data)
   router.reload(window.location.pathname)
 }
-=======
-      const res = await fetch(`https://elencanto-drf-api.herokuapp.com/orders/${order.id}/`, {method:"PUT", headers:{"Content-Type": "application/json", authorization:`Bearer ${user.access}`},body:JSON.stringify({"action":"pay"})})
-      const data = await res.json()
-      console.log(data)
-      router.reload(window.location.pathname)
-    }
->>>>>>> ce6e4ad9a2d5dc0877ed23c31edde54910783163
 
 
 
