@@ -77,9 +77,9 @@ const OrderCard = ({order}) => {
           <p>Order Id: {order.id}</p>
           <p>Placed: {order.created_at}</p>
           <br/>
-          <p>Order Sumary: </p>
+          <h3 className="Sumary">Order Sumary: </h3>
 
-          <div className="YourCart Order-Card">
+          <div className="YourCart Order-Card cart">
 
             <div className="Caracts">
                 <p className="ItemP">Items</p>
@@ -150,40 +150,20 @@ const OrderCard = ({order}) => {
                   <h3>{order.is_delivered?`Delivered at ${order.delivered_at}`:"Not delivered yet"}</h3>
                   
                 </div> :
-<<<<<<< HEAD
-
-                <div className="">
-                  <div className="PaypalSustitute">
-
-                  <button className="buy_button cancelButton" onClick={PayPal_button} style={{display:displaySustitute}}>Pay Order</button>
-
-                  </div>
-                  <div className=""> 
-=======
-                <div className="">
-                  <button style={{display:paying?"none":'block'}} onClick= {()=>setPaying(true)} className="buy_button cancelButton">Pay this order</button>
+                <div className="PayPal-div">
+                  <button style={{display:paying?"none":""}} onClick= {()=>setPaying(true)} className="  buy_button cancelButton">Pay this order</button>
               
-                <div style={{display:paying?"block":"none"}} className=""> 
->>>>>>> 1ec818472930e03f41ce33ad03d52f83a21928f5
+                  <div style={{display:paying?"block":"none"}} className=""> 
                   
-                    {sdk && <PayPalButton  amount={order.total_price} onSuccess={()=>{
+                    {sdk && <PayPalButton className=" buy_button cancelButton" amount={order.total_price} onSuccess={()=>{
                 
                       alert("Payed")
                       setSdk(false)
                       setSuccess(true)
 
-<<<<<<< HEAD
                     }}/>} 
-
-                  </div> 
-                </div>
-                
-                
-=======
-                  }}/>} 
-  </div>
+                  </div>
                 </div> 
->>>>>>> 1ec818472930e03f41ce33ad03d52f83a21928f5
             }
 
             </div>}

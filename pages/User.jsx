@@ -2,7 +2,6 @@ import { useContext, useEffect, useState } from "react"
 import { UserContext } from "../context/UserContext"
 import {useRouter } from "next/router"
 import OrderCard from "../components/DeskVersion/OrderCard"
-import AddressCard from "../components/DeskVersion/AddressCard"
 
 const User = () => {
 

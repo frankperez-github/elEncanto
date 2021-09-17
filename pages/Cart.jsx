@@ -31,7 +31,7 @@ const Cart = ()=> {
             </div>
 
             {cartItems.length==0 ? <h1 className="EmptyCart">Empty</h1> :
-            <div className="">
+            <div className="cart">
             
                 <div className="Caracts">
                     <p className="ItemP">Items</p>

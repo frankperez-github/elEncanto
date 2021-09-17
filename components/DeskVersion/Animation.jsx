@@ -9,28 +9,42 @@ export default function Animation() {
 
             <div className="Pallets-div">
                 <div className="Left_side">
-                    <div className="">
-                        <div id="EmptyTruck">
-                            <Image alt="No Image" src="/truck.svg" width="450%" height="200%" />
+                    <div className="Truck_Animation_mob">
+                        <div id="closeTruck">
+                            <Image src="/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck" />
                         </div>
-                        <div id="OpenTruck">
-                            <Image alt="No Image" src="/empty_truck.svg" width="500%" height="250%" />
+                        <div id="closeTruck2">
+                            <Image src="/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck2" />
                         </div>
-                        <div id="ChargeDron">
-                            <Image alt="No Image" src="/charge_dron.svg" width="100%" height="100%" />
+                        <div id="closeTruck3">
+                            <Image src="/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck3" />
                         </div>
-                        <div  id="EmptyDron">
-                            <Image alt="No Image" src="/empty_dron.svg" width="100%" height="100%"/>
+                        <div id="closeTruck4">
+                            <Image src="/truck.svg" width="400%" height="250%" className="truck_mob_img ClosedTruck4" />
                         </div>
-                    </div>
+                        
+
+                        <div id="OpenTruck_mob">
+                            <Image src="/empty_truck.svg" width="400%" height="250%" />
+                        </div>
+
+                        <div className="chargeDron">
+                            <Image src="/charge_dron.svg" width="370%" height="200%" id="ChargeDron_mob"/>
+                        </div>
+
+                        <div className="emptyDron">
+                            <Image src="/empty_dron.svg"  width ="370%" height="100%" id="EmptyDron_mob"/>
+                        </div>
+
+                        <div id="Text_animation_mob">
+                            Order Placed.<br/> We will contact you when it gets aproved.
+                        </div>
+                    </div>        
                 </div>    
             </div>
 
-            <div id="TextTruck">
-                Order Placed. 
-            </div>
+            
                 
-            <buy_form/>
        </div>
 
     );
