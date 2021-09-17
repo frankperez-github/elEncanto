@@ -7,12 +7,20 @@ import { CartContext } from "../../context/CartContext"
 
 const OrderCard = ({order}) => {
 
+  var displayPayPal = "none"
+  var displaySustitute="block"
+
   const router = useRouter()
   const {user} = useContext(UserContext)
   const [subTotal, setSubTotal] = useState(0)
   const [tax, setTax] = useState(0)
   const [sdk, setSdk] = useState(false)
   const [success, setSuccess] = useState(false)
+
+    const PayPal_button = () =>{
+      displayPayPal = "block"
+      displaySustitute="none"
+    }
 
     const deleteOrder = async() => {
       await fetch(`https://elencantoapi.com/orders/${order.id}/`, {method:"DELETE", headers:{"Content-Type": "application/json", authorization:`Bearer ${user.access?user.access:user.token}`}, })
@@ -141,18 +149,27 @@ const OrderCard = ({order}) => {
                   <h3>{order.is_delivered?`Delivered at ${order.delivered_at}`:"Not delivered yet"}</h3>
 
                 </div> :
-                
-                <div className=""> 
+
+                <div className="">
+                  <div className="PaypalSustitute">
+
+                  <button className="buy_button cancelButton" onClick={PayPal_button} style={{display:displaySustitute}}>Pay Order</button>
+
+                  </div>
+                  <div className=""> 
                   
-                  {sdk && <PayPalButton amount={order.total_price} onSuccess={()=>{
-              
-                    alert("Payed")
-                    setSdk(false)
-                    setSuccess(true)
+                    {sdk && <PayPalButton  amount={order.total_price} onSuccess={()=>{
+                
+                      alert("Payed")
+                      setSdk(false)
+                      setSuccess(true)
 
-                  }}/>} 
+                    }}/>} 
 
-                </div> 
+                  </div> 
+                </div>
+                
+                
             }
 
             </div>}

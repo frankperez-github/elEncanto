@@ -440,12 +440,16 @@ button:hover{
     margin-left: 25%;
     margin-bottom: 10%;
 }
+.user{
+    text-align: center !important;
+}
 .ordersTitle{
     margin-bottom: 6%;
     width: 88%;
     margin: -2% 6%;
 }
 .ordersTitle h2{
+    margin-left: 2% !important;
     font-size: 22px !important;
     color: #F56764;
 }
@@ -597,7 +601,7 @@ button:hover{
 }
 .Quantity p{
     font-size: 17px !important;
-    margin-left: 12%;
+    margin-left: 11%;
     margin-top: 0%;
 }
 .paid h1{
@@ -605,6 +609,9 @@ button:hover{
 }
 .orderCard h3{
     font-weight: 300;
+}
+.orders h2{
+    margin-left: 40%;
 }
 .NoOrders{
     font-weight: 300;
@@ -866,6 +873,10 @@ select{
     margin-right: -55%;
     width: 7%;
     height: 3vh;
+}
+.ItemName{
+    margin-left: 5%;
+    margin-right: -5%;
 }
 /*--------end of buy_form----------*/
 
@@ -2095,12 +2106,12 @@ select{
 
     .Quantity p{
         font-size: 17px !important;
-        margin-left: 35%;
+        margin-left:0%;
         margin-top: 20%;
     }
     .LogOut{
         box-shadow: 1px 2px 15px   rgb(218, 216, 216) ;
-        margin: 10% 0% 10% 20%;
+        margin: 10% 0%;
         font-size: 14px;
         padding: 2% 0%;
         border-radius: 1rem;
@@ -2111,6 +2122,9 @@ select{
         align-self: flex-end;
         font-size: 18px;
         width: 60%;
+    }
+    .orders h2{
+        margin-left: 17%;
     }
 }    
 @media (max-width:320px) {
