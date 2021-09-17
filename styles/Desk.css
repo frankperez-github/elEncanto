@@ -1365,7 +1365,7 @@ select{
         font-size: 11px;
     }
     #Text_animation_mob{
-        font-size: 10px !important;
+        font-size: 10px ;
     }
     .nav_bar{
         font-size: 9px;
@@ -2206,10 +2206,11 @@ select{
     #Text_animation_mob{
         text-align: center;
         position: absolute;
-        opacity: 0;
+        opacity: 1;
+        font-size: 17px;
         width:80%;
         top: 85% !important;
-        left: 13% !important;
+        left: 10% !important;
         animation-name: Text_animation_mob;
         animation-duration: 6s;
     }
