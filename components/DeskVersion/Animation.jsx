@@ -27,7 +27,7 @@ export default function Animation() {
             </div>
 
             <div id="TextTruck">
-                We are preparing your order!
+                Order Placed. 
             </div>
                 
             <buy_form/>

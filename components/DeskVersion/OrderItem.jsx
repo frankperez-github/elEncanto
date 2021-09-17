@@ -39,7 +39,7 @@ const OrderItem = ({item}) => {
                         </div>
                         
                         <p className="ItemName">{item.name} </p>
-                        
+                        {console.log(item)}
                     </div>
 
                     <div className="Quantity">

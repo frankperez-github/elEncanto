@@ -68,7 +68,7 @@ const OrderCard = ({order}) => {
           <p>Order Id: {order.id}</p>
           <p>Placed: {order.created_at}</p>
           <br/>
-          <p>Order Sumary: {order.payment_method}</p>
+          <p>Order Sumary: </p>
 
           <div className="YourCart Order-Card">
 
@@ -142,7 +142,7 @@ const OrderCard = ({order}) => {
 
                 </div> :
                 
-                <div className="cancelButton"> 
+                <div className=""> 
                   
                   {sdk && <PayPalButton amount={order.total_price} onSuccess={()=>{
               
