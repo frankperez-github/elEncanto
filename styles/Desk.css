@@ -2206,7 +2206,7 @@ select{
     #Text_animation_mob{
         text-align: center;
         position: absolute;
-        opacity: 1;
+        opacity: 0;
         font-size: 17px;
         width:80%;
         top: 85% !important;
