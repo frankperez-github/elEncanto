@@ -72,7 +72,7 @@ function Layout(props) {
                     <div className="link-div">
                     
                         <div className="NavLink-div">
-                                <div className="LinkImg">
+                                <div className="LinkImg " id="cart">
                                     <svg className="LinkSVG" className="LinkSVG" xmlns="http://www.w3.org/2000/svg" width="22.832" height="25.648" viewBox="0 0 22.832 25.648">
                                         <g id="purchases" transform="translate(-74 -181)">
                                             <g id="pruchases_icon" transform="translate(74 181)">

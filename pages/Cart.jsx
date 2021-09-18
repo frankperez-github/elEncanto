@@ -85,7 +85,7 @@ const Cart = ()=> {
         </div>
         
         {cartItems.length==0 ? <div className="emptyButton"></div> :
-            <button  onClick={()=>{router.push('/Shipping')}} className="buy_button CartBuy" style={{height:"40px", width:"70%", justifySelf:"center"}}>Proceed to checkout</button>}
+            <button  onClick={()=>{router.push('/Shipping'); }} className="buy_button CartBuy" style={{height:"40px", width:"70%", justifySelf:"center"}}>Proceed to checkout</button>}
 
      </div>
  )

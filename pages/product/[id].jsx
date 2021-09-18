@@ -21,9 +21,12 @@ export const getServerSideProps = async(context) => {
 }
 }
 
+    
+
 
 export default function ProductDetail({product}) {
-
+    
+    
    const router = useRouter()
   const [qty, setQty] = useState(1)
   const [currentImg, setCurrentImg] = useState(0)
@@ -42,6 +45,13 @@ export default function ProductDetail({product}) {
     },[currentImg])
 
    
+    const Vibrate=()=>{
+        var cart = document.getElementById("cart");
+        cart.classList.add("Cartimg");
+        var audio = document.getElementById("audio");
+        audio.play();
+    }
+
     
     const {dispatch} = useContext(CartContext)
 
@@ -117,10 +127,16 @@ export default function ProductDetail({product}) {
 
                     <label htmlFor="qty-select"></label>
 
-                    <button onClick={addToCart} className=" white_button">Add to cart</button>
+                    <button onClick={()=>{addToCart(); Vibrate()}}className=" white_button">Add to cart</button>
 
-                    <button onClick={()=> {addToCart();router.push("/Cart")}} className="buy_button buyPhone">Buy</button>
+                    
+                   
+
+                    <button onClick={()=> {addToCart();Vibrate();router.push("/Cart")}} className="buy_button buyPhone">Buy</button>
                 </div> : <h1>Out of stock</h1>}
+
+                        
+                <audio  src="/ding.mp3" id="audio"></audio>
 
             </div>
         </div>
