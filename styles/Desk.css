@@ -2248,6 +2248,7 @@ select{
         animation-duration: 6s;
     }
     .paypal{
+        margin-left: 0;
         width: 100%;
     }
 }    
