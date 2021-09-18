@@ -156,7 +156,7 @@ const OrderCard = ({order}) => {
                 <div className="PayPal-div">
                   <button style={{display:paying?"none":""}} onClick= {()=>setPaying(true)} className="  buy_button cancelButton">Pay this order</button>
               
-                  <div style={{display:paying?"block":"none"}} className=""> 
+                  <div style={{display:paying?"block":"none"}} className="paypal"> 
                   
                     {sdk && <PayPalButton className=" buy_button cancelButton" amount={order.total_price} onSuccess={()=>{
                 

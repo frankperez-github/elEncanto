@@ -30,6 +30,7 @@ const Login = ()=> {
         if (user.username) {
             router.push("User")
         }
+     
     }, [])
 
     return (

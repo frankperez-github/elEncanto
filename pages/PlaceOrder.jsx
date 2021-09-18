@@ -22,20 +22,22 @@ const PlaceOrder = () => {
             )
             setTax(Number((subTotal*0.08375).toFixed(2)))
         }
-        else router.push('/User')
+       
     },[cartItems, subTotal])
 
-    const sendOrder = async() => {
+ 
 
-        await fetch('https://elencantoapi.com/orders/', {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access?user.access:user.token}`},body:JSON.stringify({"order_items":cartItems, "shipping_address":shippingAddress,
+    const sendOrder = async() => {
+        
+       await fetch('https://elencantoapi.com/orders/', {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access?user.access:user.token}`},body:JSON.stringify({"order_items":cartItems, "shipping_address":shippingAddress,
         "total_price":Number(subTotal+tax)})})
         dispatch({type:"CLEAN"})
-
+        setTimeout(()=>{router.push("/User")}, 7000)
     }
 
     const showAnim =() =>{
 
-        setTimeout(()=>{router.push("/User")}, 7500);
+        
         document.getElementById('Animation').style.display="block";
         document.getElementById('Place_Order').style.display="none";
         
