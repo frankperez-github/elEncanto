@@ -2247,6 +2247,9 @@ select{
         animation-name: Text_animation_mob;
         animation-duration: 6s;
     }
+    .paypal{
+        width: 100%;
+    }
 }    
 @media (max-width:320px) {
     #Text_animation_mob{
