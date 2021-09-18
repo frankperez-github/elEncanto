@@ -32,7 +32,7 @@ const PlaceOrder = () => {
        await fetch('https://elencantoapi.com/orders/', {method:"POST", headers:{"Content-Type":"application/json", authorization: `Bearer ${user.access?user.access:user.token}`},body:JSON.stringify({"order_items":cartItems, "shipping_address":shippingAddress,
         "total_price":Number(subTotal+tax)})})
         dispatch({type:"CLEAN"})
-        setTimeout(()=>{router.push("/User")}, 7000)
+        setTimeout(()=>{router.push("/User")}, 6500)
     }
 
     const showAnim =() =>{
