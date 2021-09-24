@@ -92,7 +92,7 @@ export default function Home({products}) {
   )
 }
 
-export const getStaticProps  = async()=> {
+export const getServerSideProps  = async()=> {
   const res = await fetch('https://elencantoapi.com/products')
   
   const products = await res.json()
@@ -103,6 +103,6 @@ export const getStaticProps  = async()=> {
       products,
      
     },
-    revalidate: 10,
+
   }
 }
