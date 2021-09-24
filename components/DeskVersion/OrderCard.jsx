@@ -42,7 +42,7 @@ const OrderCard = ({order}) => {
     const addPaypalScript = ()=>{
       const script = document.createElement("script")
       script.type = 'text/javascript'
-      script.src = "https://www.paypal.com/sdk/js?client-id=AYfvlWFE-FyeSm2NBubForDud-H-5OAv98pe4_Y7-mqNSvbukVej_qzzcnumwu4IGf1gs7uASF2km1dp"
+      script.src = "https://www.paypal.com/sdk/js?client-id=AZobwNd6WIzVh6zFLdbokGhRoa3flznbVRKpKOTdHOgtbJJQg0-mH3Fc-2PzcQ3SvRFKzkycBeFux1mM"
       script.async = true
       script.onload = () => {
         setSdk(true)

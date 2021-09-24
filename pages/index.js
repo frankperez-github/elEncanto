@@ -101,7 +101,8 @@ export const getStaticProps  = async()=> {
   return {
     props: {
       products,
-     // pages:[...Array(Math.ceil(products.lenght/5)).keys()]
-    }
+     
+    },
+    revalidate: 10,
   }
 }
