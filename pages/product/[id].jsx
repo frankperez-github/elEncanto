@@ -79,7 +79,7 @@ export default function ProductDetail({product}) {
                     </div>
 
                     <div className="imageProduct">
-                        <Image className="ImageProductsDetails" alt="No Image" width={1000} height={900} src={product.images[currentImg].image} />
+                        <Image className="ImageProductsDetails" alt="No Image" width={1000} height={900} src={product.images[currentImg]?product.images[currentImg].image:"/nimg.png"} />
                     </div>
 
                     <div className="arrow-div detArrow">
