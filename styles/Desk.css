@@ -920,14 +920,18 @@ select{
     
 }
 .ClosedTruck2{
-    margin-left: 10% !important;
+    margin-left: 0% !important;
     opacity: 0;
     animation-name: Acelerate;
     animation-duration: 6s;
 }
+.paypal{
+    margin-left: 25%;
+    width: 50%;
+}
 .ClosedTruck3{
     opacity: 0;
-    margin-left: 10% !important;
+    margin-left: 0% !important;
     animation-name: Acelerate2;
     animation-duration: 6s;
 }
@@ -2242,6 +2246,10 @@ select{
         left: 10% !important;
         animation-name: Text_animation_mob;
         animation-duration: 6s;
+    }
+    .paypal{
+        margin-left: 0;
+        width: 100%;
     }
 }    
 @media (max-width:320px) {
