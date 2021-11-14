@@ -62,7 +62,7 @@ export default function ProductDetail({product}) {
             qty:Number(qty),
             countInStock:Number(product.countInStock),
             price:Number(product.price),
-            image:product.images[0].image
+            image:product.images.length>0?product.images[0].image:""
 
         }
         dispatch({type:'ADD_ITEM', payload:item})
@@ -79,7 +79,7 @@ export default function ProductDetail({product}) {
                     </div>
 
                     <div className="imageProduct">
-                        <Image className="ImageProductsDetails" alt="No Image" width={1000} height={900} src={product.images[currentImg].image} />
+                        <Image className="ImageProductsDetails" alt="No Image" width={1000} height={900} src={product.images.length>0?product.images[currentImg].image:"/nimg.png"} />
                     </div>
 
                     <div className="arrow-div detArrow">

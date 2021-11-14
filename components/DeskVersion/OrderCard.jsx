@@ -42,7 +42,7 @@ const OrderCard = ({order}) => {
     const addPaypalScript = ()=>{
       const script = document.createElement("script")
       script.type = 'text/javascript'
-      script.src = "https://www.paypal.com/sdk/js?client-id=AYfvlWFE-FyeSm2NBubForDud-H-5OAv98pe4_Y7-mqNSvbukVej_qzzcnumwu4IGf1gs7uASF2km1dp"
+      script.src = "https://www.paypal.com/sdk/js?client-id=AZobwNd6WIzVh6zFLdbokGhRoa3flznbVRKpKOTdHOgtbJJQg0-mH3Fc-2PzcQ3SvRFKzkycBeFux1mM"
       script.async = true
       script.onload = () => {
         setSdk(true)
@@ -144,13 +144,13 @@ const OrderCard = ({order}) => {
             <a style={{color:"#F56764"}}>elencantoliquidation@gmail.com</a> </p>:
             
             <div className="OrderState">
-              <h3 className="paid">{ order.is_paid?" Your order is paid" : " "}</h3>
+             
               
                 {order.is_paid ?
                 <div>
-                  <h3>`Paid at: {order.paid_at}`</h3> 
+                  <h3 style={{color:"#54cf49"}}>Paid at: {order.paid_at}</h3> 
 
-                  <h3>{order.is_delivered?`Delivered at ${order.delivered_at}`:"Not delivered yet"}</h3>
+                  <h3 style={{color:order.is_delivered?"#54cf49":"#F56764"}}>{order.is_delivered?`Delivered at ${order.delivered_at}`:"Not delivered yet"}</h3>
                   
                 </div> :
                 <div className="PayPal-div">
@@ -158,7 +158,7 @@ const OrderCard = ({order}) => {
               
                   <div style={{display:paying?"block":"none"}} className="paypal"> 
                   
-                    {sdk && <PayPalButton  amount={order.total_price} onSuccess={()=>{
+                    {sdk && <PayPalButton className=" buy_button cancelButton" amount={order.total_price} onSuccess={()=>{
                 
                       alert("Payed")
                       setSdk(false)

@@ -12,7 +12,7 @@ export default function ProductCard({product}) {
             <div className="product ProductCard">
                                 
             <div className="ModuleImg-div">
-                <Image alt="No Image" src={product.images[0].image} width="42%" height="47%"/>
+                <Image alt="No Image" src={product.images.length>0?product.images[0].image:"/nimg.png"} width="42%" height="47%"/>
             </div>
         
         

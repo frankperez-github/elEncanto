@@ -13,7 +13,8 @@ export default function Home({products}) {
   const [page, setPage] = useState(0)
   const [keyword, setKeyword] = useState("")
   const [pages, setPages] = useState([])
-  const [perPage] = useState(8)
+  const [perPage] = useState(16)
+
   useEffect(()=>{
     var pagesArr = []
     let len = products.filter(product=>product.name.toLowerCase().includes(keyword.toLowerCase())).length
@@ -103,7 +104,8 @@ export const getStaticProps  = async()=> {
   return {
     props: {
       products,
-     // pages:[...Array(Math.ceil(products.lenght/5)).keys()]
-    }
+     
+    },
+    revalidate: 10,
   }
 }

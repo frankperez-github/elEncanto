@@ -34,7 +34,7 @@ const OrderItem = ({item}) => {
 
                         <div className="ItemPic bigPic">
                             <Link href={`/product/${item.product}`}>
-                                <Image alt="No Image" width={100} height={100} src={item.image}/> 
+                                <Image alt="No Image" width={100} height={100} src={item.image?item.image:"/nimg.png"}/> 
                             </Link>
                         </div>
                         
