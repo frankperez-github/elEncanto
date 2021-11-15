@@ -168,7 +168,7 @@ button:hover{
 
 .pagination-bar{
     position: absolute;
-    bottom: 18%;
+    bottom: 12%;
     left: 43%;
     width: 40%;
     display: flex;
@@ -1755,21 +1755,16 @@ select{
         flex-direction: column;
         justify-content: space-around;
     }
-    .pagination-bar{
-        left: 10%;
-        margin-bottom: 5%;
-    }
     .Footer{
-      
         background-color: white;
         box-shadow: 0px -4px 10px   rgb(218, 216, 216);
-      
+        margin-top: 10%;
     }
     .Networks_column{
         display: flex;
         justify-content: space-between;
         margin: 5% 5%;
-        padding-top: 2%;
+        padding-top: 5%;
         width: 90%;
     }
     .Search-div{
@@ -1796,11 +1791,14 @@ select{
     .Pallets-div{
         width: 95%;
         margin-left: 2.5%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
     }
     .pagination-bar{
         position: relative;
         width: 60%;
-        margin-left: 20%;
+        left: 32%;
     }
     .pagination-bar p{
         font-size: 16px;

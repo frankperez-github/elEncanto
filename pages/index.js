@@ -66,6 +66,7 @@ export default function Home({products}) {
               
                   
                 </div>
+
                 <div className="pagination-bar ">
                     
                     <div className="arrow-div">
@@ -74,11 +75,12 @@ export default function Home({products}) {
 
                 
                     {pages.map(item=><p key={item.index} onClick={()=>{setPage(item.index)}} className={item["isActive"]?"selectedNumber":""}>{item.index+1}</p>)}
+                    
                     <div className="arrow-div">
                       <Image onClick={()=> {if(page<products.filter(product=>product.name.toLowerCase().includes(keyword.toLowerCase())).length/perPage-1) setPage(page+1) }} alt="No Image"  className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
                     </div>
 
-                  </div> 
+                </div> 
 
               </div>
             
