@@ -7,7 +7,7 @@ export const  CartItemReducer = (state, action) => {
     switch(action.type) {
         case "ADD_ITEM":
         {
-        return state.find(x=>x.product===item.product)?state.map(x=>x.product===item.product?item:x):[...state, item]}
+        return state.find(x=>x.product===item.product)?state.map(x=>x.product===item.product?{...item, qty:x["qty"]+item["qty"]}:x):[...state, item]}
 
 
         case"REMOVE_ITEM":
