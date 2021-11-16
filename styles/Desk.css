@@ -1809,7 +1809,7 @@ select{
         justify-content: space-between;
         flex-direction: column;
     }
-    .Right_side > div:nth-child(17)
+    .Right_side > div:nth-child(7)
     {
         position: relative;
         margin-top: 2%;
