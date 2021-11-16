@@ -63,11 +63,7 @@ export default function Home({products}) {
                 
                   {products.filter(product=>product.name.toLowerCase().includes(keyword.toLowerCase())).slice(page*perPage,page*perPage+perPage).map(product=><ProductCard key = {product.id} product={product}/>)}
 
-              
-                  
-                </div>
-
-                <div className="pagination-bar ">
+                  <div className="pagination-bar ">
                     
                     <div className="arrow-div">
                       <Image onClick={()=> {if(page>0) setPage(page-1) }} alt="No Image" className="arrow-pag leftarr" src="/Larrow.svg" width="45%" height="45%" />
@@ -80,7 +76,10 @@ export default function Home({products}) {
                       <Image onClick={()=> {if(page<products.filter(product=>product.name.toLowerCase().includes(keyword.toLowerCase())).length/perPage-1) setPage(page+1) }} alt="No Image"  className="arrow-pag rightarr" src="/Rarrow.svg" width="45%" height="45%" />
                     </div>
 
-                </div> 
+                  </div> 
+                </div>
+
+                
 
               </div>
             
